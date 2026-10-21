@@ -227,6 +227,12 @@ details p{margin:12px 0 0;color:var(--mut)}
 .tile span{font-size:15px;color:#cdd7e0;line-height:1.5}
 .tile.s7{grid-column:span 7}.tile.s5{grid-column:span 5}.tile.s6{grid-column:span 6}.tile.s4{grid-column:span 4}
 .tile.tall{min-height:310px}
+.tile.perch{margin-top:150px}.tile.perch2{margin-top:130px}
+.tile .perchart{position:absolute;z-index:3;pointer-events:none;height:auto}
+.tile .perchart.sit{right:38px;bottom:calc(100% - 123px);width:176px;filter:drop-shadow(5px 6px 0 rgba(0,0,0,.4))}
+.tile .perchart.lean{right:44px;bottom:calc(100% - 8px);width:140px;filter:drop-shadow(4px 0 0 rgba(0,0,0,.35))}
+@media (max-width:560px){.tile.perch{margin-top:140px}.tile.perch2{margin-top:120px}.tile .perchart.sit{width:150px;bottom:calc(100% - 105px);right:20px}.tile .perchart.lean{width:120px;right:24px}}
+
 .home-main{position:relative;z-index:1;max-width:var(--max);margin:0 auto;padding:84px 20px 90px}
 .home-main .tiles{margin-top:210px}
 .home-main h2{margin-top:0}
@@ -313,7 +319,7 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
   <span class="kicker">Гайд</span>
   <h1><span class="slab y s"><span>Правообладателям</span></span></h1><p class="lead">Сайт «NTE по-русски» неофициальный и некоммерческий. Игра Neverness to Everness, её названия, изображения и персонажи принадлежат Hotta Studio и Perfect World. Мы не связаны с издателем.</p><div class="chips"><span class="chip">Обновлено 20 октября 2026</span><span class="chip"></span></div>
 </div>
-<div class="side"><img class="girl " src="https://kitron4ik.github.io/assets/mascot-phone-sit.png" alt="" width="260" height="330"><div class="stairs "></div></div></div>
+<div class="side"><img class="girl up" src="https://kitron4ik.github.io/assets/pose-like.webp" alt="" width="260" height="330"><div class="stairs up"></div></div></div>
 <div class="stage-cut"></div></section>
 <div class="layout"><nav class="toc" aria-label="Содержание"><b>На этой странице</b><a href="#s0">Какие материалы используются</a><a href="#s1">Если вы правообладатель</a></nav><article>
 

@@ -227,6 +227,12 @@ details p{margin:12px 0 0;color:var(--mut)}
 .tile span{font-size:15px;color:#cdd7e0;line-height:1.5}
 .tile.s7{grid-column:span 7}.tile.s5{grid-column:span 5}.tile.s6{grid-column:span 6}.tile.s4{grid-column:span 4}
 .tile.tall{min-height:310px}
+.tile.perch{margin-top:150px}.tile.perch2{margin-top:130px}
+.tile .perchart{position:absolute;z-index:3;pointer-events:none;height:auto}
+.tile .perchart.sit{right:38px;bottom:calc(100% - 123px);width:176px;filter:drop-shadow(5px 6px 0 rgba(0,0,0,.4))}
+.tile .perchart.lean{right:44px;bottom:calc(100% - 8px);width:140px;filter:drop-shadow(4px 0 0 rgba(0,0,0,.35))}
+@media (max-width:560px){.tile.perch{margin-top:140px}.tile.perch2{margin-top:120px}.tile .perchart.sit{width:150px;bottom:calc(100% - 105px);right:20px}.tile .perchart.lean{width:120px;right:24px}}
+
 .home-main{position:relative;z-index:1;max-width:var(--max);margin:0 auto;padding:84px 20px 90px}
 .home-main .tiles{margin-top:210px}
 .home-main h2{margin-top:0}
@@ -404,6 +410,18 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
 <tr><td data-l="Уровень навыка">8</td><td data-l="Нужна ступень">5</td><td data-l="Материалы"><span class="mat"><img src="https://kitron4ik.github.io/assets/mat/SkillUpMaterial_04_lv3.png" alt="" width="30" height="30" loading="lazy"><b>Ночь бьющихся сердец</b> ×3</span><span class="mat"><img src="https://kitron4ik.github.io/assets/mat/OrdinaryMonMaterial_04_lv3.png" alt="" width="30" height="30" loading="lazy"><b>Необыкновенный бред</b> ×3</span><span class="mat"><img src="https://kitron4ik.github.io/assets/mat/weeklycloneboss_a03_01.png" alt="" width="30" height="30" loading="lazy"><b>Вечное воспоминание</b> ×1</span><span class="mat"><img src="https://kitron4ik.github.io/assets/game/beetle.png" alt="" width="30" height="30" loading="lazy"><b>Жук-монета</b> ×80 000</span></td></tr>
 <tr><td data-l="Уровень навыка">9</td><td data-l="Нужна ступень">6</td><td data-l="Материалы"><span class="mat"><img src="https://kitron4ik.github.io/assets/mat/SkillUpMaterial_04_lv3.png" alt="" width="30" height="30" loading="lazy"><b>Ночь бьющихся сердец</b> ×5</span><span class="mat"><img src="https://kitron4ik.github.io/assets/mat/OrdinaryMonMaterial_04_lv3.png" alt="" width="30" height="30" loading="lazy"><b>Необыкновенный бред</b> ×5</span><span class="mat"><img src="https://kitron4ik.github.io/assets/mat/weeklycloneboss_a03_01.png" alt="" width="30" height="30" loading="lazy"><b>Вечное воспоминание</b> ×2</span><span class="mat"><img src="https://kitron4ik.github.io/assets/game/beetle.png" alt="" width="30" height="30" loading="lazy"><b>Жук-монета</b> ×100 000</span></td></tr>
 <tr><td data-l="Уровень навыка">10</td><td data-l="Нужна ступень">6</td><td data-l="Материалы"><span class="mat"><img src="https://kitron4ik.github.io/assets/mat/SkillUpMaterial_04_lv3.png" alt="" width="30" height="30" loading="lazy"><b>Ночь бьющихся сердец</b> ×8</span><span class="mat"><img src="https://kitron4ik.github.io/assets/mat/OrdinaryMonMaterial_04_lv3.png" alt="" width="30" height="30" loading="lazy"><b>Необыкновенный бред</b> ×8</span><span class="mat"><img src="https://kitron4ik.github.io/assets/mat/weeklycloneboss_a03_01.png" alt="" width="30" height="30" loading="lazy"><b>Вечное воспоминание</b> ×4</span><span class="mat"><img src="https://kitron4ik.github.io/assets/game/beetle.png" alt="" width="30" height="30" loading="lazy"><b>Жук-монета</b> ×120 000</span></td></tr>
+</table></div>
+<h3>Где брать материалы</h3>
+<div class="tbl cp" style="--edge:#22303d"><table>
+<tr><th>Материал</th><th>Где добыть</th></tr>
+<tr><td data-l="Материал"><img class="gico" src="https://kitron4ik.github.io/assets/mat/OrdinaryMonMaterial_04_lv1.png" alt="" width="40" height="40" loading="lazy"><b>Приостановленный бред</b></td><td data-l="Где добыть">ящик материалов на выбор, Добыча из аномалии, Обмен охотника, Обмен потерь</td></tr>
+<tr><td data-l="Материал"><img class="gico" src="https://kitron4ik.github.io/assets/mat/Worldboss_material_07.png" alt="" width="40" height="40" loading="lazy"><b>Слеза моря</b></td><td data-l="Где добыть">ящик материалов на выбор, Охота за аномалиями: Морской узник</td></tr>
+<tr><td data-l="Материал"><img class="gico" src="https://kitron4ik.github.io/assets/mat/OrdinaryMonMaterial_04_lv2.png" alt="" width="40" height="40" loading="lazy"><b>Страстный бред</b></td><td data-l="Где добыть">Добыча из аномалии, создание из материалов ступенью ниже, Обмен охотника, Обмен потерь</td></tr>
+<tr><td data-l="Материал"><img class="gico" src="https://kitron4ik.github.io/assets/mat/OrdinaryMonMaterial_04_lv3.png" alt="" width="40" height="40" loading="lazy"><b>Необыкновенный бред</b></td><td data-l="Где добыть">Добыча из аномалии, создание из материалов ступенью ниже, Обмен охотника</td></tr>
+<tr><td data-l="Материал"><img class="gico" src="https://kitron4ik.github.io/assets/mat/SkillUpMaterial_04_lv1.png" alt="" width="40" height="40" loading="lazy"><b>Синхронность мышления</b></td><td data-l="Где добыть">ящик материалов на выбор, Схемы Худини, Обмен охотника</td></tr>
+<tr><td data-l="Материал"><img class="gico" src="https://kitron4ik.github.io/assets/mat/SkillUpMaterial_04_lv2.png" alt="" width="40" height="40" loading="lazy"><b>Резонанс веры</b></td><td data-l="Где добыть">Схемы Худини, Обмен охотника, создание из материалов ступенью ниже</td></tr>
+<tr><td data-l="Материал"><img class="gico" src="https://kitron4ik.github.io/assets/mat/weeklycloneboss_a03_01.png" alt="" width="40" height="40" loading="lazy"><b>Вечное воспоминание</b></td><td data-l="Где добыть">награда недельного босса</td></tr>
+<tr><td data-l="Материал"><img class="gico" src="https://kitron4ik.github.io/assets/mat/SkillUpMaterial_04_lv3.png" alt="" width="40" height="40" loading="lazy"><b>Ночь бьющихся сердец</b></td><td data-l="Где добыть">Схемы Худини, Обмен охотника, создание из материалов ступенью ниже</td></tr>
 </table></div>
 <h3>Сколько всего нужно</h3>
 <div class="tbl cp" style="--edge:#22303d"><table>
