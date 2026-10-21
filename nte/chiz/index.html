@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Чиз (Chiz) в NTE: навыки, пробуждения и описание</title>
-<meta name="description" content="Чиз (Chiz) в Neverness to Everness: S-ранг, навыки и пассивы, пробуждения, фракция. По официальным текстам игры на русском.">
+<title>Чиз (Chiz) в NTE: сборка, навыки, команды и пробуждения</title>
+<meta name="description" content="Чиз (Chiz) в Neverness to Everness: S-ранг, навыки и пассивы, пробуждения, лучшие дуги и картридж, команды и ротация. Официальные тексты игры на русском и сторонние гайды.">
 <link rel="canonical" href="https://kitron4ik.github.io/nte/chiz/">
 <link rel="icon" type="image/png" sizes="32x32" href="https://kitron4ik.github.io/assets/favicon-32.png">
 <link rel="apple-touch-icon" href="https://kitron4ik.github.io/assets/favicon.png">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Чиз (Chiz) в NTE: навыки, пробуждения и описание">
-<meta property="og:description" content="Чиз (Chiz) в Neverness to Everness: S-ранг, навыки и пассивы, пробуждения, фракция. По официальным текстам игры на русском.">
+<meta property="og:title" content="Чиз (Chiz) в NTE: сборка, навыки, команды и пробуждения">
+<meta property="og:description" content="Чиз (Chiz) в Neverness to Everness: S-ранг, навыки и пассивы, пробуждения, лучшие дуги и картридж, команды и ротация. Официальные тексты игры на русском и сторонние гайды.">
 <meta property="og:url" content="https://kitron4ik.github.io/nte/chiz/">
 <meta property="og:image" content="https://kitron4ik.github.io/assets/og-garant.jpg">
 <meta name="theme-color" content="#07090d">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Кто такой(ая) Чиз в Neverness to Everness?", "acceptedAnswer": {"@type": "Answer", "text": "Чиз (Chiz), S-ранговый герой NTE из фракции «Семья Дворжак»."}}, {"@type": "Question", "name": "Какие навыки у Чиз?", "acceptedAnswer": {"@type": "Answer", "text": "базовая атака: «Меч изгнанника»; навык: «Превосходство Розовых лапок»; навык поддержки: «QTE»; сверхспособность: «Игра с нулевой суммой»."}}, {"@type": "Question", "name": "Сколько пробуждений у Чиз?", "acceptedAnswer": {"@type": "Answer", "text": "В данных игры 8, их названия и эффекты приведены на странице."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Кто такой(ая) Чиз в Neverness to Everness?", "acceptedAnswer": {"@type": "Answer", "text": "Чиз (Chiz), S-ранговый герой NTE из фракции «Семья Дворжак»."}}, {"@type": "Question", "name": "Какие навыки у Чиз?", "acceptedAnswer": {"@type": "Answer", "text": "базовая атака: «Меч изгнанника»; навык: «Превосходство Розовых лапок»; навык поддержки: «QTE»; сверхспособность: «Игра с нулевой суммой»."}}, {"@type": "Question", "name": "Сколько пробуждений у Чиз?", "acceptedAnswer": {"@type": "Answer", "text": "В данных игры 8, их названия и эффекты приведены на странице."}}, {"@type": "Question", "name": "Какая лучшая дуга для Чиз?", "acceptedAnswer": {"@type": "Answer", "text": "По GenshinBuilds, «Созерцательная кошка» (Contemplative Cat)."}}, {"@type": "Question", "name": "Какой картридж ставить Чиз?", "acceptedAnswer": {"@type": "Answer", "text": "По GenshinBuilds, «Утраченное сияние» (Lost Radiance)."}}]}</script>
 <style>
 @font-face{font-family:"Russo One";src:url("https://kitron4ik.github.io/assets/fonts/RussoOne-Regular.ttf") format("truetype");font-display:swap}
 :root{color-scheme:dark;--y:#ffc61a;--y2:#fff1a8;--k:#07090d;--k2:#0e1620;--c:#50e6ff;--text:#ecf2f7;--mut:#9fb2c1;--line:rgba(255,198,26,.28);--max:1160px;--n:20px;
@@ -111,7 +111,10 @@ h1{margin:0 0 22px;line-height:1;display:flex;flex-direction:column;align-items:
 .page .stage-in .stairs{margin-top:0}
 .page .stage-in .lead{max-width:40ch}
 .side .girl.portrait{height:auto;width:min(230px,60%);right:26px;top:auto;bottom:calc(100% - 258px);z-index:7;filter:drop-shadow(6px 8px 0 rgba(0,0,0,.45))}
-.en{color:#8497a6;font-size:.9em}.lab{color:#8497a6;font-size:13px}
+.en{color:#8497a6;font-size:.9em}
+i.best{font-style:normal;font:400 11px "Russo One",sans-serif;background:var(--y);color:#000;padding:1px 8px;margin-left:6px;clip-path:var(--slant);vertical-align:middle}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:10px 0 24px}.two ul{margin:6px 0 0;padding-left:20px}
+@media (max-width:700px){.two{grid-template-columns:1fr}}.lab{color:#8497a6;font-size:13px}
 .cgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;margin:18px 0 30px}
 .ccard{--fill:#0c141c;display:flex;flex-direction:column;align-items:center;text-align:center;padding:16px 8px 14px;text-decoration:none;color:#fff;transition:transform .15s}
 .ccard:hover{transform:translateY(-4px)}
@@ -222,15 +225,15 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
 <div class="stage-in"><div>
   <div class="crumbs"><a href="https://kitron4ik.github.io/">NTE по-русски</a> / Neverness to Everness</div>
   <span class="kicker">Гайд</span>
-  <h1><span class="slab y s"><span>Чиз в NTE: навыки и пробуждения</span></span></h1><p class="lead">Чиз (Chiz) это S-ранговый герой NTE из фракции «Семья Дворжак». Ниже навыки, пассивы и пробуждения по официальным текстам игры.</p><div class="chips"><span class="chip">Обновлено 21 октября 2026</span><span class="chip">Данные из игры, русская локализация (версия 1.4.13 CN)</span></div>
+  <h1><span class="slab y s"><span>Чиз в NTE: сборка и команды</span></span></h1><p class="lead">Чиз (Chiz) это S-ранговый герой NTE из фракции «Семья Дворжак». Ниже навыки, пассивы и пробуждения по официальным текстам игры.</p><div class="chips"><span class="chip">Обновлено 21 октября 2026</span><span class="chip">Данные из игры, русская локализация (версия 1.4.13 CN)</span></div>
 </div>
 <div class="side"><img class="girl portrait" src="https://kitron4ik.github.io/assets/char/chiz.png" alt="Портрет: Чиз" width="200" height="200"><div class="stairs portrait"><div class="step cp"><b>S</b><span>редкость героя</span></div><div class="step cp"><b>8</b><span>пробуждений по данным игры</span></div><div class="step cp"><b>4</b><span>навыков и пассивов</span></div></div></div></div>
 <div class="stage-cut"></div></section>
-<div class="layout"><nav class="toc" aria-label="Содержание"><b>На этой странице</b><a href="#s0">Коротко</a><a href="#s1">Навыки</a><a href="#s2">Пробуждения</a><a href="#s3">Источники</a><a href="#faq">Частые вопросы</a></nav><article>
+<div class="layout"><nav class="toc" aria-label="Содержание"><b>На этой странице</b><a href="#s0">Коротко</a><a href="#s1">Навыки</a><a href="#s2">Пробуждения</a><a href="#s3">Сборка по сторонним гайдам</a><a href="#s4">Команды</a><a href="#s5">Ротация</a><a href="#s6">Сильные и слабые стороны</a><a href="#s7">Порядок прокачки навыков</a><a href="#s8">Источники</a><a href="#faq">Частые вопросы</a></nav><article>
 <h2 id="s0">Коротко</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Параметр</th><th>Значение</th></tr>
-<tr><td>Редкость</td><td>S-ранг</td></tr><tr><td>Фракция</td><td>Семья Дворжак</td></tr><tr><td>Имя в игре</td><td>Чиз (Chiz)</td></tr>
+<tr><td>Редкость</td><td>S-ранг</td></tr><tr><td>Стихия (по описанию навыков)</td><td>космос</td></tr><tr><td>Фракция</td><td>Семья Дворжак</td></tr><tr><td>Имя в игре</td><td>Чиз (Chiz)</td></tr>
 </table></div>
 <p>Официальное описание из игры: «Хотя она может показаться немного застенчивой, она — самая надёжная управляющая в банке «Розовые лапки».».</p>
 <h2 id="s1">Навыки</h2>
@@ -254,10 +257,50 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
 <tr><td>7</td><td><b>Родные и близкие</b> <span class="en">(Friends and Family)</span></td><td>Увеличивает эффективность сбора зерна на дополнительные 50 %, пока действует состояние «Долг».</td></tr>
 <tr><td>8</td><td><b>Возвращение домой</b> <span class="en">(Homecoming)</span></td><td>Когда Чиз наносит урон, снижает сопротивление космосу цели на 10 %.</td></tr>
 </table></div>
-<h2 id="s3">Источники</h2>
-<p class="src">Названия, описания навыков и пробуждений: <a href="https://github.com/AzureXuanVerse/NTE_Assets" rel="noopener">выгрузка ресурсов игры NTE_Assets</a> (версия 1.4.13 CN), русская локализация. Данные проверены 21 октября 2026, неофициальная выгрузка ресурсов игры.</p>
+<h2 id="s3"><img class="ico" src="https://kitron4ik.github.io/assets/ico/arc.svg" alt="" width="28" height="28">Сборка по сторонним гайдам</h2>
+<p>Роль по гайдам: основной ДД, наносит урон на поле (космос). Эффекты дуг и картриджей ниже из текста игры, числа и выбор из гайда.</p>
+<div class="tbl cp" style="--edge:#22303d"><table>
+<tr><th>Дуга</th><th>Что делает (текст игры)</th><th>Числа и заметки из гайда</th></tr>
+<tr><td><img class="gico" src="https://kitron4ik.github.io/assets/arc/mamen.png" alt="" width="46" height="46" loading="lazy"><b>Созерцательная кошка</b> <span class="en">(Contemplative Cat)</span> <i class=best>лучшая</i></td><td>Увеличивает урон космоса на … за каждые … фонсов у владельца. Складывается до 10 раз.</td><td>повышает урон космоса за каждые 100 000 Фонса на счёте, до 10 стаков. Для максимума нужно около 1 000 000 Фонса</td></tr>
+<tr><td><img class="gico" src="https://kitron4ik.github.io/assets/arc/bopu.png" alt="" width="46" height="46" loading="lazy"><b>Космический восторг, дикая греза</b> <span class="en">(Cosmos Daze, Wild Reverie)</span></td><td>Повышает наносимый носителем урон на … на … сек. после использования навыка поддержки. Срабатывает не чаще раза в … сек.</td><td>усиливает урон владельца на 10 с после навыка поддержки, не чаще раза в 20 с</td></tr>
+<tr><td><b>Будь счастлив</b> <span class="en">(Be Happy)</span></td><td>При победе над врагом увеличивает ОЗ владельца на …. Срабатывает не чаще раза в … сек.</td><td>восстанавливает ОЗ владельца при победе над врагом, не чаще раза в 20 с</td></tr>
+</table></div>
+<p><b>Картридж «Утраченное сияние»</b> (Lost Radiance), лучший комплект. Эпический (2): урон космоса +10 %. Легендарный (4): после применения владельцем сверхспособности игнорирует 25 % защиты врагов в течение 20 сек. Эффект не складывается. (текст игры). Запасные: Кредо теней (Shadow Creed #2).</p>
+<p>Порядок модулей по гайду: атака %, урон, атака, крит. шанс, крит. урон.</p>
+<h2 id="s4">Команды</h2>
+<div class="tbl cp" style="--edge:#22303d"><table>
+<tr><th>Команда</th><th>Состав (роль)</th></tr>
+<tr><td>Зарядка (самая сильная и самая трудная в сборке)</td><td><b>Чиз</b> (основной ДД), <b>Хатор</b> (саб-ДД), <b>Цзююань</b> (саб-ДД (можно Минт)), <b>Адлер</b> (поддержка)</td></tr>
+<tr><td>Цветение (доступнее)</td><td><b>Нужны герои анимы</b></td></tr>
+<tr><td>Ремора</td><td><b>Нужны герои лакшаны</b></td></tr>
+</table></div>
+<h2 id="s5">Ротация</h2>
+<ol>
+<li>Навык Адлера.</li>
+<li>Навык Цзююань.</li>
+<li>Навык Чиз (при смене запускает «Цветение»).</li>
+<li>Сверхспособность Чиз.</li>
+<li>Три раза: навык Чиз, две базовые атаки.</li>
+<li>Навык Хатор.</li>
+<li>Навык Чиз (при смене запускает «Ремору» или «Зарядка»).</li>
+<li>Сверхспособность Чиз.</li>
+<li>Три раза: навык Чиз, две базовые атаки.</li>
+<li>Сверхспособность Цзююань.</li>
+</ol>
+<h2 id="s6">Сильные и слабые стороны</h2>
+<div class="two"><div><b>Сильные</b><ul><li>Устойчивый урон космоса, растущий с накопленным «Зерном».</li><li>Сверхспособность сбрасывает «Зерно» до 15 000 и открывает большое окно урона.</li><li>Удерживаемый навык позволяет вертеться и наносить урон непрерывно.</li><li>Хорошо фармит Фонс.</li><li>Гибкая: подходит командам «Зарядки», «Цветения» и «Реморы».</li></ul></div><div><b>Слабые</b><ul><li>Управление «Зерном» трудно освоить, отрицательное «Зерно» снижает урон.</li><li>Лучшая дуга требует большого запаса Фонса.</li><li>Команда заряда сложнее всего собирается.</li><li>Навык поддержки слабый и качать его не стоит.</li><li>Для долгих вращений нужен щитовик или лекарь вроде Адлера.</li></ul></div></div>
+<h2 id="s7">Порядок прокачки навыков</h2>
+<ol>
+<li>«Превосходство Розовых лапок» (навык)</li>
+<li>«Игра с нулевой суммой» (сверхспособность)</li>
+<li>«Меч изгнанника» (базовая атака)</li>
+<li>«QTE» (навык поддержки)</li>
+</ol>
+<p>Навык до 5-го уровня, сверхспособность до 4-го сразу после него, базовая атака до 4-го, навык поддержки последним (3-й).</p>
+<h2 id="s8">Источники</h2>
+<p class="src">Названия, описания навыков и пробуждений: <a href="https://github.com/AzureXuanVerse/NTE_Assets" rel="noopener">выгрузка ресурсов игры NTE_Assets</a> (версия 1.4.13 CN), русская локализация. Сборка и команды: <a href="https://genshin-builds.com/en/neverness-to-everness/characters/chiz" rel="noopener">GenshinBuilds</a> (без даты на странице), это не официальные рекомендации. Данные проверены 21 октября 2026, неофициальная выгрузка ресурсов игры.</p>
 
-<h2 id="faq">Частые вопросы</h2><details class="cp"><summary>Кто такой(ая) Чиз в Neverness to Everness?</summary><p>Чиз (Chiz), S-ранговый герой NTE из фракции «Семья Дворжак».</p></details><details class="cp"><summary>Какие навыки у Чиз?</summary><p>базовая атака: «Меч изгнанника»; навык: «Превосходство Розовых лапок»; навык поддержки: «QTE»; сверхспособность: «Игра с нулевой суммой».</p></details><details class="cp"><summary>Сколько пробуждений у Чиз?</summary><p>В данных игры 8, их названия и эффекты приведены на странице.</p></details>
+<h2 id="faq">Частые вопросы</h2><details class="cp"><summary>Кто такой(ая) Чиз в Neverness to Everness?</summary><p>Чиз (Chiz), S-ранговый герой NTE из фракции «Семья Дворжак».</p></details><details class="cp"><summary>Какие навыки у Чиз?</summary><p>базовая атака: «Меч изгнанника»; навык: «Превосходство Розовых лапок»; навык поддержки: «QTE»; сверхспособность: «Игра с нулевой суммой».</p></details><details class="cp"><summary>Сколько пробуждений у Чиз?</summary><p>В данных игры 8, их названия и эффекты приведены на странице.</p></details><details class="cp"><summary>Какая лучшая дуга для Чиз?</summary><p>По GenshinBuilds, «Созерцательная кошка» (Contemplative Cat).</p></details><details class="cp"><summary>Какой картридж ставить Чиз?</summary><p>По GenshinBuilds, «Утраченное сияние» (Lost Radiance).</p></details>
 <h2 class="related">Читайте также</h2><div class="tiles"><a class="tile cp s6" href="https://kitron4ik.github.io/nte/personazhi/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><b>Персонажи NTE</b><span>Все герои Neverness to Everness с официальными русскими именами: S- и A-ранги, фракции, навыки и пробуждения по текстам игры.</span></a><a class="tile cp s6" href="https://kitron4ik.github.io/nte/s-chego-nachat/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-calendar.png alt='' width=76 height=76><b>С чего начать в NTE</b><span>Что делать новичку в Neverness to Everness: обучение, коды, баннер для новичков, выбор персонажа и план первой недели по дням.</span></a><a class="tile cp s6" href="https://kitron4ik.github.io/nte/kody/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-scroll.png alt='' width=76 height=76><b>Коды NTE: рабочие промокоды</b><span>Рабочие коды Neverness to Everness: список с наградами, как ввести код, почему код не работает.</span></a><a class="tile cp s6" href="https://kitron4ik.github.io/nte/garant/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-crown.png alt='' width=76 height=76><b>Гарант в NTE: как он работает</b><span>Как работает гарант в Neverness to Everness: S-ранг персонажа на 90-й крутке, нет «50 на 50», перенос гаранта на следующий баннер, дуги (арки) на 60 и 80 круток.</span></a></div></article></div>
 <footer><div>NTE по-русски – неофициальный проект игроков. Neverness to Everness принадлежит Hotta Studio и Perfect World. Канал: <a href="https://max.ru/channel_nte_po_russki">NTE по-русски в MAX</a>. <a href="https://kitron4ik.github.io/nte/pravoobladatelyam/">Правообладателям</a>.</div></footer>
 <script>

@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Хотори (Hotori) в NTE: навыки, пробуждения и описание</title>
-<meta name="description" content="Хотори (Hotori) в Neverness to Everness: S-ранг, навыки и пассивы, пробуждения, фракция. По официальным текстам игры на русском.">
+<title>Хотори (Hotori) в NTE: сборка, навыки, команды и пробуждения</title>
+<meta name="description" content="Хотори (Hotori) в Neverness to Everness: S-ранг, навыки и пассивы, пробуждения, лучшие дуги и картридж, команды и ротация. Официальные тексты игры на русском и сторонние гайды.">
 <link rel="canonical" href="https://kitron4ik.github.io/nte/hotori/">
 <link rel="icon" type="image/png" sizes="32x32" href="https://kitron4ik.github.io/assets/favicon-32.png">
 <link rel="apple-touch-icon" href="https://kitron4ik.github.io/assets/favicon.png">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Хотори (Hotori) в NTE: навыки, пробуждения и описание">
-<meta property="og:description" content="Хотори (Hotori) в Neverness to Everness: S-ранг, навыки и пассивы, пробуждения, фракция. По официальным текстам игры на русском.">
+<meta property="og:title" content="Хотори (Hotori) в NTE: сборка, навыки, команды и пробуждения">
+<meta property="og:description" content="Хотори (Hotori) в Neverness to Everness: S-ранг, навыки и пассивы, пробуждения, лучшие дуги и картридж, команды и ротация. Официальные тексты игры на русском и сторонние гайды.">
 <meta property="og:url" content="https://kitron4ik.github.io/nte/hotori/">
 <meta property="og:image" content="https://kitron4ik.github.io/assets/og-garant.jpg">
 <meta name="theme-color" content="#07090d">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Кто такой(ая) Хотори в Neverness to Everness?", "acceptedAnswer": {"@type": "Answer", "text": "Хотори (Hotori), S-ранговый герой NTE из фракции «Антикварный магазин «Эйбон»»."}}, {"@type": "Question", "name": "Какие навыки у Хотори?", "acceptedAnswer": {"@type": "Answer", "text": "базовая атака: «Лунный стиль Мисти»; навык: «Настоящее воспроизведение»; навык поддержки: «Авторитет лавочника»; сверхспособность: «Мировой прилив»; пассив 1: «Гребень призрачной орхидеи»; пассив 2: «Все сокровища под небесами»."}}, {"@type": "Question", "name": "Сколько пробуждений у Хотори?", "acceptedAnswer": {"@type": "Answer", "text": "В данных игры 8, их названия и эффекты приведены на странице."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Кто такой(ая) Хотори в Neverness to Everness?", "acceptedAnswer": {"@type": "Answer", "text": "Хотори (Hotori), S-ранговый герой NTE из фракции «Антикварный магазин «Эйбон»»."}}, {"@type": "Question", "name": "Какие навыки у Хотори?", "acceptedAnswer": {"@type": "Answer", "text": "базовая атака: «Лунный стиль Мисти»; навык: «Настоящее воспроизведение»; навык поддержки: «Авторитет лавочника»; сверхспособность: «Мировой прилив»; пассив 1: «Гребень призрачной орхидеи»; пассив 2: «Все сокровища под небесами»."}}, {"@type": "Question", "name": "Сколько пробуждений у Хотори?", "acceptedAnswer": {"@type": "Answer", "text": "В данных игры 8, их названия и эффекты приведены на странице."}}, {"@type": "Question", "name": "Какая лучшая дуга для Хотори?", "acceptedAnswer": {"@type": "Answer", "text": "По GenshinBuilds, «За пределы времени» (Marching Beyond Time)."}}, {"@type": "Question", "name": "Какой картридж ставить Хотори?", "acceptedAnswer": {"@type": "Answer", "text": "По GenshinBuilds, «Утраченное сияние» (Lost Radiance)."}}]}</script>
 <style>
 @font-face{font-family:"Russo One";src:url("https://kitron4ik.github.io/assets/fonts/RussoOne-Regular.ttf") format("truetype");font-display:swap}
 :root{color-scheme:dark;--y:#ffc61a;--y2:#fff1a8;--k:#07090d;--k2:#0e1620;--c:#50e6ff;--text:#ecf2f7;--mut:#9fb2c1;--line:rgba(255,198,26,.28);--max:1160px;--n:20px;
@@ -111,7 +111,10 @@ h1{margin:0 0 22px;line-height:1;display:flex;flex-direction:column;align-items:
 .page .stage-in .stairs{margin-top:0}
 .page .stage-in .lead{max-width:40ch}
 .side .girl.portrait{height:auto;width:min(230px,60%);right:26px;top:auto;bottom:calc(100% - 258px);z-index:7;filter:drop-shadow(6px 8px 0 rgba(0,0,0,.45))}
-.en{color:#8497a6;font-size:.9em}.lab{color:#8497a6;font-size:13px}
+.en{color:#8497a6;font-size:.9em}
+i.best{font-style:normal;font:400 11px "Russo One",sans-serif;background:var(--y);color:#000;padding:1px 8px;margin-left:6px;clip-path:var(--slant);vertical-align:middle}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:10px 0 24px}.two ul{margin:6px 0 0;padding-left:20px}
+@media (max-width:700px){.two{grid-template-columns:1fr}}.lab{color:#8497a6;font-size:13px}
 .cgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;margin:18px 0 30px}
 .ccard{--fill:#0c141c;display:flex;flex-direction:column;align-items:center;text-align:center;padding:16px 8px 14px;text-decoration:none;color:#fff;transition:transform .15s}
 .ccard:hover{transform:translateY(-4px)}
@@ -222,15 +225,15 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
 <div class="stage-in"><div>
   <div class="crumbs"><a href="https://kitron4ik.github.io/">NTE по-русски</a> / Neverness to Everness</div>
   <span class="kicker">Гайд</span>
-  <h1><span class="slab y s"><span>Хотори в NTE: навыки и пробуждения</span></span></h1><p class="lead">Хотори (Hotori) это S-ранговый герой NTE из фракции «Антикварный магазин «Эйбон»». Ниже навыки, пассивы и пробуждения по официальным текстам игры.</p><div class="chips"><span class="chip">Обновлено 21 октября 2026</span><span class="chip">Данные из игры, русская локализация (версия 1.4.13 CN)</span></div>
+  <h1><span class="slab y s"><span>Хотори в NTE: сборка и команды</span></span></h1><p class="lead">Хотори (Hotori) это S-ранговый герой NTE из фракции «Антикварный магазин «Эйбон»». Ниже навыки, пассивы и пробуждения по официальным текстам игры.</p><div class="chips"><span class="chip">Обновлено 21 октября 2026</span><span class="chip">Данные из игры, русская локализация (версия 1.4.13 CN)</span></div>
 </div>
 <div class="side"><img class="girl portrait" src="https://kitron4ik.github.io/assets/char/hotori.png" alt="Портрет: Хотори" width="200" height="200"><div class="stairs portrait"><div class="step cp"><b>S</b><span>редкость героя</span></div><div class="step cp"><b>8</b><span>пробуждений по данным игры</span></div><div class="step cp"><b>6</b><span>навыков и пассивов</span></div></div></div></div>
 <div class="stage-cut"></div></section>
-<div class="layout"><nav class="toc" aria-label="Содержание"><b>На этой странице</b><a href="#s0">Коротко</a><a href="#s1">Навыки</a><a href="#s2">Пробуждения</a><a href="#s3">Источники</a><a href="#faq">Частые вопросы</a></nav><article>
+<div class="layout"><nav class="toc" aria-label="Содержание"><b>На этой странице</b><a href="#s0">Коротко</a><a href="#s1">Навыки</a><a href="#s2">Пробуждения</a><a href="#s3">Сборка по сторонним гайдам</a><a href="#s4">Команды</a><a href="#s5">Ротация</a><a href="#s6">Сильные и слабые стороны</a><a href="#s7">Порядок прокачки навыков</a><a href="#s8">Источники</a><a href="#faq">Частые вопросы</a></nav><article>
 <h2 id="s0">Коротко</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Параметр</th><th>Значение</th></tr>
-<tr><td>Редкость</td><td>S-ранг</td></tr><tr><td>Фракция</td><td>Антикварный магазин «Эйбон»</td></tr><tr><td>Имя в игре</td><td>Хотори (Hotori)</td></tr>
+<tr><td>Редкость</td><td>S-ранг</td></tr><tr><td>Стихия (по описанию навыков)</td><td>космос</td></tr><tr><td>Фракция</td><td>Антикварный магазин «Эйбон»</td></tr><tr><td>Имя в игре</td><td>Хотори (Hotori)</td></tr>
 </table></div>
 <p>Официальное описание из игры: «Хозяйка «Эйбона», которая, кажется, не очень трезва.».</p>
 <h2 id="s1">Навыки</h2>
@@ -256,10 +259,49 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
 <tr><td>7</td><td><b>Разбитая вечность</b> <span class="en">(Eternity Shattered)</span></td><td>Повышает уровень навыков «Лунный стиль Мисти», «Настоящее воспроизведение» и «Мировой прилив» на 1.</td></tr>
 <tr><td>8</td><td><b>Величайшее сокровище ясного понимания</b> <span class="en">(The Ultimate Treasure of Clear Understanding)</span></td><td>Когда Хотори в команде и жива, даёт всем членам команды 30 % к атаке.</td></tr>
 </table></div>
-<h2 id="s3">Источники</h2>
-<p class="src">Названия, описания навыков и пробуждений: <a href="https://github.com/AzureXuanVerse/NTE_Assets" rel="noopener">выгрузка ресурсов игры NTE_Assets</a> (версия 1.4.13 CN), русская локализация. Данные проверены 21 октября 2026, неофициальная выгрузка ресурсов игры.</p>
+<h2 id="s3"><img class="ico" src="https://kitron4ik.github.io/assets/ico/arc.svg" alt="" width="28" height="28">Сборка по сторонним гайдам</h2>
+<p>Роль по гайдам: саб-ДД с высоким burst-уроном. Эффекты дуг и картриджей ниже из текста игры, числа и выбор из гайда.</p>
+<div class="tbl cp" style="--edge:#22303d"><table>
+<tr><th>Дуга</th><th>Что делает (текст игры)</th><th>Числа и заметки из гайда</th></tr>
+<tr><td><img class="gico" src="https://kitron4ik.github.io/assets/arc/Time.png" alt="" width="46" height="46" loading="lazy"><b>За пределы времени</b> <span class="en">(Marching Beyond Time)</span> <i class=best>лучшая</i></td><td>Увеличивает АТК на ….<br>При активации навыка перенаправления носитель входит в Лабораторию пустоши и сбрасывает текущее Время пустоши. В Лаборатории союзники получают 1 уровень Времени пустоши за каждое использование навыка перенаправления или поддержки (макс. 3 уровня). Когда носитель применяет сверхспособность в Лаборатории пустоши, он выходит из неё и тратит всё Время пустоши: крит. урон сверхспособности повышается на … + дополнительно … за каждый уровень. Расход 3 уровней за раз даёт … игнорирования защиты на … сек.</td><td>+16 % к атаке. При навыке перенаправления входит в «Лабораторию пустоши»; сверхспособность в ней даёт бонус к крит. урону и, возможно, игнорирование защиты</td></tr>
+<tr><td><img class="gico" src="https://kitron4ik.github.io/assets/arc/worldrain.png" alt="" width="46" height="46" loading="lazy"><b>Дождь, сотрясший мир</b> <span class="en">(The Rain That Shook the World)</span></td><td>Наносит повышенный на … урон космоса от навыка перенаправления и сверхспособности носителя.<br>Увеличивает интенсивность цикла носителя на … на … сек. после применения навыка перенаправления. При повторном срабатывании длительность обновляется.</td><td>+30 % урона космоса от навыка перенаправления и сверхспособности, временно повышает интенсивность цикла после навыка</td></tr>
+<tr><td><img class="gico" src="https://kitron4ik.github.io/assets/arc/BlastCandy.png" alt="" width="46" height="46" loading="lazy"><b>Пух бесстрашия</b> <span class="en">(Fluff of Fearlessness)</span></td><td>Когда владелец применяет сверхспособность, увеличивает атаку на … на … сек. Эффект не складывается.</td><td>+25 % к атаке на 10 с после сверхспособности, не складывается</td></tr>
+<tr><td><img class="gico" src="https://kitron4ik.github.io/assets/arc/wuhuakuang.png" alt="" width="46" height="46" loading="lazy"><b>Забытое</b> <span class="en">(The Forgotten)</span></td><td>Увеличивает атаку на …, когда у владельца больше 50 % ОЗ. Увеличивает защиту на …, когда у владельца меньше 50 % ОЗ.</td><td>бесплатный вариант: +20 % к атаке при ОЗ выше 50 % или к защите ниже 50 %. Бонус к ОЗ в побочных характеристиках Хотори не помогает</td></tr>
+</table></div>
+<p><b>Картридж «Утраченное сияние»</b> (Lost Radiance), лучший комплект. Эпический (2): урон космоса +10 %. Легендарный (4): после применения владельцем сверхспособности игнорирует 25 % защиты врагов в течение 20 сек. Эффект не складывается. (текст игры). Запасные: Светлячки и лес (Fireflies and the Forest #2).</p>
+<p>Порядок модулей по гайду: крит. шанс, крит. урон, урон, атака %, интенсивность цикла.</p>
+<h2 id="s4">Команды</h2>
+<div class="tbl cp" style="--edge:#22303d"><table>
+<tr><th>Команда</th><th>Состав (роль)</th></tr>
+<tr><td>Цветение (лучшая по GenshinBuilds)</td><td><b>Хотори</b> (саб-ДД), <b>Ноль</b> (саб-ДД), <b>Наналли</b> (основной ДД), <b>Цзююань</b> (поддержка)</td></tr>
+<tr><td>Диссонанс (Discord)</td><td><b>Хотори</b> (саб-ДД), <b>Даффодил</b> (саб-ДД, накладывает «Нову» и «Ожог»), <b>Аурелия</b> (основной ДД), <b>Сакири</b> (поддержка)</td></tr>
+</table></div>
+<p>В цветении Минт можно взять вместо Наналли, а Сакири вместо Цзююань.</p>
+<h2 id="s5">Ротация</h2>
+<ol>
+<li>Дождаться, пока «Незакрытые часы» наполнятся.</li>
+<li>Использовать навык «Настоящее воспроизведение»: лучше начинать бой с него.</li>
+<li>В течение 5 секунд записи применить навыки перенаправления или поддержки союзников (до трёх, по одному на героя).</li>
+<li>Снова дождаться наполнения часов.</li>
+<li>Наложить бафы и дебафы.</li>
+<li>Сменить на Хотори и применить сверхспособность: записанные навыки повторятся по порядку.</li>
+<li>Две серии базовых атак, затем завершающий удар.</li>
+<li>Повторить.</li>
+</ol>
+<h2 id="s6">Сильные и слабые стороны</h2>
+<div class="two"><div><b>Сильные</b><ul><li>Сверхспособность перезаряжается со временем (около 20 с), а не от энергии, поэтому ротация предсказуема.</li><li>Повторяет записанные навыки перенаправления и поддержки союзников, добавляя урон.</li><li>Остановка времени замораживает врагов и таймеры.</li><li>Много урона, особенно по сломленным врагам.</li></ul></div><div><b>Слабые</b><ul><li>Повторное применение навыка перезаписывает предыдущую запись.</li><li>Окно записи всего 5 секунд, каждый союзник записывается один раз.</li><li>Сильно зависит от навыков поддержки и перенаправления напарников.</li><li>Бесплатная дуга «Забытое» даёт характеристику, которая ей не подходит.</li></ul></div></div>
+<h2 id="s7">Порядок прокачки навыков</h2>
+<ol>
+<li>«Мировой прилив» (сверхспособность)</li>
+<li>«Настоящее воспроизведение» (навык)</li>
+<li>«Лунный стиль Мисти» (базовая атака)</li>
+<li>«Авторитет лавочника» (навык поддержки)</li>
+</ol>
+<p>Сверхспособность до 5-го уровня, навык до 5-го, базовая атака и навык поддержки до 3-го.</p>
+<h2 id="s8">Источники</h2>
+<p class="src">Названия, описания навыков и пробуждений: <a href="https://github.com/AzureXuanVerse/NTE_Assets" rel="noopener">выгрузка ресурсов игры NTE_Assets</a> (версия 1.4.13 CN), русская локализация. Сборка и команды: <a href="https://genshin-builds.com/en/neverness-to-everness/characters/hotori" rel="noopener">GenshinBuilds</a> (без даты на странице), это не официальные рекомендации. Данные проверены 21 октября 2026, неофициальная выгрузка ресурсов игры.</p>
 
-<h2 id="faq">Частые вопросы</h2><details class="cp"><summary>Кто такой(ая) Хотори в Neverness to Everness?</summary><p>Хотори (Hotori), S-ранговый герой NTE из фракции «Антикварный магазин «Эйбон»».</p></details><details class="cp"><summary>Какие навыки у Хотори?</summary><p>базовая атака: «Лунный стиль Мисти»; навык: «Настоящее воспроизведение»; навык поддержки: «Авторитет лавочника»; сверхспособность: «Мировой прилив»; пассив 1: «Гребень призрачной орхидеи»; пассив 2: «Все сокровища под небесами».</p></details><details class="cp"><summary>Сколько пробуждений у Хотори?</summary><p>В данных игры 8, их названия и эффекты приведены на странице.</p></details>
+<h2 id="faq">Частые вопросы</h2><details class="cp"><summary>Кто такой(ая) Хотори в Neverness to Everness?</summary><p>Хотори (Hotori), S-ранговый герой NTE из фракции «Антикварный магазин «Эйбон»».</p></details><details class="cp"><summary>Какие навыки у Хотори?</summary><p>базовая атака: «Лунный стиль Мисти»; навык: «Настоящее воспроизведение»; навык поддержки: «Авторитет лавочника»; сверхспособность: «Мировой прилив»; пассив 1: «Гребень призрачной орхидеи»; пассив 2: «Все сокровища под небесами».</p></details><details class="cp"><summary>Сколько пробуждений у Хотори?</summary><p>В данных игры 8, их названия и эффекты приведены на странице.</p></details><details class="cp"><summary>Какая лучшая дуга для Хотори?</summary><p>По GenshinBuilds, «За пределы времени» (Marching Beyond Time).</p></details><details class="cp"><summary>Какой картридж ставить Хотори?</summary><p>По GenshinBuilds, «Утраченное сияние» (Lost Radiance).</p></details>
 <h2 class="related">Читайте также</h2><div class="tiles"><a class="tile cp s6" href="https://kitron4ik.github.io/nte/personazhi/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><b>Персонажи NTE</b><span>Все герои Neverness to Everness с официальными русскими именами: S- и A-ранги, фракции, навыки и пробуждения по текстам игры.</span></a><a class="tile cp s6" href="https://kitron4ik.github.io/nte/s-chego-nachat/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-calendar.png alt='' width=76 height=76><b>С чего начать в NTE</b><span>Что делать новичку в Neverness to Everness: обучение, коды, баннер для новичков, выбор персонажа и план первой недели по дням.</span></a><a class="tile cp s6" href="https://kitron4ik.github.io/nte/kody/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-scroll.png alt='' width=76 height=76><b>Коды NTE: рабочие промокоды</b><span>Рабочие коды Neverness to Everness: список с наградами, как ввести код, почему код не работает.</span></a><a class="tile cp s6" href="https://kitron4ik.github.io/nte/garant/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-crown.png alt='' width=76 height=76><b>Гарант в NTE: как он работает</b><span>Как работает гарант в Neverness to Everness: S-ранг персонажа на 90-й крутке, нет «50 на 50», перенос гаранта на следующий баннер, дуги (арки) на 60 и 80 круток.</span></a></div></article></div>
 <footer><div>NTE по-русски – неофициальный проект игроков. Neverness to Everness принадлежит Hotta Studio и Perfect World. Канал: <a href="https://max.ru/channel_nte_po_russki">NTE по-русски в MAX</a>. <a href="https://kitron4ik.github.io/nte/pravoobladatelyam/">Правообладателям</a>.</div></footer>
 <script>
