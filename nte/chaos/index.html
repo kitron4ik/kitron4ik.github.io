@@ -207,8 +207,22 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
  .home .stage-in>div{max-width:52%}
  .keyart{position:absolute;right:2%;bottom:-6px;height:84%;margin:0}
 }
+@media (max-width:620px){
+ .tbl{overflow:visible;padding:4px 14px}
+ .tbl table,.tbl tbody{display:block}
+ .tbl tr{display:block;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+ .tbl tr:first-child{display:none}.tbl tr:last-child{border-bottom:0}
+ .tbl td{display:block;border:0;padding:3px 0;overflow-wrap:anywhere}
+ .tbl td::before{content:attr(data-l);display:block;font:400 11px "Russo One",sans-serif;color:var(--y);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
+ .tbl td:first-child::before{display:none}.tbl td:first-child{font-size:17px}
+ .tbl td:empty{display:none}
+ .two{grid-template-columns:1fr}
+ .rw{white-space:normal;display:block;margin:4px 0}
+}
 @media (max-width:1060px){.nav{padding:8px 11px;font-size:13px}.logo{font-size:16px;gap:8px}.logo img{width:34px;height:34px}.pill{margin-left:4px;padding:8px 14px;font-size:13px}.top div{padding:8px 14px}}
 @media (max-width:860px){.nav.x2{display:none}}
+.mnav{display:none}
+@media (max-width:560px){.top .nav{display:none}.mnav{display:flex;gap:6px;overflow-x:auto;padding:2px 14px 8px;max-width:var(--max);margin:0 auto;scrollbar-width:none}.mnav::-webkit-scrollbar{display:none}.mnav a{flex:none;color:#cfd8e0;font:400 13px "Russo One",sans-serif;text-decoration:none;padding:7px 13px;background:#0e1620;clip-path:var(--slant)}}
 @media (max-width:560px){body{font-size:16.5px}.nav.opt{display:none}.logo{font-size:15px;white-space:nowrap;gap:8px}.logo img{width:34px;height:34px}.nav{padding:8px 10px;font-size:13px}.pill{margin-left:4px;padding:8px 14px;font-size:13px}.top div{gap:2px}.giant{top:-2%}.slab.k{margin-left:18px}.top div{padding:8px 14px}.step:nth-child(n){margin-left:0}.giant{font-size:210px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.kicker,.slab,.girl{animation:none!important}.btn,.tile,.nav::before,details{transition:none}}
 </style>
@@ -224,7 +238,7 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
   <a class="nav opt x2" href="https://kitron4ik.github.io/nte/kody/">Коды</a>
   <a class="nav opt" href="https://kitron4ik.github.io/nte/kalkulyator/">Калькулятор</a>
   <a class="pill" href="https://max.ru/channel_nte_po_russki">Канал в MAX</a>
-</div></header>
+</div><nav class="mnav" aria-label="Разделы"><a href="https://kitron4ik.github.io/nte/personazhi/">Герои</a><a href="https://kitron4ik.github.io/nte/s-chego-nachat/">Новичку</a><a href="https://kitron4ik.github.io/nte/garant/">Гарант</a><a href="https://kitron4ik.github.io/nte/valyuty/">Валюты</a><a href="https://kitron4ik.github.io/nte/kody/">Коды</a><a href="https://kitron4ik.github.io/nte/kalkulyator/">Калькулятор</a></nav></header>
 <section class="stage" style="--bg:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><div class="stage-bg"></div><div class="giant" aria-hidden="true">CHAOS</div>
 <div class="stage-in"><div>
   <div class="crumbs"><a href="https://kitron4ik.github.io/">NTE по-русски</a> / Neverness to Everness</div>
@@ -237,46 +251,46 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
 <h2 id="s0">Коротко</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Параметр</th><th>Значение</th></tr>
-<tr><td>Редкость</td><td>S-ранг</td></tr><tr><td>Стихия (по описанию навыков)</td><td>лакшана</td></tr><tr><td>Фракция</td><td>Бюро по борьбе с аномалиями, ТОИ-4</td></tr><tr><td>Имя в игре</td><td>Хаос (Chaos)</td></tr>
+<tr><td data-l="Параметр">Редкость</td><td data-l="Значение">S-ранг</td></tr><tr><td data-l="Параметр">Стихия (по описанию навыков)</td><td data-l="Значение">лакшана</td></tr><tr><td data-l="Параметр">Фракция</td><td data-l="Значение">Бюро по борьбе с аномалиями, ТОИ-4</td></tr><tr><td data-l="Параметр">Имя в игре</td><td data-l="Значение">Хаос (Chaos)</td></tr>
 </table></div>
 <p>Официальное описание из игры: «Несмотря на то, что он — только лейтенант, его часто принимают за капитана отряда 4.».</p>
 <h2 id="s1">Навыки</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Навык</th><th>Что делает (по тексту игры)</th></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/chaos-melee.png" alt="" width="40" height="40" loading="lazy"><b>Погоня</b> <span class="en">(Pursuit)</span><br><span class="lab">Базовая атака</span></td><td><b>Базовая атака: Погоня</b><br>Проводит до 5 последовательных атак подряд своим оружием, нанося урон лакшаны и накапливая Преступление.<br><br><b>Базовая атака: Окончательный приговор</b><br>Ваша вина очевидна. Удерживайте кнопку базовой атаки, чтобы применить Окончательный приговор. Если текущее Преступление достигло предела (1000), расходует весь запас Преступления, добавляет 2-й удар к Окончательному приговору и наносит высокий итоговый урон. Если Преступление не достигло предела, выполняет только 1-й удар Окончательного приговора, нанося урон 2 раза.<br><br><b>Базовая атака: Переворот</b><br>Нажмите базовую атаку, находясь в воздухе, чтобы устремиться вниз, нанося 1 удар урона лакшаны по области. Урон увеличивается в зависимости от высоты падения (до 1×). При этом Хаос концентрирует разум и обостряет охотничье чутьё: обнаруживает врагов поблизости на короткое время. Замеченные цели подсвечиваются контуром.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/chaos-skill.png" alt="" width="40" height="40" loading="lazy"><b>Метка сомнения</b> <span class="en">(Doubtmark)</span><br><span class="lab">Навык</span></td><td><b>Метка сомнения</b><br>Характеристики цели подтверждены. Стреляет по врагам спереди и призывает гончую, чтобы та набросилась на цель. Гончая кусает цель дважды, мечась из стороны в сторону. При попадании накладывает максимум на 2 врагов Розыск на 15 сек. При атаке целей с Розыском увеличивает урон на 20 %.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/chaos-qte.png" alt="" width="40" height="40" loading="lazy"><b>Натиск</b> <span class="en">(Onslaught)</span><br><span class="lab">Навык поддержки</span></td><td><b>Натиск</b><br>И не надейся сбежать! Бьёт косой снизу вверх, нанося 1 удар урона лакшаны.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/chaos-ultraskill.png" alt="" width="40" height="40" loading="lazy"><b>Возмездие</b> <span class="en">(Retribution)</span><br><span class="lab">Сверхспособность</span></td><td><b>Возмездие</b><br>Призывает гончую для подавления врагов рядом, накладывая Розыск на всех противников и входя в состояние «Эхо ужаса». Пока Хаос в состоянии Эха ужаса и является активным персонажем, Преступление стремительно копится, позволяя чаще использовать Окончательный приговор и наносить огромный итоговый урон.</td></tr>
-<tr><td><b>Своевременное правосудие</b> <span class="en">(Justice in Time)</span><br><span class="lab">Пассив 1</span></td><td><b>Своевременное правосудие</b><br>Усиление Реморы: когда Ремора заканчивается, наносит цели урон лакшаны в размере 800 % от АТК в зависимости от длительности Реморы. Каждая секунда сверх базовой длительности в 5 секунд увеличивает урон на 45 % (до 300 %). При повторной активации длительность Реморы сбрасывается.</td></tr>
-<tr><td><b>Главная цель</b> <span class="en">(Prime Target)</span><br><span class="lab">Пассив 2</span></td><td><b>Главная цель</b><br>Увеличивает бонус к урону от Розыска до 30 %.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/chaos-melee.png" alt="" width="40" height="40" loading="lazy"><b>Погоня</b> <span class="en">(Pursuit)</span><br><span class="lab">Базовая атака</span></td><td data-l="Что делает (по тексту игры)"><b>Базовая атака: Погоня</b><br>Проводит до 5 последовательных атак подряд своим оружием, нанося урон лакшаны и накапливая Преступление.<br><br><b>Базовая атака: Окончательный приговор</b><br>Ваша вина очевидна. Удерживайте кнопку базовой атаки, чтобы применить Окончательный приговор. Если текущее Преступление достигло предела (1000), расходует весь запас Преступления, добавляет 2-й удар к Окончательному приговору и наносит высокий итоговый урон. Если Преступление не достигло предела, выполняет только 1-й удар Окончательного приговора, нанося урон 2 раза.<br><br><b>Базовая атака: Переворот</b><br>Нажмите базовую атаку, находясь в воздухе, чтобы устремиться вниз, нанося 1 удар урона лакшаны по области. Урон увеличивается в зависимости от высоты падения (до 1×). При этом Хаос концентрирует разум и обостряет охотничье чутьё: обнаруживает врагов поблизости на короткое время. Замеченные цели подсвечиваются контуром.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/chaos-skill.png" alt="" width="40" height="40" loading="lazy"><b>Метка сомнения</b> <span class="en">(Doubtmark)</span><br><span class="lab">Навык</span></td><td data-l="Что делает (по тексту игры)"><b>Метка сомнения</b><br>Характеристики цели подтверждены. Стреляет по врагам спереди и призывает гончую, чтобы та набросилась на цель. Гончая кусает цель дважды, мечась из стороны в сторону. При попадании накладывает максимум на 2 врагов Розыск на 15 сек. При атаке целей с Розыском увеличивает урон на 20 %.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/chaos-qte.png" alt="" width="40" height="40" loading="lazy"><b>Натиск</b> <span class="en">(Onslaught)</span><br><span class="lab">Навык поддержки</span></td><td data-l="Что делает (по тексту игры)"><b>Натиск</b><br>И не надейся сбежать! Бьёт косой снизу вверх, нанося 1 удар урона лакшаны.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/chaos-ultraskill.png" alt="" width="40" height="40" loading="lazy"><b>Возмездие</b> <span class="en">(Retribution)</span><br><span class="lab">Сверхспособность</span></td><td data-l="Что делает (по тексту игры)"><b>Возмездие</b><br>Призывает гончую для подавления врагов рядом, накладывая Розыск на всех противников и входя в состояние «Эхо ужаса». Пока Хаос в состоянии Эха ужаса и является активным персонажем, Преступление стремительно копится, позволяя чаще использовать Окончательный приговор и наносить огромный итоговый урон.</td></tr>
+<tr><td data-l="Навык"><b>Своевременное правосудие</b> <span class="en">(Justice in Time)</span><br><span class="lab">Пассив 1</span></td><td data-l="Что делает (по тексту игры)"><b>Своевременное правосудие</b><br>Усиление Реморы: когда Ремора заканчивается, наносит цели урон лакшаны в размере 800 % от АТК в зависимости от длительности Реморы. Каждая секунда сверх базовой длительности в 5 секунд увеличивает урон на 45 % (до 300 %). При повторной активации длительность Реморы сбрасывается.</td></tr>
+<tr><td data-l="Навык"><b>Главная цель</b> <span class="en">(Prime Target)</span><br><span class="lab">Пассив 2</span></td><td data-l="Что делает (по тексту игры)"><b>Главная цель</b><br>Увеличивает бонус к урону от Розыска до 30 %.</td></tr>
 </table></div>
 <p class="note">Числа вида «…» в игре зависят от уровня навыка и здесь не показаны, множители смотрите в самой игре.</p>
 <h2 id="s2">Пробуждения</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>№</th><th>Название</th><th>Эффект</th></tr>
-<tr><td>1</td><td><b>Пронзительное чутьё</b> <span class="en">(Piercing Insight)</span></td><td>Даёт дополнительные 40 % Преступления при атаке врагов с Розыском.</td></tr>
-<tr><td>2</td><td><b>Обвинение / Грех</b> <span class="en">(Charge / Sin)</span></td><td>Игнорирует 20 % защиты цели при атаке врагов с Розыском.</td></tr>
-<tr><td>3</td><td><b>Тлеющая вспышка</b> <span class="en">(Emberflare)</span></td><td>После использования Возмездия увеличивает крит. урон на 30 % на 20 сек. При повторном срабатывании длительность обновляется.</td></tr>
-<tr><td>4</td><td><b>Тонущий прилив</b> <span class="en">(Drowning Tide)</span></td><td>При убийстве цели с Розыском передаёт Розыск ближайшей неотмеченной цели и пересчитывает его длительность.</td></tr>
-<tr><td>5</td><td><b>Взор в бездну</b> <span class="en">(Voidgaze)</span></td><td>Увеличивает урон по цели на 20 %, если на поле осталась только 1 цель с Розыском.</td></tr>
-<tr><td>6</td><td><b>Ложное происхождение</b> <span class="en">(False Origin)</span></td><td>Мгновенно восстанавливает Преступление до предела после применения Возмездия.</td></tr>
-<tr><td>7</td><td><b>Правосудие / Истина</b> <span class="en">(Justice / Truth)</span></td><td>Повышает уровень навыков «Погоня», «Метка сомнения» и «Возмездие» на 1.</td></tr>
-<tr><td>8</td><td><b>Свет / Рассвет</b> <span class="en">(Light / Daybreak)</span></td><td>Снижает сопротивление лакшане у врагов с Розыском на 10 %.</td></tr>
+<tr><td data-l="№">1</td><td data-l="Название"><b>Пронзительное чутьё</b> <span class="en">(Piercing Insight)</span></td><td data-l="Эффект">Даёт дополнительные 40 % Преступления при атаке врагов с Розыском.</td></tr>
+<tr><td data-l="№">2</td><td data-l="Название"><b>Обвинение / Грех</b> <span class="en">(Charge / Sin)</span></td><td data-l="Эффект">Игнорирует 20 % защиты цели при атаке врагов с Розыском.</td></tr>
+<tr><td data-l="№">3</td><td data-l="Название"><b>Тлеющая вспышка</b> <span class="en">(Emberflare)</span></td><td data-l="Эффект">После использования Возмездия увеличивает крит. урон на 30 % на 20 сек. При повторном срабатывании длительность обновляется.</td></tr>
+<tr><td data-l="№">4</td><td data-l="Название"><b>Тонущий прилив</b> <span class="en">(Drowning Tide)</span></td><td data-l="Эффект">При убийстве цели с Розыском передаёт Розыск ближайшей неотмеченной цели и пересчитывает его длительность.</td></tr>
+<tr><td data-l="№">5</td><td data-l="Название"><b>Взор в бездну</b> <span class="en">(Voidgaze)</span></td><td data-l="Эффект">Увеличивает урон по цели на 20 %, если на поле осталась только 1 цель с Розыском.</td></tr>
+<tr><td data-l="№">6</td><td data-l="Название"><b>Ложное происхождение</b> <span class="en">(False Origin)</span></td><td data-l="Эффект">Мгновенно восстанавливает Преступление до предела после применения Возмездия.</td></tr>
+<tr><td data-l="№">7</td><td data-l="Название"><b>Правосудие / Истина</b> <span class="en">(Justice / Truth)</span></td><td data-l="Эффект">Повышает уровень навыков «Погоня», «Метка сомнения» и «Возмездие» на 1.</td></tr>
+<tr><td data-l="№">8</td><td data-l="Название"><b>Свет / Рассвет</b> <span class="en">(Light / Daybreak)</span></td><td data-l="Эффект">Снижает сопротивление лакшане у врагов с Розыском на 10 %.</td></tr>
 </table></div>
 <h2 id="s3"><img class="ico" src="https://kitron4ik.github.io/assets/ico/arc.svg" alt="" width="28" height="28">Сборка по сторонним гайдам</h2>
 <p>Роль по гайдам: основной ДД на поле, урон лакшаны. Эффекты дуг и картриджей ниже из текста игры, числа и выбор из гайда.</p>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Дуга</th><th>Что делает (текст игры)</th><th>Числа и заметки из гайда</th></tr>
-<tr><td><img class="gico" src="https://kitron4ik.github.io/assets/arc/GoldWool.png" alt="" width="46" height="46" loading="lazy"><b>Заветное желание</b> <span class="en">(What&#x27;s Desired)</span> <i class=best>лучшая</i></td><td>Увеличивает урон лакшаны владельца на …. Повышает крит. урон владельца на … на … сек. при применении навыка перенаправления или сверхспособности. При повторном срабатывании длительность обновляется.</td><td>+20 % урона лакшаны. После навыка перенаправления или сверхспособности +40 % крит. урона на 20 с, сбрасывается при повторном срабатывании</td></tr>
-<tr><td><img class="gico" src="https://kitron4ik.github.io/assets/arc/KnightCandy.png" alt="" width="46" height="46" loading="lazy"><b>Пух ярости</b> <span class="en">(Fluff of Ferocity)</span></td><td>Увеличивает крит. урон владельца на … на … сек. после нанесения крит. удара. Складывается до 10 раз. При повторном срабатывании длительность обновляется.</td><td>+4 % крит. урона на 10 с после критического удара, до 10 стаков</td></tr>
-<tr><td><img class="gico" src="https://kitron4ik.github.io/assets/arc/koinobori.png" alt="" width="46" height="46" loading="lazy"><b>Время придёт</b> <span class="en">(A Time Will Come)</span></td><td>Даёт владельцу … к атаке, … к защите и … к ОЗ, когда в команде есть как минимум 3 разных типа эспера.</td><td>если в отряде не менее 3 разных типов эспера, даёт +10 % к атаке, защите и ОЗ</td></tr>
+<tr><td data-l="Дуга"><img class="gico" src="https://kitron4ik.github.io/assets/arc/GoldWool.png" alt="" width="46" height="46" loading="lazy"><b>Заветное желание</b> <span class="en">(What&#x27;s Desired)</span> <i class=best>лучшая</i></td><td data-l="Что делает (текст игры)">Увеличивает урон лакшаны владельца на …. Повышает крит. урон владельца на … на … сек. при применении навыка перенаправления или сверхспособности. При повторном срабатывании длительность обновляется.</td><td data-l="Числа и заметки из гайда">+20 % урона лакшаны. После навыка перенаправления или сверхспособности +40 % крит. урона на 20 с, сбрасывается при повторном срабатывании</td></tr>
+<tr><td data-l="Дуга"><img class="gico" src="https://kitron4ik.github.io/assets/arc/KnightCandy.png" alt="" width="46" height="46" loading="lazy"><b>Пух ярости</b> <span class="en">(Fluff of Ferocity)</span></td><td data-l="Что делает (текст игры)">Увеличивает крит. урон владельца на … на … сек. после нанесения крит. удара. Складывается до 10 раз. При повторном срабатывании длительность обновляется.</td><td data-l="Числа и заметки из гайда">+4 % крит. урона на 10 с после критического удара, до 10 стаков</td></tr>
+<tr><td data-l="Дуга"><img class="gico" src="https://kitron4ik.github.io/assets/arc/koinobori.png" alt="" width="46" height="46" loading="lazy"><b>Время придёт</b> <span class="en">(A Time Will Come)</span></td><td data-l="Что делает (текст игры)">Даёт владельцу … к атаке, … к защите и … к ОЗ, когда в команде есть как минимум 3 разных типа эспера.</td><td data-l="Числа и заметки из гайда">если в отряде не менее 3 разных типов эспера, даёт +10 % к атаке, защите и ОЗ</td></tr>
 </table></div>
 <p><b>Картридж «Уличный боец»</b> (Street Boxer), лучший комплект. Эпический (2): урон лакшаны +10 %. Легендарный (4): увеличивает шанс крит. удара владельца на 14 %. После того как отряд активирует эффекты «Ремора» или «След», шанс крит. удара увеличивается дополнительно на 14 % в течение 20 сек. (текст игры). Запасные: Кредо теней (Shadow Creed #2).</p>
 <p>Порядок модулей по гайду: крит. шанс, крит. урон, урон, атака %, атака.</p>
 <h2 id="s4">Команды</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Команда</th><th>Состав (роль)</th></tr>
-<tr><td>Ремора (лучшая)</td><td><b>Хаос</b> (основной ДД, ядро команды), <b>Хатор</b> (саб-ДД (продлевает и обновляет «Ремору», повышает крит. шанс отряда)), <b>Ноль</b> (саб-ДД (запускает «Ремору»)), <b>Ханиэль</b> (поддержка (баффы и «След»))</td></tr>
+<tr><td data-l="Команда">Ремора (лучшая)</td><td data-l="Состав (роль)"><b>Хаос</b> (основной ДД, ядро команды), <b>Хатор</b> (саб-ДД (продлевает и обновляет «Ремору», повышает крит. шанс отряда)), <b>Ноль</b> (саб-ДД (запускает «Ремору»)), <b>Ханиэль</b> (поддержка (баффы и «След»))</td></tr>
 </table></div>
 <p>Между ротациями гайд советует использовать навык Хатор, как только он доступен, чтобы копить её сверхспособность.</p>
 <h2 id="s5">Ротация</h2>
@@ -305,17 +319,17 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
 <p>Второй источник: страница героя на GameWith (обновлена 09.08.2026). Сравнение по главным пунктам:</p>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Пункт</th><th>GenshinBuilds</th><th>GameWith</th><th>Итог</th></tr>
-<tr><td>Лучшая дуга</td><td>«Заветное желание» (What's Desired)</td><td>«Заветное желание» (What's Desired)</td><td><span class="okk">совпало</span></td></tr>
-<tr><td>Картридж</td><td>«Уличный боец» (Street Boxer)</td><td>«Уличный боец» (Street Boxer)</td><td><span class="okk">совпало</span></td></tr>
-<tr><td>Порядок прокачки навыков</td><td>«Погоня», «Возмездие», «Метка сомнения», «Натиск»</td><td>«Погоня», «Возмездие», «Метка сомнения», «Натиск»</td><td><span class="okk">совпало</span></td></tr>
+<tr><td data-l="Пункт">Лучшая дуга</td><td data-l="GenshinBuilds">«Заветное желание» (What's Desired)</td><td data-l="GameWith">«Заветное желание» (What's Desired)</td><td data-l="Итог"><span class="okk">совпало</span></td></tr>
+<tr><td data-l="Пункт">Картридж</td><td data-l="GenshinBuilds">«Уличный боец» (Street Boxer)</td><td data-l="GameWith">«Уличный боец» (Street Boxer)</td><td data-l="Итог"><span class="okk">совпало</span></td></tr>
+<tr><td data-l="Пункт">Порядок прокачки навыков</td><td data-l="GenshinBuilds">«Погоня», «Возмездие», «Метка сомнения», «Натиск»</td><td data-l="GameWith">«Погоня», «Возмездие», «Метка сомнения», «Натиск»</td><td data-l="Итог"><span class="okk">совпало</span></td></tr>
 </table></div>
 <p>По лучшей дуге и картриджу источники согласны.</p>
 <p>Остальные дуги у GameWith по порядку: «Пух ярости» (Fluff of Ferocity), «Сообщество Камелии» (Camellia Society), «Время придёт» (A Time Will Come).</p>
 <h3>Команды по GameWith</h3>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Команда</th><th>Состав</th><th>Замены</th></tr>
-<tr><td>Ремора и «След»</td><td><b>Хаос</b>, <b>Ноль</b>, <b>Ханиэль</b>, <b>Хатор</b></td><td>вместо Хатор можно Ския, вместо Ханиэль Фадия</td></tr>
-<tr><td>Зарядка</td><td><b>Хаос</b>, <b>Ноль</b>, <b>Хотори</b>, <b>Цзююань</b></td><td>вместо Цзююань можно героев анимы, например Наналли</td></tr>
+<tr><td data-l="Команда">Ремора и «След»</td><td data-l="Состав"><b>Хаос</b>, <b>Ноль</b>, <b>Ханиэль</b>, <b>Хатор</b></td><td data-l="Замены">вместо Хатор можно Ския, вместо Ханиэль Фадия</td></tr>
+<tr><td data-l="Команда">Зарядка</td><td data-l="Состав"><b>Хаос</b>, <b>Ноль</b>, <b>Хотори</b>, <b>Цзююань</b></td><td data-l="Замены">вместо Цзююань можно героев анимы, например Наналли</td></tr>
 </table></div>
 <h2 id="s9">Источники</h2>
 <p class="src">Названия, описания навыков и пробуждений: <a href="https://github.com/AzureXuanVerse/NTE_Assets" rel="noopener">выгрузка ресурсов игры NTE_Assets</a> (версия 1.4.13 CN), русская локализация. Сборка и команды: <a href="https://genshin-builds.com/en/neverness-to-everness/characters/chaos" rel="noopener">GenshinBuilds</a> (без даты на странице), сверка: <a href="https://gamewith.net/nte/75954" rel="noopener">GameWith</a> (09.08.2026). Это не официальные рекомендации. Данные проверены 21 октября 2026, неофициальная выгрузка ресурсов игры.</p>

@@ -207,8 +207,22 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
  .home .stage-in>div{max-width:52%}
  .keyart{position:absolute;right:2%;bottom:-6px;height:84%;margin:0}
 }
+@media (max-width:620px){
+ .tbl{overflow:visible;padding:4px 14px}
+ .tbl table,.tbl tbody{display:block}
+ .tbl tr{display:block;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+ .tbl tr:first-child{display:none}.tbl tr:last-child{border-bottom:0}
+ .tbl td{display:block;border:0;padding:3px 0;overflow-wrap:anywhere}
+ .tbl td::before{content:attr(data-l);display:block;font:400 11px "Russo One",sans-serif;color:var(--y);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
+ .tbl td:first-child::before{display:none}.tbl td:first-child{font-size:17px}
+ .tbl td:empty{display:none}
+ .two{grid-template-columns:1fr}
+ .rw{white-space:normal;display:block;margin:4px 0}
+}
 @media (max-width:1060px){.nav{padding:8px 11px;font-size:13px}.logo{font-size:16px;gap:8px}.logo img{width:34px;height:34px}.pill{margin-left:4px;padding:8px 14px;font-size:13px}.top div{padding:8px 14px}}
 @media (max-width:860px){.nav.x2{display:none}}
+.mnav{display:none}
+@media (max-width:560px){.top .nav{display:none}.mnav{display:flex;gap:6px;overflow-x:auto;padding:2px 14px 8px;max-width:var(--max);margin:0 auto;scrollbar-width:none}.mnav::-webkit-scrollbar{display:none}.mnav a{flex:none;color:#cfd8e0;font:400 13px "Russo One",sans-serif;text-decoration:none;padding:7px 13px;background:#0e1620;clip-path:var(--slant)}}
 @media (max-width:560px){body{font-size:16.5px}.nav.opt{display:none}.logo{font-size:15px;white-space:nowrap;gap:8px}.logo img{width:34px;height:34px}.nav{padding:8px 10px;font-size:13px}.pill{margin-left:4px;padding:8px 14px;font-size:13px}.top div{gap:2px}.giant{top:-2%}.slab.k{margin-left:18px}.top div{padding:8px 14px}.step:nth-child(n){margin-left:0}.giant{font-size:210px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.kicker,.slab,.girl{animation:none!important}.btn,.tile,.nav::before,details{transition:none}}
 </style>
@@ -224,7 +238,7 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
   <a class="nav opt x2" href="https://kitron4ik.github.io/nte/kody/">Коды</a>
   <a class="nav opt" href="https://kitron4ik.github.io/nte/kalkulyator/">Калькулятор</a>
   <a class="pill" href="https://max.ru/channel_nte_po_russki">Канал в MAX</a>
-</div></header>
+</div><nav class="mnav" aria-label="Разделы"><a href="https://kitron4ik.github.io/nte/personazhi/">Герои</a><a href="https://kitron4ik.github.io/nte/s-chego-nachat/">Новичку</a><a href="https://kitron4ik.github.io/nte/garant/">Гарант</a><a href="https://kitron4ik.github.io/nte/valyuty/">Валюты</a><a href="https://kitron4ik.github.io/nte/kody/">Коды</a><a href="https://kitron4ik.github.io/nte/kalkulyator/">Калькулятор</a></nav></header>
 <section class="stage" style="--bg:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><div class="stage-bg"></div><div class="giant" aria-hidden="true">JIUYUAN</div>
 <div class="stage-in"><div>
   <div class="crumbs"><a href="https://kitron4ik.github.io/">NTE по-русски</a> / Neverness to Everness</div>
@@ -239,9 +253,9 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
 <p>Лучшая дуга: <b>«Убежище реальности»</b> (Reality Refuge). Остальные варианты у GenshinBuilds: «Забытое» и «Первый шаг к успеху».</p>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Дуга</th><th>Что делает (текст игры)</th><th>Число на макс. уровне (GenshinBuilds)</th></tr>
-<tr><td><img class="gico " src="https://kitron4ik.github.io/assets/game/reality-refuge.png" alt="" width="44" height="44" loading="lazy"><b>Убежище реальности</b> (Reality Refuge)</td><td>Увеличивает урон анимы и урон от присоединения. После сверхспособности бонус растёт на 6 секунд, не складывается</td><td>+15 % урона анимы и +10 % урона от присоединения, после сверхспособности до 20 %</td></tr>
-<tr><td><img class="gico " src="https://kitron4ik.github.io/assets/game/the-forgotten.png" alt="" width="44" height="44" loading="lazy">Забытое (The Forgotten)</td><td>Увеличивает атаку, пока у владельца больше 50 % ОЗ, и защиту, когда меньше 50 %</td><td>+20 % к атаке или защите</td></tr>
-<tr><td><img class="gico " src="https://kitron4ik.github.io/assets/game/first-step.png" alt="" width="44" height="44" loading="lazy">Первый шаг к успеху (First Step to Success)</td><td>При навыке перенаправления на время повышает атаку, срабатывает не чаще, чем раз в несколько секунд</td><td>+12 % к атаке на 10 с, не чаще раза в 20 с</td></tr>
+<tr><td data-l="Дуга"><img class="gico " src="https://kitron4ik.github.io/assets/game/reality-refuge.png" alt="" width="44" height="44" loading="lazy"><b>Убежище реальности</b> (Reality Refuge)</td><td data-l="Что делает (текст игры)">Увеличивает урон анимы и урон от присоединения. После сверхспособности бонус растёт на 6 секунд, не складывается</td><td data-l="Число на макс. уровне (GenshinBuilds)">+15 % урона анимы и +10 % урона от присоединения, после сверхспособности до 20 %</td></tr>
+<tr><td data-l="Дуга"><img class="gico " src="https://kitron4ik.github.io/assets/game/the-forgotten.png" alt="" width="44" height="44" loading="lazy">Забытое (The Forgotten)</td><td data-l="Что делает (текст игры)">Увеличивает атаку, пока у владельца больше 50 % ОЗ, и защиту, когда меньше 50 %</td><td data-l="Число на макс. уровне (GenshinBuilds)">+20 % к атаке или защите</td></tr>
+<tr><td data-l="Дуга"><img class="gico " src="https://kitron4ik.github.io/assets/game/first-step.png" alt="" width="44" height="44" loading="lazy">Первый шаг к успеху (First Step to Success)</td><td data-l="Что делает (текст игры)">При навыке перенаправления на время повышает атаку, срабатывает не чаще, чем раз в несколько секунд</td><td data-l="Число на макс. уровне (GenshinBuilds)">+12 % к атаке на 10 с, не чаще раза в 20 с</td></tr>
 </table></div>
 <p>Картридж: <b>«Светлячки и лес»</b>. Эпический эффект (2 предмета) даёт +10 % урона анимы, легендарный (4 предмета) повышает крит. урон на 8 % за стак, до 7 стаков (текст игры). Порядок модулей у GenshinBuilds: крит. шанс, крит. урон, урон, атака, интенсивность цикла. Beebom (по выдаче поиска) советует: крит. шанс, урон анимы, крит. урон, атака.</p>
 
@@ -254,8 +268,8 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
 <h2 id="s3">Команды</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Команда</th><th>Состав</th><th>Источник</th></tr>
-<tr><td>Цветение</td><td>Наналли (основной ДД), Цзююань, Ноль, Сакири (баффер)</td><td>GenshinBuilds, Beebom, GameWith (с Ханиэль вместо Сакири)</td></tr>
-<tr><td>Колдовство</td><td>Наналли или Минт (основной ДД), Цзююань, Сакири, Адлер (щиты)</td><td>GenshinBuilds</td></tr>
+<tr><td data-l="Команда">Цветение</td><td data-l="Состав">Наналли (основной ДД), Цзююань, Ноль, Сакири (баффер)</td><td data-l="Источник">GenshinBuilds, Beebom, GameWith (с Ханиэль вместо Сакири)</td></tr>
+<tr><td data-l="Команда">Колдовство</td><td data-l="Состав">Наналли или Минт (основной ДД), Цзююань, Сакири, Адлер (щиты)</td><td data-l="Источник">GenshinBuilds</td></tr>
 </table></div>
 <p>В цветении сильный контроль, но нет лечения. Пассивы Цзююань работают только с циклом эспера «Цветение», в «Колдовстве» она слабее (GenshinBuilds).</p>
 

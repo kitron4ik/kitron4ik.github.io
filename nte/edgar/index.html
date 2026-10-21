@@ -207,8 +207,22 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
  .home .stage-in>div{max-width:52%}
  .keyart{position:absolute;right:2%;bottom:-6px;height:84%;margin:0}
 }
+@media (max-width:620px){
+ .tbl{overflow:visible;padding:4px 14px}
+ .tbl table,.tbl tbody{display:block}
+ .tbl tr{display:block;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+ .tbl tr:first-child{display:none}.tbl tr:last-child{border-bottom:0}
+ .tbl td{display:block;border:0;padding:3px 0;overflow-wrap:anywhere}
+ .tbl td::before{content:attr(data-l);display:block;font:400 11px "Russo One",sans-serif;color:var(--y);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
+ .tbl td:first-child::before{display:none}.tbl td:first-child{font-size:17px}
+ .tbl td:empty{display:none}
+ .two{grid-template-columns:1fr}
+ .rw{white-space:normal;display:block;margin:4px 0}
+}
 @media (max-width:1060px){.nav{padding:8px 11px;font-size:13px}.logo{font-size:16px;gap:8px}.logo img{width:34px;height:34px}.pill{margin-left:4px;padding:8px 14px;font-size:13px}.top div{padding:8px 14px}}
 @media (max-width:860px){.nav.x2{display:none}}
+.mnav{display:none}
+@media (max-width:560px){.top .nav{display:none}.mnav{display:flex;gap:6px;overflow-x:auto;padding:2px 14px 8px;max-width:var(--max);margin:0 auto;scrollbar-width:none}.mnav::-webkit-scrollbar{display:none}.mnav a{flex:none;color:#cfd8e0;font:400 13px "Russo One",sans-serif;text-decoration:none;padding:7px 13px;background:#0e1620;clip-path:var(--slant)}}
 @media (max-width:560px){body{font-size:16.5px}.nav.opt{display:none}.logo{font-size:15px;white-space:nowrap;gap:8px}.logo img{width:34px;height:34px}.nav{padding:8px 10px;font-size:13px}.pill{margin-left:4px;padding:8px 14px;font-size:13px}.top div{gap:2px}.giant{top:-2%}.slab.k{margin-left:18px}.top div{padding:8px 14px}.step:nth-child(n){margin-left:0}.giant{font-size:210px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.kicker,.slab,.girl{animation:none!important}.btn,.tile,.nav::before,details{transition:none}}
 </style>
@@ -224,7 +238,7 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
   <a class="nav opt x2" href="https://kitron4ik.github.io/nte/kody/">Коды</a>
   <a class="nav opt" href="https://kitron4ik.github.io/nte/kalkulyator/">Калькулятор</a>
   <a class="pill" href="https://max.ru/channel_nte_po_russki">Канал в MAX</a>
-</div></header>
+</div><nav class="mnav" aria-label="Разделы"><a href="https://kitron4ik.github.io/nte/personazhi/">Герои</a><a href="https://kitron4ik.github.io/nte/s-chego-nachat/">Новичку</a><a href="https://kitron4ik.github.io/nte/garant/">Гарант</a><a href="https://kitron4ik.github.io/nte/valyuty/">Валюты</a><a href="https://kitron4ik.github.io/nte/kody/">Коды</a><a href="https://kitron4ik.github.io/nte/kalkulyator/">Калькулятор</a></nav></header>
 <section class="stage" style="--bg:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><div class="stage-bg"></div><div class="giant" aria-hidden="true">EDGAR</div>
 <div class="stage-in"><div>
   <div class="crumbs"><a href="https://kitron4ik.github.io/">NTE по-русски</a> / Neverness to Everness</div>
@@ -237,45 +251,45 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
 <h2 id="s0">Коротко</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Параметр</th><th>Значение</th></tr>
-<tr><td>Редкость</td><td>A-ранг</td></tr><tr><td>Стихия (по описанию навыков)</td><td>космос</td></tr><tr><td>Фракция</td><td>Антикварный магазин «Эйбон»</td></tr><tr><td>Имя в игре</td><td>Эдгар (Edgar)</td></tr>
+<tr><td data-l="Параметр">Редкость</td><td data-l="Значение">A-ранг</td></tr><tr><td data-l="Параметр">Стихия (по описанию навыков)</td><td data-l="Значение">космос</td></tr><tr><td data-l="Параметр">Фракция</td><td data-l="Значение">Антикварный магазин «Эйбон»</td></tr><tr><td data-l="Параметр">Имя в игре</td><td data-l="Значение">Эдгар (Edgar)</td></tr>
 </table></div>
 <h2 id="s1">Навыки</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Навык</th><th>Что делает (по тексту игры)</th></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/edgar-melee.png" alt="" width="40" height="40" loading="lazy"><b>Боевая тренировка</b> <span class="en">(Combat Practice)</span><br><span class="lab">Базовая атака</span></td><td><b>Базовая атака: Боевая тренировка</b><br>Вспоминает уроки физкультуры в академии «Ламплайт» и проводит до 5 последовательных атак, которые наносят урон космоса.<br><br><b>Базовая атака: Рассчитанное приземление</b><br>Нажмите базовую атаку, находясь в воздухе, чтобы устремиться вниз, нанося 1 удар урона космоса по области при ударе. Урон увеличивается в зависимости от высоты падения (до 100 %).<br><br><b>Критический контрудар: кризис — это возможность</b><br>Срабатывает при использовании «Боевой тренировки» после критического уклонения.<br>Бросается к цели и выпускает из рюкзака поток энергии, нанося 1 удар урона космоса по области и снижая разрушение.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/edgar-skill.png" alt="" width="40" height="40" loading="lazy"><b>Дикое течение</b> <span class="en">(Wild Current)</span><br><span class="lab">Навык</span></td><td><b>Дикое течение</b><br>Удерживайте для входа в состояние непрерывного применения навыка, направляя Течение на цель, нанося урон космоса и непрерывно исцеляя товарища по команде с наименьшим количеством ОЗ.<br>Время перезарядки навыка перенаправления «Дикое течение» увеличивается в зависимости от длительности использования.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/edgar-qte.png" alt="" width="40" height="40" loading="lazy"><b>Вес знаний</b> <span class="en">(Weight of Knowledge)</span><br><span class="lab">Навык поддержки</span></td><td><b>Вес знаний</b><br>Эта сумка очень тяжёлая. Эдгар бросается к цели и изо всех сил размахивает сумкой, нанося 1 удар урона космоса по области.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/edgar-ultraskill.png" alt="" width="40" height="40" loading="lazy"><b>Поминки по Финнегану</b> <span class="en">(Finnegan&#x27;s Wake)</span><br><span class="lab">Сверхспособность</span></td><td><b>Поминки по Финнегану</b><br>Погружается в свои мысли, создавая область лабиринта на 10 сек. Наносит 1 удар урона космоса по области. Исцеляет текущего персонажа, пока лабиринт активен.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/edgar-passive_1.png" alt="" width="40" height="40" loading="lazy"><b>Нежный край</b> <span class="en">(Gentle Edge)</span><br><span class="lab">Пассив 1</span></td><td><b>Нежный край</b><br>Усиление зарядки: когда персонаж активирует зарядку с помощью навыка поддержки, он мгновенно получает 120 ед. энергии сверхспособности. После этого Пестики жизни больше не будут давать энергию сверхспособности при попадании по замедленным целям. Перезарядка: 30 сек.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/edgar-passive_2.png" alt="" width="40" height="40" loading="lazy"><b>Неизменное тепло</b> <span class="en">(Unchanging Warmth)</span><br><span class="lab">Пассив 2</span></td><td><b>Неизменное тепло</b><br>Используйте навык перенаправления «Дикое течение» или навык поддержки «Вес знаний», чтобы получить Ключ истины (максимум 3 ключа).<br>Каждый Ключ истины увеличивает длительность сверхспособности «Бдение Финнегана» на 1 сек.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/edgar-melee.png" alt="" width="40" height="40" loading="lazy"><b>Боевая тренировка</b> <span class="en">(Combat Practice)</span><br><span class="lab">Базовая атака</span></td><td data-l="Что делает (по тексту игры)"><b>Базовая атака: Боевая тренировка</b><br>Вспоминает уроки физкультуры в академии «Ламплайт» и проводит до 5 последовательных атак, которые наносят урон космоса.<br><br><b>Базовая атака: Рассчитанное приземление</b><br>Нажмите базовую атаку, находясь в воздухе, чтобы устремиться вниз, нанося 1 удар урона космоса по области при ударе. Урон увеличивается в зависимости от высоты падения (до 100 %).<br><br><b>Критический контрудар: кризис — это возможность</b><br>Срабатывает при использовании «Боевой тренировки» после критического уклонения.<br>Бросается к цели и выпускает из рюкзака поток энергии, нанося 1 удар урона космоса по области и снижая разрушение.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/edgar-skill.png" alt="" width="40" height="40" loading="lazy"><b>Дикое течение</b> <span class="en">(Wild Current)</span><br><span class="lab">Навык</span></td><td data-l="Что делает (по тексту игры)"><b>Дикое течение</b><br>Удерживайте для входа в состояние непрерывного применения навыка, направляя Течение на цель, нанося урон космоса и непрерывно исцеляя товарища по команде с наименьшим количеством ОЗ.<br>Время перезарядки навыка перенаправления «Дикое течение» увеличивается в зависимости от длительности использования.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/edgar-qte.png" alt="" width="40" height="40" loading="lazy"><b>Вес знаний</b> <span class="en">(Weight of Knowledge)</span><br><span class="lab">Навык поддержки</span></td><td data-l="Что делает (по тексту игры)"><b>Вес знаний</b><br>Эта сумка очень тяжёлая. Эдгар бросается к цели и изо всех сил размахивает сумкой, нанося 1 удар урона космоса по области.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/edgar-ultraskill.png" alt="" width="40" height="40" loading="lazy"><b>Поминки по Финнегану</b> <span class="en">(Finnegan&#x27;s Wake)</span><br><span class="lab">Сверхспособность</span></td><td data-l="Что делает (по тексту игры)"><b>Поминки по Финнегану</b><br>Погружается в свои мысли, создавая область лабиринта на 10 сек. Наносит 1 удар урона космоса по области. Исцеляет текущего персонажа, пока лабиринт активен.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/edgar-passive_1.png" alt="" width="40" height="40" loading="lazy"><b>Нежный край</b> <span class="en">(Gentle Edge)</span><br><span class="lab">Пассив 1</span></td><td data-l="Что делает (по тексту игры)"><b>Нежный край</b><br>Усиление зарядки: когда персонаж активирует зарядку с помощью навыка поддержки, он мгновенно получает 120 ед. энергии сверхспособности. После этого Пестики жизни больше не будут давать энергию сверхспособности при попадании по замедленным целям. Перезарядка: 30 сек.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/edgar-passive_2.png" alt="" width="40" height="40" loading="lazy"><b>Неизменное тепло</b> <span class="en">(Unchanging Warmth)</span><br><span class="lab">Пассив 2</span></td><td data-l="Что делает (по тексту игры)"><b>Неизменное тепло</b><br>Используйте навык перенаправления «Дикое течение» или навык поддержки «Вес знаний», чтобы получить Ключ истины (максимум 3 ключа).<br>Каждый Ключ истины увеличивает длительность сверхспособности «Бдение Финнегана» на 1 сек.</td></tr>
 </table></div>
 <p class="note">Числа вида «…» в игре зависят от уровня навыка и здесь не показаны, множители смотрите в самой игре.</p>
 <h2 id="s2">Пробуждения</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>№</th><th>Название</th><th>Эффект</th></tr>
-<tr><td>1</td><td><b>Любящий аномалии наблюдатель</b> <span class="en">(Anomaly-Loving Observer)</span></td><td>Дает Эдгару 1 Ключ истины, когда любой товарищ по команде использует навык поддержки.</td></tr>
-<tr><td>2</td><td><b>Стажер-охотник за аномалиями</b> <span class="en">(Intern Anomaly Hunter)</span></td><td>Ограничивает продление перезарядки от навыка «Дикое течение» до 3 сек.</td></tr>
-<tr><td>3</td><td><b>Один из детективов «Эйбона»</b> <span class="en">(One of the Eibon Detectives)</span></td><td>Повышает эффективность исцеления «Дикого течения» для союзников, чей уровень ОЗ находится между 30 % и 15 %.</td></tr>
-<tr><td>4</td><td><b>Опытный стратег</b> <span class="en">(Skilled Strategist)</span></td><td>+50 % к урону «Дикого течения»</td></tr>
-<tr><td>5</td><td><b>Хранитель света магазина древностей</b> <span class="en">(Guardian of the Antique Shop&#x27;s Light)</span></td><td>+20 % к макс. ОЗ Эдгара</td></tr>
-<tr><td>6</td><td><b>Гость с планеты Любопытство</b> <span class="en">(Visitor from Planet Curiosity)</span></td><td>Дает 15 % к защите всем союзникам в радиусе действия Поминок по Финнегану.</td></tr>
-<tr><td>7</td><td><b>Гонка за знаниями</b> <span class="en">(Pursuit of Knowledge)</span></td><td>Повышает уровень навыков «Дикое течение», «Поминки по Финнегану» и «Вес знаний» на 1.</td></tr>
-<tr><td>8</td><td><b>Острая проницательность</b> <span class="en">(Keen Insight)</span></td><td>Эдгар волнуется за союзников, и его мысли путаются. Превращает 3 % от потерянных макс. ОЗ любого товарища по команде в 1 заряд «Бдения Финнегана» (не более 20 зарядов). После применения «Бдения Финнегана» обнуляется.</td></tr>
+<tr><td data-l="№">1</td><td data-l="Название"><b>Любящий аномалии наблюдатель</b> <span class="en">(Anomaly-Loving Observer)</span></td><td data-l="Эффект">Дает Эдгару 1 Ключ истины, когда любой товарищ по команде использует навык поддержки.</td></tr>
+<tr><td data-l="№">2</td><td data-l="Название"><b>Стажер-охотник за аномалиями</b> <span class="en">(Intern Anomaly Hunter)</span></td><td data-l="Эффект">Ограничивает продление перезарядки от навыка «Дикое течение» до 3 сек.</td></tr>
+<tr><td data-l="№">3</td><td data-l="Название"><b>Один из детективов «Эйбона»</b> <span class="en">(One of the Eibon Detectives)</span></td><td data-l="Эффект">Повышает эффективность исцеления «Дикого течения» для союзников, чей уровень ОЗ находится между 30 % и 15 %.</td></tr>
+<tr><td data-l="№">4</td><td data-l="Название"><b>Опытный стратег</b> <span class="en">(Skilled Strategist)</span></td><td data-l="Эффект">+50 % к урону «Дикого течения»</td></tr>
+<tr><td data-l="№">5</td><td data-l="Название"><b>Хранитель света магазина древностей</b> <span class="en">(Guardian of the Antique Shop&#x27;s Light)</span></td><td data-l="Эффект">+20 % к макс. ОЗ Эдгара</td></tr>
+<tr><td data-l="№">6</td><td data-l="Название"><b>Гость с планеты Любопытство</b> <span class="en">(Visitor from Planet Curiosity)</span></td><td data-l="Эффект">Дает 15 % к защите всем союзникам в радиусе действия Поминок по Финнегану.</td></tr>
+<tr><td data-l="№">7</td><td data-l="Название"><b>Гонка за знаниями</b> <span class="en">(Pursuit of Knowledge)</span></td><td data-l="Эффект">Повышает уровень навыков «Дикое течение», «Поминки по Финнегану» и «Вес знаний» на 1.</td></tr>
+<tr><td data-l="№">8</td><td data-l="Название"><b>Острая проницательность</b> <span class="en">(Keen Insight)</span></td><td data-l="Эффект">Эдгар волнуется за союзников, и его мысли путаются. Превращает 3 % от потерянных макс. ОЗ любого товарища по команде в 1 заряд «Бдения Финнегана» (не более 20 зарядов). После применения «Бдения Финнегана» обнуляется.</td></tr>
 </table></div>
 <h2 id="s3"><img class="ico" src="https://kitron4ik.github.io/assets/ico/arc.svg" alt="" width="28" height="28">Сборка по сторонним гайдам</h2>
 <p>Роль по гайдам: поддержка и лекарь (космос). Оценка силы: C (GenshinBuilds). Эффекты дуг и картриджей ниже из текста игры, числа и выбор из гайда.</p>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Дуга</th><th>Что делает (текст игры)</th><th>Числа и заметки из гайда</th></tr>
-<tr><td><img class="gico" src="https://kitron4ik.github.io/assets/arc/Castle.png" alt="" width="46" height="46" loading="lazy"><b>Зов искаженного города</b> <span class="en">(Call of the Twisted City)</span> <i class=best>лучшая</i></td><td>Увеличивает бонус к лечению на … на … сек., когда владелец применяет навык перенаправления. Эффект не складывается.</td><td>+12 % к бонусу лечения на 10 с после навыка перенаправления, не складывается</td></tr>
-<tr><td><img class="gico" src="https://kitron4ik.github.io/assets/arc/lingganzhongjiezhe.png" alt="" width="46" height="46" loading="lazy"><b>Королевский разум</b> <span class="en">(Mind Royale)</span></td><td>При применении навыка перенаправления даёт владельцу … ед. энергии сверхспособности. Запускается не чаще раза в … сек.</td><td>даёт 10 энергии сверхспособности при навыке перенаправления, не чаще раза в 20 с</td></tr>
+<tr><td data-l="Дуга"><img class="gico" src="https://kitron4ik.github.io/assets/arc/Castle.png" alt="" width="46" height="46" loading="lazy"><b>Зов искаженного города</b> <span class="en">(Call of the Twisted City)</span> <i class=best>лучшая</i></td><td data-l="Что делает (текст игры)">Увеличивает бонус к лечению на … на … сек., когда владелец применяет навык перенаправления. Эффект не складывается.</td><td data-l="Числа и заметки из гайда">+12 % к бонусу лечения на 10 с после навыка перенаправления, не складывается</td></tr>
+<tr><td data-l="Дуга"><img class="gico" src="https://kitron4ik.github.io/assets/arc/lingganzhongjiezhe.png" alt="" width="46" height="46" loading="lazy"><b>Королевский разум</b> <span class="en">(Mind Royale)</span></td><td data-l="Что делает (текст игры)">При применении навыка перенаправления даёт владельцу … ед. энергии сверхспособности. Запускается не чаще раза в … сек.</td><td data-l="Числа и заметки из гайда">даёт 10 энергии сверхспособности при навыке перенаправления, не чаще раза в 20 с</td></tr>
 </table></div>
 <p><b>Картридж «Ночная таверна Теи»</b> (Thea&#x27;s Night Tavern), лучший комплект. Эпический (2): ОЗ +10 %. Легендарный (4): увеличивает бонус к лечению владельца на 20 %. (текст игры). Запасные: Скоростной ёж (Speedy Hedgehog #2).</p>
 <p>Порядок модулей по гайду: ОЗ %, ОЗ, интенсивность цикла, защита %, защита.</p>
 <h2 id="s4">Команды</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Команда</th><th>Состав (роль)</th></tr>
-<tr><td>Лекарь в команде зарядки (Charge)</td><td><b>Эдгар</b> (поддержка, лекарь), <b>Хатор</b> (саб-ДД (накладывает «Ремору»)), <b>Наналли</b> (основной ДД (замыкает цикл зарядки)), <b>Цзююань</b> (саб-ДД (усиливает цветение))</td></tr>
-<tr><td>Лекарь в команде цветения</td><td><b>Эдгар</b> (поддержка, лечит раненых), <b>Наналли</b> (основной ДД), <b>Ноль</b> (саб-ДД (в основном запускает цветение)), <b>Цзююань</b> (саб-ДД (усиливает цветение))</td></tr>
+<tr><td data-l="Команда">Лекарь в команде зарядки (Charge)</td><td data-l="Состав (роль)"><b>Эдгар</b> (поддержка, лекарь), <b>Хатор</b> (саб-ДД (накладывает «Ремору»)), <b>Наналли</b> (основной ДД (замыкает цикл зарядки)), <b>Цзююань</b> (саб-ДД (усиливает цветение))</td></tr>
+<tr><td data-l="Команда">Лекарь в команде цветения</td><td data-l="Состав (роль)"><b>Эдгар</b> (поддержка, лечит раненых), <b>Наналли</b> (основной ДД), <b>Ноль</b> (саб-ДД (в основном запускает цветение)), <b>Цзююань</b> (саб-ДД (усиливает цветение))</td></tr>
 </table></div>
 <p>В первой команде вместо Хатор можно Скию, чтобы накладывать «Ремору». Ноль можно добавить, чтобы ускорить циклы затмения. Вместо Наналли везде годится Минт.</p>
 <h2 id="s5">Ротация</h2>
@@ -298,17 +312,17 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
 <p>Второй источник: страница героя на GameWith (обновлена 03.09.2026). Сравнение по главным пунктам:</p>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Пункт</th><th>GenshinBuilds</th><th>GameWith</th><th>Итог</th></tr>
-<tr><td>Лучшая дуга</td><td>«Зов искаженного города» (Call of the Twisted City)</td><td>«Зов искаженного города» (Call of the Twisted City)</td><td><span class="okk">совпало</span></td></tr>
-<tr><td>Картридж</td><td>«Ночная таверна Теи» (Thea's Night Tavern)</td><td>«Ночная таверна Теи» (Thea's Night Tavern)</td><td><span class="okk">совпало</span></td></tr>
-<tr><td>Порядок прокачки навыков</td><td>«Дикое течение», «Поминки по Финнегану», «Вес знаний», «Боевая тренировка»</td><td>«Дикое течение», «Поминки по Финнегану», «Боевая тренировка», «Вес знаний»</td><td><span class="diff">расходится</span></td></tr>
+<tr><td data-l="Пункт">Лучшая дуга</td><td data-l="GenshinBuilds">«Зов искаженного города» (Call of the Twisted City)</td><td data-l="GameWith">«Зов искаженного города» (Call of the Twisted City)</td><td data-l="Итог"><span class="okk">совпало</span></td></tr>
+<tr><td data-l="Пункт">Картридж</td><td data-l="GenshinBuilds">«Ночная таверна Теи» (Thea's Night Tavern)</td><td data-l="GameWith">«Ночная таверна Теи» (Thea's Night Tavern)</td><td data-l="Итог"><span class="okk">совпало</span></td></tr>
+<tr><td data-l="Пункт">Порядок прокачки навыков</td><td data-l="GenshinBuilds">«Дикое течение», «Поминки по Финнегану», «Вес знаний», «Боевая тренировка»</td><td data-l="GameWith">«Дикое течение», «Поминки по Финнегану», «Боевая тренировка», «Вес знаний»</td><td data-l="Итог"><span class="diff">расходится</span></td></tr>
 </table></div>
 <p>По лучшей дуге и картриджу источники согласны.</p>
 <p>Остальные дуги у GameWith по порядку: «Королевский разум» (Mind Royale).</p>
 <h3>Команды по GameWith</h3>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Команда</th><th>Состав</th><th>Замены</th></tr>
-<tr><td>Зарядка</td><td><b>Ноль</b>, <b>Наналли</b>, <b>Хатор</b>, <b>Эдгар</b></td><td>вместо Наналли можно Цзююань</td></tr>
-<tr><td>Бюджетная</td><td><b>Эдгар</b>, <b>Ския</b>, <b>Минт</b>, <b>Ханиэль</b></td><td>вместо Ханиэль можно Аурелия</td></tr>
+<tr><td data-l="Команда">Зарядка</td><td data-l="Состав"><b>Ноль</b>, <b>Наналли</b>, <b>Хатор</b>, <b>Эдгар</b></td><td data-l="Замены">вместо Наналли можно Цзююань</td></tr>
+<tr><td data-l="Команда">Бюджетная</td><td data-l="Состав"><b>Эдгар</b>, <b>Ския</b>, <b>Минт</b>, <b>Ханиэль</b></td><td data-l="Замены">вместо Ханиэль можно Аурелия</td></tr>
 </table></div>
 <h2 id="s9">Источники</h2>
 <p class="src">Названия, описания навыков и пробуждений: <a href="https://github.com/AzureXuanVerse/NTE_Assets" rel="noopener">выгрузка ресурсов игры NTE_Assets</a> (версия 1.4.13 CN), русская локализация. Сборка и команды: <a href="https://genshin-builds.com/en/neverness-to-everness/characters/edgar" rel="noopener">GenshinBuilds</a> (без даты на странице), сверка: <a href="https://gamewith.net/nte/74392" rel="noopener">GameWith</a> (03.09.2026). Это не официальные рекомендации. Данные проверены 21 октября 2026, неофициальная выгрузка ресурсов игры.</p>

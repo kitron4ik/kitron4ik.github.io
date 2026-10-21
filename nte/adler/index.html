@@ -207,8 +207,22 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
  .home .stage-in>div{max-width:52%}
  .keyart{position:absolute;right:2%;bottom:-6px;height:84%;margin:0}
 }
+@media (max-width:620px){
+ .tbl{overflow:visible;padding:4px 14px}
+ .tbl table,.tbl tbody{display:block}
+ .tbl tr{display:block;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+ .tbl tr:first-child{display:none}.tbl tr:last-child{border-bottom:0}
+ .tbl td{display:block;border:0;padding:3px 0;overflow-wrap:anywhere}
+ .tbl td::before{content:attr(data-l);display:block;font:400 11px "Russo One",sans-serif;color:var(--y);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
+ .tbl td:first-child::before{display:none}.tbl td:first-child{font-size:17px}
+ .tbl td:empty{display:none}
+ .two{grid-template-columns:1fr}
+ .rw{white-space:normal;display:block;margin:4px 0}
+}
 @media (max-width:1060px){.nav{padding:8px 11px;font-size:13px}.logo{font-size:16px;gap:8px}.logo img{width:34px;height:34px}.pill{margin-left:4px;padding:8px 14px;font-size:13px}.top div{padding:8px 14px}}
 @media (max-width:860px){.nav.x2{display:none}}
+.mnav{display:none}
+@media (max-width:560px){.top .nav{display:none}.mnav{display:flex;gap:6px;overflow-x:auto;padding:2px 14px 8px;max-width:var(--max);margin:0 auto;scrollbar-width:none}.mnav::-webkit-scrollbar{display:none}.mnav a{flex:none;color:#cfd8e0;font:400 13px "Russo One",sans-serif;text-decoration:none;padding:7px 13px;background:#0e1620;clip-path:var(--slant)}}
 @media (max-width:560px){body{font-size:16.5px}.nav.opt{display:none}.logo{font-size:15px;white-space:nowrap;gap:8px}.logo img{width:34px;height:34px}.nav{padding:8px 10px;font-size:13px}.pill{margin-left:4px;padding:8px 14px;font-size:13px}.top div{gap:2px}.giant{top:-2%}.slab.k{margin-left:18px}.top div{padding:8px 14px}.step:nth-child(n){margin-left:0}.giant{font-size:210px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.kicker,.slab,.girl{animation:none!important}.btn,.tile,.nav::before,details{transition:none}}
 </style>
@@ -224,7 +238,7 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
   <a class="nav opt x2" href="https://kitron4ik.github.io/nte/kody/">Коды</a>
   <a class="nav opt" href="https://kitron4ik.github.io/nte/kalkulyator/">Калькулятор</a>
   <a class="pill" href="https://max.ru/channel_nte_po_russki">Канал в MAX</a>
-</div></header>
+</div><nav class="mnav" aria-label="Разделы"><a href="https://kitron4ik.github.io/nte/personazhi/">Герои</a><a href="https://kitron4ik.github.io/nte/s-chego-nachat/">Новичку</a><a href="https://kitron4ik.github.io/nte/garant/">Гарант</a><a href="https://kitron4ik.github.io/nte/valyuty/">Валюты</a><a href="https://kitron4ik.github.io/nte/kody/">Коды</a><a href="https://kitron4ik.github.io/nte/kalkulyator/">Калькулятор</a></nav></header>
 <section class="stage" style="--bg:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><div class="stage-bg"></div><div class="giant" aria-hidden="true">ADLER</div>
 <div class="stage-in"><div>
   <div class="crumbs"><a href="https://kitron4ik.github.io/">NTE по-русски</a> / Neverness to Everness</div>
@@ -237,47 +251,47 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
 <h2 id="s0">Коротко</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Параметр</th><th>Значение</th></tr>
-<tr><td>Редкость</td><td>A-ранг</td></tr><tr><td>Фракция</td><td>Антикварный магазин «Эйбон»</td></tr><tr><td>Имя в игре</td><td>Адлер (Adler)</td></tr>
+<tr><td data-l="Параметр">Редкость</td><td data-l="Значение">A-ранг</td></tr><tr><td data-l="Параметр">Фракция</td><td data-l="Значение">Антикварный магазин «Эйбон»</td></tr><tr><td data-l="Параметр">Имя в игре</td><td data-l="Значение">Адлер (Adler)</td></tr>
 </table></div>
 <p>Официальное описание из игры: «Идеальный дворецкий, который приносит спокойствие всем в «Эйбоне» и окрестностях.».</p>
 <h2 id="s1">Навыки</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Навык</th><th>Что делает (по тексту игры)</th></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/adler-melee.png" alt="" width="40" height="40" loading="lazy"><b>Избавление</b> <span class="en">(Deliverance)</span><br><span class="lab">Базовая атака</span></td><td>Избавление<br>Выполняет до 5 последовательных атак оружием. При попадании базовой атакой он получает 1 ур. Кармы вплоть до 20 ур.<br><br>Освобождение<br>Переходит в режим прицеливания, наносит 1 удар урона от чар цели в прицеле и получает 2 ур. Кармы.<br><br>Невежество<br>Достает оружие в воздухе и пикирует, нанося 1 удар урона от чар по области в точке падения.<br><br>Карма<br>При попаданиях «Избавления» и «Освобождения» Адлер получает по 1 ур. Кармы (макс. 20 ур.).<br><br><b>Базовая атака: Избавление</b><br>Проводит до 5 последовательных атак подряд своим оружием, нанося урон от чар.<br><br><b>Базовая атака: Освобождение</b><br>Переходит в режим прицеливания и наносит 1 удар урона от чар одному противнику в прицеле.<br><br><b>Базовая атака: Невежество</b><br>Пикирует, нанося 1 удар урона от чар по области при ударе. Урон увеличивается в зависимости от высоты падения (до 100 %).<br><br><b>Карма</b><br>Дает Адлеру 1 уровень кармы, когда Избавление или Невежество поражает врага.<br>Дает Адлеру 2 уровня кармы, когда Освобождение поражает врага.<br>Макс. уровней кармы: 20.<br><br><b>Критический контрудар: откровение</b><br>Активируется при использовании «Избавления» после срабатывания критического уклонения. Уклоняется от атаки быстрым рывком, ловит момент и наносит быстрый удар оружием, нанося 1 удар урона от чар по области, снижая показатель разрушения цели.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/adler-skill.png" alt="" width="40" height="40" loading="lazy"><b>Проклятие зла</b> <span class="en">(Evil&#x27;s Bane)</span><br><span class="lab">Навык</span></td><td><b>Проклятие зла</b><br>Нужна помощь? Адлер призывает фантомов Суньи для атаки врагов, нанося 1 удар урона от чар по области, а затем накладывает на противников эффект периодического урона от чар и наделяет активных персонажей щитом с Благословением.<br>Тратит все уровни Кармы при использовании навыка. Каждый потраченный уровень увеличивает урон от навыка Адлера на 2 %.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/adler-qte.png" alt="" width="40" height="40" loading="lazy"><b>Идеальное отражение</b> <span class="en">(Pristine Reflection)</span><br><span class="lab">Навык поддержки</span></td><td><b>Идеальное отражение</b><br>Этот бой нельзя больше затягивать. Прицелиться и выпустить 1 компрессионный заряд по врагу, который при попадании наносит 1 удар урона от чар по области.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/adler-ultraskill.png" alt="" width="40" height="40" loading="lazy"><b>Спокойствие</b> <span class="en">(Tranquility)</span><br><span class="lab">Сверхспособность</span></td><td><b>Спокойствие</b><br>Хотелось бы обойтись без боя… Адлер призывает Рупу, Ведану, Санну, Виннану и Санкхару — всего 5 сунья, — чтобы атаковать всех врагов. Каждая цель получает 5 ударов урона от чар. Если на поле боя остается только один противник, сунья проводят вторую атаку, нанося в сумме 10 ударов урона от чар.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/adler-passive_1.png" alt="" width="40" height="40" loading="lazy"><b>Умеренность</b> <span class="en">(Temperance)</span><br><span class="lab">Пассив 1</span></td><td><b>Умеренность</b><br>Усиление ожога: при каждом срабатывании «Ожога» на цель накладывается одно из трёх случайных ослаблений: −20 % атаки, -10 % сопротивляемости эсперам или +10 % к эффективности разрушения. Действует 15 сек., эффекты не складываются.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/adler-passive_2.png" alt="" width="40" height="40" loading="lazy"><b>Праведное сердце</b> <span class="en">(Righteous Heart)</span><br><span class="lab">Пассив 2</span></td><td>Описание в данных игры не найдено.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/adler-melee.png" alt="" width="40" height="40" loading="lazy"><b>Избавление</b> <span class="en">(Deliverance)</span><br><span class="lab">Базовая атака</span></td><td data-l="Что делает (по тексту игры)">Избавление<br>Выполняет до 5 последовательных атак оружием. При попадании базовой атакой он получает 1 ур. Кармы вплоть до 20 ур.<br><br>Освобождение<br>Переходит в режим прицеливания, наносит 1 удар урона от чар цели в прицеле и получает 2 ур. Кармы.<br><br>Невежество<br>Достает оружие в воздухе и пикирует, нанося 1 удар урона от чар по области в точке падения.<br><br>Карма<br>При попаданиях «Избавления» и «Освобождения» Адлер получает по 1 ур. Кармы (макс. 20 ур.).<br><br><b>Базовая атака: Избавление</b><br>Проводит до 5 последовательных атак подряд своим оружием, нанося урон от чар.<br><br><b>Базовая атака: Освобождение</b><br>Переходит в режим прицеливания и наносит 1 удар урона от чар одному противнику в прицеле.<br><br><b>Базовая атака: Невежество</b><br>Пикирует, нанося 1 удар урона от чар по области при ударе. Урон увеличивается в зависимости от высоты падения (до 100 %).<br><br><b>Карма</b><br>Дает Адлеру 1 уровень кармы, когда Избавление или Невежество поражает врага.<br>Дает Адлеру 2 уровня кармы, когда Освобождение поражает врага.<br>Макс. уровней кармы: 20.<br><br><b>Критический контрудар: откровение</b><br>Активируется при использовании «Избавления» после срабатывания критического уклонения. Уклоняется от атаки быстрым рывком, ловит момент и наносит быстрый удар оружием, нанося 1 удар урона от чар по области, снижая показатель разрушения цели.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/adler-skill.png" alt="" width="40" height="40" loading="lazy"><b>Проклятие зла</b> <span class="en">(Evil&#x27;s Bane)</span><br><span class="lab">Навык</span></td><td data-l="Что делает (по тексту игры)"><b>Проклятие зла</b><br>Нужна помощь? Адлер призывает фантомов Суньи для атаки врагов, нанося 1 удар урона от чар по области, а затем накладывает на противников эффект периодического урона от чар и наделяет активных персонажей щитом с Благословением.<br>Тратит все уровни Кармы при использовании навыка. Каждый потраченный уровень увеличивает урон от навыка Адлера на 2 %.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/adler-qte.png" alt="" width="40" height="40" loading="lazy"><b>Идеальное отражение</b> <span class="en">(Pristine Reflection)</span><br><span class="lab">Навык поддержки</span></td><td data-l="Что делает (по тексту игры)"><b>Идеальное отражение</b><br>Этот бой нельзя больше затягивать. Прицелиться и выпустить 1 компрессионный заряд по врагу, который при попадании наносит 1 удар урона от чар по области.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/adler-ultraskill.png" alt="" width="40" height="40" loading="lazy"><b>Спокойствие</b> <span class="en">(Tranquility)</span><br><span class="lab">Сверхспособность</span></td><td data-l="Что делает (по тексту игры)"><b>Спокойствие</b><br>Хотелось бы обойтись без боя… Адлер призывает Рупу, Ведану, Санну, Виннану и Санкхару — всего 5 сунья, — чтобы атаковать всех врагов. Каждая цель получает 5 ударов урона от чар. Если на поле боя остается только один противник, сунья проводят вторую атаку, нанося в сумме 10 ударов урона от чар.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/adler-passive_1.png" alt="" width="40" height="40" loading="lazy"><b>Умеренность</b> <span class="en">(Temperance)</span><br><span class="lab">Пассив 1</span></td><td data-l="Что делает (по тексту игры)"><b>Умеренность</b><br>Усиление ожога: при каждом срабатывании «Ожога» на цель накладывается одно из трёх случайных ослаблений: −20 % атаки, -10 % сопротивляемости эсперам или +10 % к эффективности разрушения. Действует 15 сек., эффекты не складываются.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/adler-passive_2.png" alt="" width="40" height="40" loading="lazy"><b>Праведное сердце</b> <span class="en">(Righteous Heart)</span><br><span class="lab">Пассив 2</span></td><td data-l="Что делает (по тексту игры)">Описание в данных игры не найдено.</td></tr>
 </table></div>
 <p class="note">Числа вида «…» в игре зависят от уровня навыка и здесь не показаны, множители смотрите в самой игре.</p>
 <h2 id="s2">Пробуждения</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>№</th><th>Название</th><th>Эффект</th></tr>
-<tr><td>1</td><td><b>Форма</b> <span class="en">(Form)</span></td><td>При применении Спокойствия дает Адлеру 20 уровней кармы.</td></tr>
-<tr><td>2</td><td><b>Чувство</b> <span class="en">(Sensation)</span></td><td>Каждый уровень кармы дает Адлеру бонус к урону 3 %.</td></tr>
-<tr><td>3</td><td><b>Восприятие</b> <span class="en">(Perception)</span></td><td>Увеличивает щит Благословения на 20 %.</td></tr>
-<tr><td>4</td><td><b>Формация</b> <span class="en">(Formation)</span></td><td>Когда Благословение разрушается, поглощает часть избыточного урона на основании 50 % от защиты Адлера.</td></tr>
-<tr><td>5</td><td><b>Распознание</b> <span class="en">(Discernment)</span></td><td>При применении Спокойствия дает Адлеру 20 ед. энергии сверхспособности.</td></tr>
-<tr><td>6</td><td><b>Все формы пусты</b> <span class="en">(All Forms Are Void)</span></td><td>Увеличивает длительность Благословения до 12 сек.</td></tr>
-<tr><td>7</td><td><b>Очищение</b> <span class="en">(Cleanse)</span></td><td>Повышает уровень навыков «Избавление», «Проклятие зла» и «Спокойствие» на 1.</td></tr>
-<tr><td>8</td><td><b>Просвещённый хранитель</b> <span class="en">(Enlightened Guardian)</span></td><td>Увеличивает урон от чар команды на 10 %, когда её защищает Благословение.</td></tr>
+<tr><td data-l="№">1</td><td data-l="Название"><b>Форма</b> <span class="en">(Form)</span></td><td data-l="Эффект">При применении Спокойствия дает Адлеру 20 уровней кармы.</td></tr>
+<tr><td data-l="№">2</td><td data-l="Название"><b>Чувство</b> <span class="en">(Sensation)</span></td><td data-l="Эффект">Каждый уровень кармы дает Адлеру бонус к урону 3 %.</td></tr>
+<tr><td data-l="№">3</td><td data-l="Название"><b>Восприятие</b> <span class="en">(Perception)</span></td><td data-l="Эффект">Увеличивает щит Благословения на 20 %.</td></tr>
+<tr><td data-l="№">4</td><td data-l="Название"><b>Формация</b> <span class="en">(Formation)</span></td><td data-l="Эффект">Когда Благословение разрушается, поглощает часть избыточного урона на основании 50 % от защиты Адлера.</td></tr>
+<tr><td data-l="№">5</td><td data-l="Название"><b>Распознание</b> <span class="en">(Discernment)</span></td><td data-l="Эффект">При применении Спокойствия дает Адлеру 20 ед. энергии сверхспособности.</td></tr>
+<tr><td data-l="№">6</td><td data-l="Название"><b>Все формы пусты</b> <span class="en">(All Forms Are Void)</span></td><td data-l="Эффект">Увеличивает длительность Благословения до 12 сек.</td></tr>
+<tr><td data-l="№">7</td><td data-l="Название"><b>Очищение</b> <span class="en">(Cleanse)</span></td><td data-l="Эффект">Повышает уровень навыков «Избавление», «Проклятие зла» и «Спокойствие» на 1.</td></tr>
+<tr><td data-l="№">8</td><td data-l="Название"><b>Просвещённый хранитель</b> <span class="en">(Enlightened Guardian)</span></td><td data-l="Эффект">Увеличивает урон от чар команды на 10 %, когда её защищает Благословение.</td></tr>
 </table></div>
 <h2 id="s3"><img class="ico" src="https://kitron4ik.github.io/assets/ico/arc.svg" alt="" width="28" height="28">Сборка по сторонним гайдам</h2>
 <p>Роль по гайдам: поддержка со щитами, зависящими от защиты. Оценка силы: B (GenshinBuilds). Стихия по гайду: чары (по GenshinBuilds). Эффекты дуг и картриджей ниже из текста игры, числа и выбор из гайда.</p>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Дуга</th><th>Что делает (текст игры)</th><th>Числа и заметки из гайда</th></tr>
-<tr><td><img class="gico" src="https://kitron4ik.github.io/assets/arc/yuren.png" alt="" width="46" height="46" loading="lazy"><b>Зонтик</b> <span class="en">(Umbrella)</span> <i class=best>лучшая</i></td><td>Увеличивает ОЗ на ….<br>Усиливает щиты на …, когда ОЗ владельца выше 50 %.</td><td>+10 % к ОЗ. Усиливает щиты на 10 %, пока ОЗ владельца выше 50 %</td></tr>
-<tr><td><img class="gico" src="https://kitron4ik.github.io/assets/arc/BitterCake.png" alt="" width="46" height="46" loading="lazy"><b>Хороший, плохой, горький</b> <span class="en">(The Good, The Bad, The Bitter)</span></td><td>При получении урона увеличивает защиту владельца на … на … сек. Срабатывает не чаще раза в … сек.</td><td>+26 % к защите на 10 с при получении урона, не чаще раза в 20 с</td></tr>
-<tr><td><img class="gico" src="https://kitron4ik.github.io/assets/arc/koinobori.png" alt="" width="46" height="46" loading="lazy"><b>Время придёт</b> <span class="en">(A Time Will Come)</span></td><td>Даёт владельцу … к атаке, … к защите и … к ОЗ, когда в команде есть как минимум 3 разных типа эспера.</td><td>если в отряде не менее 3 разных типов эспера, даёт +10 % к атаке, защите и ОЗ</td></tr>
+<tr><td data-l="Дуга"><img class="gico" src="https://kitron4ik.github.io/assets/arc/yuren.png" alt="" width="46" height="46" loading="lazy"><b>Зонтик</b> <span class="en">(Umbrella)</span> <i class=best>лучшая</i></td><td data-l="Что делает (текст игры)">Увеличивает ОЗ на ….<br>Усиливает щиты на …, когда ОЗ владельца выше 50 %.</td><td data-l="Числа и заметки из гайда">+10 % к ОЗ. Усиливает щиты на 10 %, пока ОЗ владельца выше 50 %</td></tr>
+<tr><td data-l="Дуга"><img class="gico" src="https://kitron4ik.github.io/assets/arc/BitterCake.png" alt="" width="46" height="46" loading="lazy"><b>Хороший, плохой, горький</b> <span class="en">(The Good, The Bad, The Bitter)</span></td><td data-l="Что делает (текст игры)">При получении урона увеличивает защиту владельца на … на … сек. Срабатывает не чаще раза в … сек.</td><td data-l="Числа и заметки из гайда">+26 % к защите на 10 с при получении урона, не чаще раза в 20 с</td></tr>
+<tr><td data-l="Дуга"><img class="gico" src="https://kitron4ik.github.io/assets/arc/koinobori.png" alt="" width="46" height="46" loading="lazy"><b>Время придёт</b> <span class="en">(A Time Will Come)</span></td><td data-l="Что делает (текст игры)">Даёт владельцу … к атаке, … к защите и … к ОЗ, когда в команде есть как минимум 3 разных типа эспера.</td><td data-l="Числа и заметки из гайда">если в отряде не менее 3 разных типов эспера, даёт +10 % к атаке, защите и ОЗ</td></tr>
 </table></div>
 <p><b>Картридж «Королевский страж»</b> (Kingdom&#x27;s Guard), лучший комплект. Эпический (2): защита +15 %. Легендарный (4): увеличивает прочность щитов владельца на 20 %. (текст игры). Запасные: Багрянец: Две бабочки (Crimson: Twin Butterflies #2).</p>
 <p>Порядок модулей по гайду: защита %, урон, интенсивность цикла, крит. шанс, крит. урон.</p>
 <h2 id="s4">Команды</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Команда</th><th>Состав (роль)</th></tr>
-<tr><td>«Ожог» или «Диссонанс»</td><td><b>Адлер</b> (поддержка), <b>Байканг</b> (основной ДД), <b>Даффодил</b> (саб-ДД), <b>Сакири</b> (баффер)</td></tr>
-<tr><td>Колдовство (Hexed)</td><td><b>Адлер</b> (поддержка), <b>Наналли</b> (основной ДД), <b>Цзююань</b> (саб-ДД), <b>Сакири</b> (баффер)</td></tr>
+<tr><td data-l="Команда">«Ожог» или «Диссонанс»</td><td data-l="Состав (роль)"><b>Адлер</b> (поддержка), <b>Байканг</b> (основной ДД), <b>Даффодил</b> (саб-ДД), <b>Сакири</b> (баффер)</td></tr>
+<tr><td data-l="Команда">Колдовство (Hexed)</td><td data-l="Состав (роль)"><b>Адлер</b> (поддержка), <b>Наналли</b> (основной ДД), <b>Цзююань</b> (саб-ДД), <b>Сакири</b> (баффер)</td></tr>
 </table></div>
 <p>Если в первой команде заменить Сакири на Ханиэль, получится команда диссонанса.</p>
 <h2 id="s5">Ротация</h2>
@@ -302,17 +316,17 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
 <p>Второй источник: страница героя на GameWith (обновлена 03.09.2026). Сравнение по главным пунктам:</p>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Пункт</th><th>GenshinBuilds</th><th>GameWith</th><th>Итог</th></tr>
-<tr><td>Лучшая дуга</td><td>«Зонтик» (Umbrella)</td><td>«Зонтик» (Umbrella)</td><td><span class="okk">совпало</span></td></tr>
-<tr><td>Картридж</td><td>«Королевский страж» (Kingdom's Guard)</td><td>«Королевский страж» (Kingdom's Guard)</td><td><span class="okk">совпало</span></td></tr>
-<tr><td>Порядок прокачки навыков</td><td>«Проклятие зла», «Спокойствие», «Идеальное отражение», «Избавление»</td><td>«Проклятие зла», «Спокойствие», «Избавление», «Идеальное отражение»</td><td><span class="diff">расходится</span></td></tr>
+<tr><td data-l="Пункт">Лучшая дуга</td><td data-l="GenshinBuilds">«Зонтик» (Umbrella)</td><td data-l="GameWith">«Зонтик» (Umbrella)</td><td data-l="Итог"><span class="okk">совпало</span></td></tr>
+<tr><td data-l="Пункт">Картридж</td><td data-l="GenshinBuilds">«Королевский страж» (Kingdom's Guard)</td><td data-l="GameWith">«Королевский страж» (Kingdom's Guard)</td><td data-l="Итог"><span class="okk">совпало</span></td></tr>
+<tr><td data-l="Пункт">Порядок прокачки навыков</td><td data-l="GenshinBuilds">«Проклятие зла», «Спокойствие», «Идеальное отражение», «Избавление»</td><td data-l="GameWith">«Проклятие зла», «Спокойствие», «Избавление», «Идеальное отражение»</td><td data-l="Итог"><span class="diff">расходится</span></td></tr>
 </table></div>
 <p>По лучшей дуге и картриджу источники согласны.</p>
 <p>Остальные дуги у GameWith по порядку: «Ложная весна» (The Fools' Spring), «Время придёт» (A Time Will Come).</p>
 <h3>Команды по GameWith</h3>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Команда</th><th>Состав</th><th>Замены</th></tr>
-<tr><td>Диссонанс</td><td><b>Сакири</b>, <b>Даффодил</b>, <b>Фадия</b>, <b>Адлер</b></td><td>вместо Сакири можно Байканг, вместо Фадия Ханиэль</td></tr>
-<tr><td>Бюджетная</td><td><b>Адлер</b>, <b>Даффодил</b>, <b>Минт</b>, <b>Ханиэль</b></td><td>вместо Ханиэль можно Аурелия</td></tr>
+<tr><td data-l="Команда">Диссонанс</td><td data-l="Состав"><b>Сакири</b>, <b>Даффодил</b>, <b>Фадия</b>, <b>Адлер</b></td><td data-l="Замены">вместо Сакири можно Байканг, вместо Фадия Ханиэль</td></tr>
+<tr><td data-l="Команда">Бюджетная</td><td data-l="Состав"><b>Адлер</b>, <b>Даффодил</b>, <b>Минт</b>, <b>Ханиэль</b></td><td data-l="Замены">вместо Ханиэль можно Аурелия</td></tr>
 </table></div>
 <h2 id="s9">Источники</h2>
 <p class="src">Названия, описания навыков и пробуждений: <a href="https://github.com/AzureXuanVerse/NTE_Assets" rel="noopener">выгрузка ресурсов игры NTE_Assets</a> (версия 1.4.13 CN), русская локализация. Сборка и команды: <a href="https://genshin-builds.com/en/neverness-to-everness/characters/adler" rel="noopener">GenshinBuilds</a> (без даты на странице), сверка: <a href="https://gamewith.net/nte/74389" rel="noopener">GameWith</a> (03.09.2026). Это не официальные рекомендации. Данные проверены 21 октября 2026, неофициальная выгрузка ресурсов игры.</p>

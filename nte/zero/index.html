@@ -207,8 +207,22 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
  .home .stage-in>div{max-width:52%}
  .keyart{position:absolute;right:2%;bottom:-6px;height:84%;margin:0}
 }
+@media (max-width:620px){
+ .tbl{overflow:visible;padding:4px 14px}
+ .tbl table,.tbl tbody{display:block}
+ .tbl tr{display:block;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+ .tbl tr:first-child{display:none}.tbl tr:last-child{border-bottom:0}
+ .tbl td{display:block;border:0;padding:3px 0;overflow-wrap:anywhere}
+ .tbl td::before{content:attr(data-l);display:block;font:400 11px "Russo One",sans-serif;color:var(--y);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
+ .tbl td:first-child::before{display:none}.tbl td:first-child{font-size:17px}
+ .tbl td:empty{display:none}
+ .two{grid-template-columns:1fr}
+ .rw{white-space:normal;display:block;margin:4px 0}
+}
 @media (max-width:1060px){.nav{padding:8px 11px;font-size:13px}.logo{font-size:16px;gap:8px}.logo img{width:34px;height:34px}.pill{margin-left:4px;padding:8px 14px;font-size:13px}.top div{padding:8px 14px}}
 @media (max-width:860px){.nav.x2{display:none}}
+.mnav{display:none}
+@media (max-width:560px){.top .nav{display:none}.mnav{display:flex;gap:6px;overflow-x:auto;padding:2px 14px 8px;max-width:var(--max);margin:0 auto;scrollbar-width:none}.mnav::-webkit-scrollbar{display:none}.mnav a{flex:none;color:#cfd8e0;font:400 13px "Russo One",sans-serif;text-decoration:none;padding:7px 13px;background:#0e1620;clip-path:var(--slant)}}
 @media (max-width:560px){body{font-size:16.5px}.nav.opt{display:none}.logo{font-size:15px;white-space:nowrap;gap:8px}.logo img{width:34px;height:34px}.nav{padding:8px 10px;font-size:13px}.pill{margin-left:4px;padding:8px 14px;font-size:13px}.top div{gap:2px}.giant{top:-2%}.slab.k{margin-left:18px}.top div{padding:8px 14px}.step:nth-child(n){margin-left:0}.giant{font-size:210px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.kicker,.slab,.girl{animation:none!important}.btn,.tile,.nav::before,details{transition:none}}
 </style>
@@ -224,7 +238,7 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
   <a class="nav opt x2" href="https://kitron4ik.github.io/nte/kody/">Коды</a>
   <a class="nav opt" href="https://kitron4ik.github.io/nte/kalkulyator/">Калькулятор</a>
   <a class="pill" href="https://max.ru/channel_nte_po_russki">Канал в MAX</a>
-</div></header>
+</div><nav class="mnav" aria-label="Разделы"><a href="https://kitron4ik.github.io/nte/personazhi/">Герои</a><a href="https://kitron4ik.github.io/nte/s-chego-nachat/">Новичку</a><a href="https://kitron4ik.github.io/nte/garant/">Гарант</a><a href="https://kitron4ik.github.io/nte/valyuty/">Валюты</a><a href="https://kitron4ik.github.io/nte/kody/">Коды</a><a href="https://kitron4ik.github.io/nte/kalkulyator/">Калькулятор</a></nav></header>
 <section class="stage" style="--bg:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><div class="stage-bg"></div><div class="giant" aria-hidden="true">ZERO</div>
 <div class="stage-in"><div>
   <div class="crumbs"><a href="https://kitron4ik.github.io/">NTE по-русски</a> / Neverness to Everness</div>
@@ -237,46 +251,46 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
 <h2 id="s0">Коротко</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Параметр</th><th>Значение</th></tr>
-<tr><td>Редкость</td><td>S-ранг</td></tr><tr><td>Стихия (по описанию навыков)</td><td>космос</td></tr><tr><td>Фракция</td><td>Антикварный магазин «Эйбон»</td></tr><tr><td>Имя в игре</td><td>Ноль (Zero)</td></tr>
+<tr><td data-l="Параметр">Редкость</td><td data-l="Значение">S-ранг</td></tr><tr><td data-l="Параметр">Стихия (по описанию навыков)</td><td data-l="Значение">космос</td></tr><tr><td data-l="Параметр">Фракция</td><td data-l="Значение">Антикварный магазин «Эйбон»</td></tr><tr><td data-l="Параметр">Имя в игре</td><td data-l="Значение">Ноль (Zero)</td></tr>
 </table></div>
 <p>Официальное описание из игры: «Единственный в истории эспер без обнаруживаемого Индекса Вертхаймера.».</p>
 <h2 id="s1">Навыки</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Навык</th><th>Что делает (по тексту игры)</th></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/zero-melee.png" alt="" width="40" height="40" loading="lazy"><b>Оценка</b> <span class="en">(Appraisal)</span><br><span class="lab">Базовая атака</span></td><td>Описание в данных игры не найдено.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/zero-skill.png" alt="" width="40" height="40" loading="lazy"><b>Оценка и гравировка</b> <span class="en">(Appraise and Engrave)</span><br><span class="lab">Навык</span></td><td><b>Оценка и гравировка</b><br>Промах, враг раскрыт! Совершает 3 быстрых удара оружием, затем прыгает в воздух для зарядки и применяет Пушку эспера, нанося 1 удар урона космоса по области. Дополнительно наносит первому пораженному противнику, чей уровень ниже уровня Ноль, 1 удар урона космоса.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/zero-qte.png" alt="" width="40" height="40" loading="lazy"><b>Цветение разлома</b> <span class="en">(Rift Blossom)</span><br><span class="lab">Навык поддержки</span></td><td><b>Цветение разлома</b><br>Рассекая пространство, взрывает разлом, нанося 2 удара урона космоса по области.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/zero-ultraskill.png" alt="" width="40" height="40" loading="lazy"><b>Деление на ноль</b> <span class="en">(Divide by Zero)</span><br><span class="lab">Сверхспособность</span></td><td><b>Деление на ноль</b><br>Танцуя, я разрываю связи между Нексусами, что вижу лишь я. Наносит несколько ударов урона космоса по области.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/zero-passive_1.png" alt="" width="40" height="40" loading="lazy"><b>Восприятие аномалий</b> <span class="en">(Anomaly Perception)</span><br><span class="lab">Пассив 1</span></td><td><b>Восприятие аномалий</b><br>Усиление зарядки: восстанавливает ОЗ в размере 50 % базовой атаки Ноль, когда активный персонаж получает энергию сверхспособности.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/zero-passive_2.png" alt="" width="40" height="40" loading="lazy"><b>Теопнеустос</b> <span class="en">(Theopneustos)</span><br><span class="lab">Пассив 2</span></td><td><b>Теопнеустос</b><br>Сверхспособность «Деление на ноль»: урон увеличивается на 25 %.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/zero-melee.png" alt="" width="40" height="40" loading="lazy"><b>Оценка</b> <span class="en">(Appraisal)</span><br><span class="lab">Базовая атака</span></td><td data-l="Что делает (по тексту игры)">Описание в данных игры не найдено.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/zero-skill.png" alt="" width="40" height="40" loading="lazy"><b>Оценка и гравировка</b> <span class="en">(Appraise and Engrave)</span><br><span class="lab">Навык</span></td><td data-l="Что делает (по тексту игры)"><b>Оценка и гравировка</b><br>Промах, враг раскрыт! Совершает 3 быстрых удара оружием, затем прыгает в воздух для зарядки и применяет Пушку эспера, нанося 1 удар урона космоса по области. Дополнительно наносит первому пораженному противнику, чей уровень ниже уровня Ноль, 1 удар урона космоса.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/zero-qte.png" alt="" width="40" height="40" loading="lazy"><b>Цветение разлома</b> <span class="en">(Rift Blossom)</span><br><span class="lab">Навык поддержки</span></td><td data-l="Что делает (по тексту игры)"><b>Цветение разлома</b><br>Рассекая пространство, взрывает разлом, нанося 2 удара урона космоса по области.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/zero-ultraskill.png" alt="" width="40" height="40" loading="lazy"><b>Деление на ноль</b> <span class="en">(Divide by Zero)</span><br><span class="lab">Сверхспособность</span></td><td data-l="Что делает (по тексту игры)"><b>Деление на ноль</b><br>Танцуя, я разрываю связи между Нексусами, что вижу лишь я. Наносит несколько ударов урона космоса по области.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/zero-passive_1.png" alt="" width="40" height="40" loading="lazy"><b>Восприятие аномалий</b> <span class="en">(Anomaly Perception)</span><br><span class="lab">Пассив 1</span></td><td data-l="Что делает (по тексту игры)"><b>Восприятие аномалий</b><br>Усиление зарядки: восстанавливает ОЗ в размере 50 % базовой атаки Ноль, когда активный персонаж получает энергию сверхспособности.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/zero-passive_2.png" alt="" width="40" height="40" loading="lazy"><b>Теопнеустос</b> <span class="en">(Theopneustos)</span><br><span class="lab">Пассив 2</span></td><td data-l="Что делает (по тексту игры)"><b>Теопнеустос</b><br>Сверхспособность «Деление на ноль»: урон увеличивается на 25 %.</td></tr>
 </table></div>
 <p class="note">Числа вида «…» в игре зависят от уровня навыка и здесь не показаны, множители смотрите в самой игре.</p>
 <h2 id="s2">Пробуждения</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>№</th><th>Название</th><th>Эффект</th></tr>
-<tr><td>1</td><td><b>Цветущий взгляд</b> <span class="en">(Blooming Gaze)</span></td><td>Наносит 1 дополнительный удар с уроном в размере 200 % от атаки по противникам более низкого уровня при первом попадании. Этот урон игнорирует 75 % защиты цели.</td></tr>
-<tr><td>2</td><td><b>В поисках призвания</b> <span class="en">(Finding the Calling)</span></td><td>После успешного применения «Оценки и гравировки» вы получаете 8 ед. энергии сверхспособности.</td></tr>
-<tr><td>3</td><td><b>Записи об аномалиях</b> <span class="en">(Anomalies Record)</span></td><td>Сверхспособность «Деление на ноль»: шанс критического удара увеличивается на 50 %.</td></tr>
-<tr><td>4</td><td><b>Неопределённые факторы</b> <span class="en">(Undecided Factors)</span></td><td>Урон от сверхспособности «Деление на ноль» увеличивается на 0,1 % за каждое 1 очко базовой атаки Ноль, вплоть до максимума в 25 %.</td></tr>
-<tr><td>5</td><td><b>Теопнеустос</b> <span class="en">(Theopneustos)</span></td><td>Увеличивает атаку Ноль на 10 % на 20 сек. при применении навыка поддержки.</td></tr>
-<tr><td>6</td><td><b>Обманчивое освобождение</b> <span class="en">(Deceptive Liberation)</span></td><td>Множитель доп. урона «Оценки и гравировки» повышается до 300 % от атаки.</td></tr>
-<tr><td>7</td><td><b>Распознавание</b> <span class="en">(Discern)</span></td><td>Повышает уровень навыков «Оценка», «Оценка и гравировка» и «Деление на ноль» на 1.</td></tr>
-<tr><td>8</td><td><b>Нулевое отображение</b> <span class="en">(Zero Display)</span></td><td>Когда Ноль запускает любой цикл эспера космоса, атака всей команды увеличивается на 12 % на 20 сек.</td></tr>
+<tr><td data-l="№">1</td><td data-l="Название"><b>Цветущий взгляд</b> <span class="en">(Blooming Gaze)</span></td><td data-l="Эффект">Наносит 1 дополнительный удар с уроном в размере 200 % от атаки по противникам более низкого уровня при первом попадании. Этот урон игнорирует 75 % защиты цели.</td></tr>
+<tr><td data-l="№">2</td><td data-l="Название"><b>В поисках призвания</b> <span class="en">(Finding the Calling)</span></td><td data-l="Эффект">После успешного применения «Оценки и гравировки» вы получаете 8 ед. энергии сверхспособности.</td></tr>
+<tr><td data-l="№">3</td><td data-l="Название"><b>Записи об аномалиях</b> <span class="en">(Anomalies Record)</span></td><td data-l="Эффект">Сверхспособность «Деление на ноль»: шанс критического удара увеличивается на 50 %.</td></tr>
+<tr><td data-l="№">4</td><td data-l="Название"><b>Неопределённые факторы</b> <span class="en">(Undecided Factors)</span></td><td data-l="Эффект">Урон от сверхспособности «Деление на ноль» увеличивается на 0,1 % за каждое 1 очко базовой атаки Ноль, вплоть до максимума в 25 %.</td></tr>
+<tr><td data-l="№">5</td><td data-l="Название"><b>Теопнеустос</b> <span class="en">(Theopneustos)</span></td><td data-l="Эффект">Увеличивает атаку Ноль на 10 % на 20 сек. при применении навыка поддержки.</td></tr>
+<tr><td data-l="№">6</td><td data-l="Название"><b>Обманчивое освобождение</b> <span class="en">(Deceptive Liberation)</span></td><td data-l="Эффект">Множитель доп. урона «Оценки и гравировки» повышается до 300 % от атаки.</td></tr>
+<tr><td data-l="№">7</td><td data-l="Название"><b>Распознавание</b> <span class="en">(Discern)</span></td><td data-l="Эффект">Повышает уровень навыков «Оценка», «Оценка и гравировка» и «Деление на ноль» на 1.</td></tr>
+<tr><td data-l="№">8</td><td data-l="Название"><b>Нулевое отображение</b> <span class="en">(Zero Display)</span></td><td data-l="Эффект">Когда Ноль запускает любой цикл эспера космоса, атака всей команды увеличивается на 12 % на 20 сек.</td></tr>
 </table></div>
 <h2 id="s3"><img class="ico" src="https://kitron4ik.github.io/assets/ico/arc.svg" alt="" width="28" height="28">Сборка по сторонним гайдам</h2>
 <p>Роль по гайдам: саб-ДД (burst), космос. Оценка силы: A (GenshinBuilds). Эффекты дуг и картриджей ниже из текста игры, числа и выбор из гайда.</p>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Дуга</th><th>Что делает (текст игры)</th><th>Числа и заметки из гайда</th></tr>
-<tr><td><img class="gico" src="https://kitron4ik.github.io/assets/arc/worldrain.png" alt="" width="46" height="46" loading="lazy"><b>Дождь, сотрясший мир</b> <span class="en">(The Rain That Shook the World)</span> <i class=best>лучшая</i></td><td>Наносит повышенный на … урон космоса от навыка перенаправления и сверхспособности носителя.<br>Увеличивает интенсивность цикла носителя на … на … сек. после применения навыка перенаправления. При повторном срабатывании длительность обновляется.</td><td>+30 % урона космоса от навыка перенаправления и сверхспособности. После навыка повышает интенсивность цикла на 36 на 15 с</td></tr>
-<tr><td><img class="gico" src="https://kitron4ik.github.io/assets/arc/rishi.png" alt="" width="46" height="46" loading="lazy"><b>Выходной</b> <span class="en">(Day Off)</span></td><td>Увеличивает атаку владельца на …. Открывает дугу: Затмение.<br>Дуга: Затмение — владелец создаёт затмение на … сек. Каждый убитый во время затмения враг восстанавливает … ед. энергии сверхспособности, до … раз. (Перезарядка: … сек.)</td><td>+30 % к атаке. Открывает эффект «Затмение»: 40 с, каждый побеждённый враг даёт 6 энергии сверхспособности, до 5 раз (перезарядка 300 с)</td></tr>
-<tr><td><img class="gico" src="https://kitron4ik.github.io/assets/arc/wuhuakuang.png" alt="" width="46" height="46" loading="lazy"><b>Забытое</b> <span class="en">(The Forgotten)</span></td><td>Увеличивает атаку на …, когда у владельца больше 50 % ОЗ. Увеличивает защиту на …, когда у владельца меньше 50 % ОЗ.</td><td>+20 % к атаке при ОЗ выше 50 % или к защите ниже 50 %</td></tr>
+<tr><td data-l="Дуга"><img class="gico" src="https://kitron4ik.github.io/assets/arc/worldrain.png" alt="" width="46" height="46" loading="lazy"><b>Дождь, сотрясший мир</b> <span class="en">(The Rain That Shook the World)</span> <i class=best>лучшая</i></td><td data-l="Что делает (текст игры)">Наносит повышенный на … урон космоса от навыка перенаправления и сверхспособности носителя.<br>Увеличивает интенсивность цикла носителя на … на … сек. после применения навыка перенаправления. При повторном срабатывании длительность обновляется.</td><td data-l="Числа и заметки из гайда">+30 % урона космоса от навыка перенаправления и сверхспособности. После навыка повышает интенсивность цикла на 36 на 15 с</td></tr>
+<tr><td data-l="Дуга"><img class="gico" src="https://kitron4ik.github.io/assets/arc/rishi.png" alt="" width="46" height="46" loading="lazy"><b>Выходной</b> <span class="en">(Day Off)</span></td><td data-l="Что делает (текст игры)">Увеличивает атаку владельца на …. Открывает дугу: Затмение.<br>Дуга: Затмение — владелец создаёт затмение на … сек. Каждый убитый во время затмения враг восстанавливает … ед. энергии сверхспособности, до … раз. (Перезарядка: … сек.)</td><td data-l="Числа и заметки из гайда">+30 % к атаке. Открывает эффект «Затмение»: 40 с, каждый побеждённый враг даёт 6 энергии сверхспособности, до 5 раз (перезарядка 300 с)</td></tr>
+<tr><td data-l="Дуга"><img class="gico" src="https://kitron4ik.github.io/assets/arc/wuhuakuang.png" alt="" width="46" height="46" loading="lazy"><b>Забытое</b> <span class="en">(The Forgotten)</span></td><td data-l="Что делает (текст игры)">Увеличивает атаку на …, когда у владельца больше 50 % ОЗ. Увеличивает защиту на …, когда у владельца меньше 50 % ОЗ.</td><td data-l="Числа и заметки из гайда">+20 % к атаке при ОЗ выше 50 % или к защите ниже 50 %</td></tr>
 </table></div>
 <p><b>Картридж «Утраченное сияние»</b> (Lost Radiance), лучший комплект. Эпический (2): урон космоса +10 %. Легендарный (4): после применения владельцем сверхспособности игнорирует 25 % защиты врагов в течение 20 сек. Эффект не складывается. (текст игры). Запасные: Кредо теней (Shadow Creed #2).</p>
 <p>Порядок модулей по гайду: крит. урон, крит. шанс, интенсивность цикла, урон, атака %.</p>
 <h2 id="s4">Команды</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Команда</th><th>Состав (роль)</th></tr>
-<tr><td>Саб-ДД Ноль (единственная команда в гайде): цветение с быстрой сменой</td><td><b>Ноль</b> (саб-ДД, burst), <b>Наналли</b> (основной ДД), <b>Цзююань</b> (саб-ДД), <b>Сакири</b> (поддержка)</td></tr>
+<tr><td data-l="Команда">Саб-ДД Ноль (единственная команда в гайде): цветение с быстрой сменой</td><td data-l="Состав (роль)"><b>Ноль</b> (саб-ДД, burst), <b>Наналли</b> (основной ДД), <b>Цзююань</b> (саб-ДД), <b>Сакири</b> (поддержка)</td></tr>
 </table></div>
 <p>Минт можно поставить вместо Наналли с той же ротацией.</p>
 <h2 id="s5">Ротация</h2>
@@ -306,18 +320,18 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
 <p>Второй источник: страница героя на GameWith (обновлена 04.09.2026). Сравнение по главным пунктам:</p>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Пункт</th><th>GenshinBuilds</th><th>GameWith</th><th>Итог</th></tr>
-<tr><td>Лучшая дуга</td><td>«Дождь, сотрясший мир» (The Rain That Shook the World)</td><td>«Дождь, сотрясший мир» (у GameWith «Doomrain», это, судя по названию, та же дуга)</td><td><span class="okk">совпало</span></td></tr>
-<tr><td>Картридж</td><td>«Утраченное сияние» (Lost Radiance)</td><td>«Утраченное сияние» (Lost Radiance)</td><td><span class="okk">совпало</span></td></tr>
-<tr><td>Порядок прокачки навыков</td><td>«Деление на ноль», «Оценка и гравировка», «Оценка», «Цветение разлома»</td><td>«Оценка и гравировка», «Деление на ноль», «Цветение разлома», «Оценка»</td><td><span class="diff">расходится</span></td></tr>
+<tr><td data-l="Пункт">Лучшая дуга</td><td data-l="GenshinBuilds">«Дождь, сотрясший мир» (The Rain That Shook the World)</td><td data-l="GameWith">«Дождь, сотрясший мир» (у GameWith «Doomrain», это, судя по названию, та же дуга)</td><td data-l="Итог"><span class="okk">совпало</span></td></tr>
+<tr><td data-l="Пункт">Картридж</td><td data-l="GenshinBuilds">«Утраченное сияние» (Lost Radiance)</td><td data-l="GameWith">«Утраченное сияние» (Lost Radiance)</td><td data-l="Итог"><span class="okk">совпало</span></td></tr>
+<tr><td data-l="Пункт">Порядок прокачки навыков</td><td data-l="GenshinBuilds">«Деление на ноль», «Оценка и гравировка», «Оценка», «Цветение разлома»</td><td data-l="GameWith">«Оценка и гравировка», «Деление на ноль», «Цветение разлома», «Оценка»</td><td data-l="Итог"><span class="diff">расходится</span></td></tr>
 </table></div>
 <p>По лучшей дуге и картриджу источники согласны.</p>
 <p>Остальные дуги у GameWith по порядку: «Выходной» (Day Off), «Взорвать толпу» (Blow up the Crowd), «Забытое» (The Forgotten).</p>
 <h3>Команды по GameWith</h3>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Команда</th><th>Состав</th><th>Замены</th></tr>
-<tr><td>Зарядка</td><td><b>Ноль</b>, <b>Наналли</b>, <b>Хатор</b>, <b>Фадия</b></td><td>нет</td></tr>
-<tr><td>Цветение и «Нова»</td><td><b>Ноль</b>, <b>Наналли</b>, <b>Даффодил</b>, <b>Ханиэль</b></td><td>нет</td></tr>
-<tr><td>Бюджетная</td><td><b>Ноль</b>, <b>Минт</b>, <b>Ския</b>, <b>Ханиэль</b></td><td>нет</td></tr>
+<tr><td data-l="Команда">Зарядка</td><td data-l="Состав"><b>Ноль</b>, <b>Наналли</b>, <b>Хатор</b>, <b>Фадия</b></td><td data-l="Замены">нет</td></tr>
+<tr><td data-l="Команда">Цветение и «Нова»</td><td data-l="Состав"><b>Ноль</b>, <b>Наналли</b>, <b>Даффодил</b>, <b>Ханиэль</b></td><td data-l="Замены">нет</td></tr>
+<tr><td data-l="Команда">Бюджетная</td><td data-l="Состав"><b>Ноль</b>, <b>Минт</b>, <b>Ския</b>, <b>Ханиэль</b></td><td data-l="Замены">нет</td></tr>
 </table></div>
 <h2 id="s9">Источники</h2>
 <p class="src">Названия, описания навыков и пробуждений: <a href="https://github.com/AzureXuanVerse/NTE_Assets" rel="noopener">выгрузка ресурсов игры NTE_Assets</a> (версия 1.4.13 CN), русская локализация. Сборка и команды: <a href="https://genshin-builds.com/en/neverness-to-everness/characters/zero" rel="noopener">GenshinBuilds</a> (без даты на странице), сверка: <a href="https://gamewith.net/nte/74400" rel="noopener">GameWith</a> (04.09.2026). Это не официальные рекомендации. Данные проверены 21 октября 2026, неофициальная выгрузка ресурсов игры.</p>

@@ -207,8 +207,22 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
  .home .stage-in>div{max-width:52%}
  .keyart{position:absolute;right:2%;bottom:-6px;height:84%;margin:0}
 }
+@media (max-width:620px){
+ .tbl{overflow:visible;padding:4px 14px}
+ .tbl table,.tbl tbody{display:block}
+ .tbl tr{display:block;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+ .tbl tr:first-child{display:none}.tbl tr:last-child{border-bottom:0}
+ .tbl td{display:block;border:0;padding:3px 0;overflow-wrap:anywhere}
+ .tbl td::before{content:attr(data-l);display:block;font:400 11px "Russo One",sans-serif;color:var(--y);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
+ .tbl td:first-child::before{display:none}.tbl td:first-child{font-size:17px}
+ .tbl td:empty{display:none}
+ .two{grid-template-columns:1fr}
+ .rw{white-space:normal;display:block;margin:4px 0}
+}
 @media (max-width:1060px){.nav{padding:8px 11px;font-size:13px}.logo{font-size:16px;gap:8px}.logo img{width:34px;height:34px}.pill{margin-left:4px;padding:8px 14px;font-size:13px}.top div{padding:8px 14px}}
 @media (max-width:860px){.nav.x2{display:none}}
+.mnav{display:none}
+@media (max-width:560px){.top .nav{display:none}.mnav{display:flex;gap:6px;overflow-x:auto;padding:2px 14px 8px;max-width:var(--max);margin:0 auto;scrollbar-width:none}.mnav::-webkit-scrollbar{display:none}.mnav a{flex:none;color:#cfd8e0;font:400 13px "Russo One",sans-serif;text-decoration:none;padding:7px 13px;background:#0e1620;clip-path:var(--slant)}}
 @media (max-width:560px){body{font-size:16.5px}.nav.opt{display:none}.logo{font-size:15px;white-space:nowrap;gap:8px}.logo img{width:34px;height:34px}.nav{padding:8px 10px;font-size:13px}.pill{margin-left:4px;padding:8px 14px;font-size:13px}.top div{gap:2px}.giant{top:-2%}.slab.k{margin-left:18px}.top div{padding:8px 14px}.step:nth-child(n){margin-left:0}.giant{font-size:210px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.kicker,.slab,.girl{animation:none!important}.btn,.tile,.nav::before,details{transition:none}}
 </style>
@@ -224,7 +238,7 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
   <a class="nav opt x2" href="https://kitron4ik.github.io/nte/kody/">Коды</a>
   <a class="nav opt" href="https://kitron4ik.github.io/nte/kalkulyator/">Калькулятор</a>
   <a class="pill" href="https://max.ru/channel_nte_po_russki">Канал в MAX</a>
-</div></header>
+</div><nav class="mnav" aria-label="Разделы"><a href="https://kitron4ik.github.io/nte/personazhi/">Герои</a><a href="https://kitron4ik.github.io/nte/s-chego-nachat/">Новичку</a><a href="https://kitron4ik.github.io/nte/garant/">Гарант</a><a href="https://kitron4ik.github.io/nte/valyuty/">Валюты</a><a href="https://kitron4ik.github.io/nte/kody/">Коды</a><a href="https://kitron4ik.github.io/nte/kalkulyator/">Калькулятор</a></nav></header>
 <section class="stage" style="--bg:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><div class="stage-bg"></div><div class="giant" aria-hidden="true">СТАРТ</div>
 <div class="stage-in"><div>
   <div class="crumbs"><a href="https://kitron4ik.github.io/">NTE по-русски</a> / Neverness to Everness</div>
@@ -251,13 +265,13 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
 <p>Этот план из гайда NTE Guide. Сам гайд помечен как исторический справочник, так что числа и названия проверьте в игре.</p>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>День</th><th>Что делать</th></tr>
-<tr><td>1</td><td>Пройти обучение и двигать сюжет, пока не откроются ежедневные задания. Ввести <a href="https://kitron4ik.github.io/nte/kody/">коды</a>. Потратить все 20 круток баннера для новичков со скидкой. Выбрать одного S-ранга из шести. Всю энергию потратить на сюжет</td></tr>
-<tr><td>2</td><td>Дойти до «Городского магната» (City Tycoon) и запустить его: чем раньше, тем быстрее копится Чиз (Chiz). Открывать регионы и сделать первое возвышение персонажа, если доступно</td></tr>
-<tr><td>3</td><td>Поднять главного урон-дилера до 30+ уровня. Надеть временные диски с правильной основной характеристикой, идеальные побочные пока не нужны. Закрывать побочные задания и точки исследования карты</td></tr>
-<tr><td>4</td><td>Убедиться, что открыты все системы. Первая попытка Бездны и Башни испытаний. Завести ежедневный маршрут: вход, 4 ежедневных задания, энергия, «Городской магнат», коды</td></tr>
-<tr><td>5</td><td>Главного урон-дилера до 40 уровня. Фармить подземелья дисков ради бонусов комплектов. Прокачать оружие до максимума, что доступно. Продвинуться дальше в Бездне</td></tr>
-<tr><td>6</td><td>Собрать команду из четырёх: урон, бафферы, поддержка, гибкий слот. Начать недельных боссов, хотя бы одного-двух</td></tr>
-<tr><td>7</td><td>Забрать награды за первое убийство трёх недельных боссов. Пройти Бездну так далеко, как получится. Разобрать итоги недели</td></tr>
+<tr><td data-l="День">1</td><td data-l="Что делать">Пройти обучение и двигать сюжет, пока не откроются ежедневные задания. Ввести <a href="https://kitron4ik.github.io/nte/kody/">коды</a>. Потратить все 20 круток баннера для новичков со скидкой. Выбрать одного S-ранга из шести. Всю энергию потратить на сюжет</td></tr>
+<tr><td data-l="День">2</td><td data-l="Что делать">Дойти до «Городского магната» (City Tycoon) и запустить его: чем раньше, тем быстрее копится Чиз (Chiz). Открывать регионы и сделать первое возвышение персонажа, если доступно</td></tr>
+<tr><td data-l="День">3</td><td data-l="Что делать">Поднять главного урон-дилера до 30+ уровня. Надеть временные диски с правильной основной характеристикой, идеальные побочные пока не нужны. Закрывать побочные задания и точки исследования карты</td></tr>
+<tr><td data-l="День">4</td><td data-l="Что делать">Убедиться, что открыты все системы. Первая попытка Бездны и Башни испытаний. Завести ежедневный маршрут: вход, 4 ежедневных задания, энергия, «Городской магнат», коды</td></tr>
+<tr><td data-l="День">5</td><td data-l="Что делать">Главного урон-дилера до 40 уровня. Фармить подземелья дисков ради бонусов комплектов. Прокачать оружие до максимума, что доступно. Продвинуться дальше в Бездне</td></tr>
+<tr><td data-l="День">6</td><td data-l="Что делать">Собрать команду из четырёх: урон, бафферы, поддержка, гибкий слот. Начать недельных боссов, хотя бы одного-двух</td></tr>
+<tr><td data-l="День">7</td><td data-l="Что делать">Забрать награды за первое убийство трёх недельных боссов. Пройти Бездну так далеко, как получится. Разобрать итоги недели</td></tr>
 </table></div>
 <p class="src">Цель недели по этому гайду: один главный урон-дилер 40+ уровня, полная команда, пройденная половина Бездны, работающий «Городской магнат» и устоявшийся ежедневный маршрут.</p>
 

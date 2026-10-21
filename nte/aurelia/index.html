@@ -207,8 +207,22 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
  .home .stage-in>div{max-width:52%}
  .keyart{position:absolute;right:2%;bottom:-6px;height:84%;margin:0}
 }
+@media (max-width:620px){
+ .tbl{overflow:visible;padding:4px 14px}
+ .tbl table,.tbl tbody{display:block}
+ .tbl tr{display:block;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+ .tbl tr:first-child{display:none}.tbl tr:last-child{border-bottom:0}
+ .tbl td{display:block;border:0;padding:3px 0;overflow-wrap:anywhere}
+ .tbl td::before{content:attr(data-l);display:block;font:400 11px "Russo One",sans-serif;color:var(--y);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
+ .tbl td:first-child::before{display:none}.tbl td:first-child{font-size:17px}
+ .tbl td:empty{display:none}
+ .two{grid-template-columns:1fr}
+ .rw{white-space:normal;display:block;margin:4px 0}
+}
 @media (max-width:1060px){.nav{padding:8px 11px;font-size:13px}.logo{font-size:16px;gap:8px}.logo img{width:34px;height:34px}.pill{margin-left:4px;padding:8px 14px;font-size:13px}.top div{padding:8px 14px}}
 @media (max-width:860px){.nav.x2{display:none}}
+.mnav{display:none}
+@media (max-width:560px){.top .nav{display:none}.mnav{display:flex;gap:6px;overflow-x:auto;padding:2px 14px 8px;max-width:var(--max);margin:0 auto;scrollbar-width:none}.mnav::-webkit-scrollbar{display:none}.mnav a{flex:none;color:#cfd8e0;font:400 13px "Russo One",sans-serif;text-decoration:none;padding:7px 13px;background:#0e1620;clip-path:var(--slant)}}
 @media (max-width:560px){body{font-size:16.5px}.nav.opt{display:none}.logo{font-size:15px;white-space:nowrap;gap:8px}.logo img{width:34px;height:34px}.nav{padding:8px 10px;font-size:13px}.pill{margin-left:4px;padding:8px 14px;font-size:13px}.top div{gap:2px}.giant{top:-2%}.slab.k{margin-left:18px}.top div{padding:8px 14px}.step:nth-child(n){margin-left:0}.giant{font-size:210px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.kicker,.slab,.girl{animation:none!important}.btn,.tile,.nav::before,details{transition:none}}
 </style>
@@ -224,7 +238,7 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
   <a class="nav opt x2" href="https://kitron4ik.github.io/nte/kody/">Коды</a>
   <a class="nav opt" href="https://kitron4ik.github.io/nte/kalkulyator/">Калькулятор</a>
   <a class="pill" href="https://max.ru/channel_nte_po_russki">Канал в MAX</a>
-</div></header>
+</div><nav class="mnav" aria-label="Разделы"><a href="https://kitron4ik.github.io/nte/personazhi/">Герои</a><a href="https://kitron4ik.github.io/nte/s-chego-nachat/">Новичку</a><a href="https://kitron4ik.github.io/nte/garant/">Гарант</a><a href="https://kitron4ik.github.io/nte/valyuty/">Валюты</a><a href="https://kitron4ik.github.io/nte/kody/">Коды</a><a href="https://kitron4ik.github.io/nte/kalkulyator/">Калькулятор</a></nav></header>
 <section class="stage" style="--bg:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><div class="stage-bg"></div><div class="giant" aria-hidden="true">AURELIA</div>
 <div class="stage-in"><div>
   <div class="crumbs"><a href="https://kitron4ik.github.io/">NTE по-русски</a> / Neverness to Everness</div>
@@ -237,46 +251,46 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
 <h2 id="s0">Коротко</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Параметр</th><th>Значение</th></tr>
-<tr><td>Редкость</td><td>A-ранг</td></tr><tr><td>Стихия (по описанию навыков)</td><td>психика</td></tr><tr><td>Фракция</td><td>Ассоциация жителей улицы Тамамочи</td></tr><tr><td>Имя в игре</td><td>Аурелия (Aurelia)</td></tr>
+<tr><td data-l="Параметр">Редкость</td><td data-l="Значение">A-ранг</td></tr><tr><td data-l="Параметр">Стихия (по описанию навыков)</td><td data-l="Значение">психика</td></tr><tr><td data-l="Параметр">Фракция</td><td data-l="Значение">Ассоциация жителей улицы Тамамочи</td></tr><tr><td data-l="Параметр">Имя в игре</td><td data-l="Значение">Аурелия (Aurelia)</td></tr>
 </table></div>
 <p>Официальное описание из игры: «Интересный факт об Этеро, который удалось узнать благодаря Аурелии: поездка по городу верхом на медузе не считается нарушением правил дорожного движения.».</p>
 <h2 id="s1">Навыки</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Навык</th><th>Что делает (по тексту игры)</th></tr>
-<tr><td><b>Капелла</b> <span class="en">(Cappella)</span><br><span class="lab">Базовая атака</span></td><td><b>Базовая атака: Легато</b><br>Пой плавно и естественно! Наносит удары оружием, выполняя до 4 последовательных атак и нанося Урон психики.<br><br><b>Базовая атака: Стаккато</b><br>Пой громко и от души! Зажмите уклонение во время движения, чтобы оседлать медузу и на время развить высокую скорость. При приближении целей периодически выпускает медузный взрыв, нанося урон психики.<br>В этом состоянии совершается особое уклонение, а «Контрудар после критического уклонения: Синкопа» автоматически выпускает четыре медузных взрыва.<br>Эффект автоматически заканчивается, когда выносливость падает ниже определённого значения.<br><br><b>Базовая атака: Портаменто</b><br>Пой чисто и красиво! Взмахивает своим оружием в воздухе и пикирует, нанося 1 удар урона психики по области при ударе. Урон увеличивается в зависимости от высоты падения (до 100 %).</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/aurelia-skill.png" alt="" width="40" height="40" loading="lazy"><b>Виртуозная ария</b> <span class="en">(Cadenza Aria)</span><br><span class="lab">Навык</span></td><td><b>Виртуозная ария</b><br>Преврати повседневность в радужную мелодию и позволь ей греметь над горизонтом. Наносит 1 удар урона психики по области и входит в состояние Каденции на 12 сек.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/aurelia-qte.png" alt="" width="40" height="40" loading="lazy"><b>Диссонанс</b> <span class="en">(Dissonance)</span><br><span class="lab">Навык поддержки</span></td><td><b>Диссонанс</b><br>Истинное мастерство есть безупречное чувство времени. Приказывает медузе атаковать, нанося 1 удар урона психики по области.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/aurelia-ultraskill.png" alt="" width="40" height="40" loading="lazy"><b>Канонический хор</b> <span class="en">(Canon Chorus)</span><br><span class="lab">Сверхспособность</span></td><td><b>Канонический хор</b><br>Споём следующий куплет вместе! Собирает ближайших медуз, нанося Урон психики 6 раз по области и слегка стягивая противников друг к другу.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/aurelia-passive_1.png" alt="" width="40" height="40" loading="lazy"><b>Гармоника</b> <span class="en">(Harmonics)</span><br><span class="lab">Пассив 1</span></td><td><b>Гармоника</b><br>Усиление Новы: после завершения состояния «Новы» наносит цели Урон психики 3 раза, каждый раз в размере 50 % от АТК.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/aurelia-passive_2.png" alt="" width="40" height="40" loading="lazy"><b>Крещендо</b> <span class="en">(Crescendo)</span><br><span class="lab">Пассив 2</span></td><td><b>Крещендо</b><br>Когда медузный взрыв поражает цель, АТК Аурелии повышается на 1 % на 5 сек., складывается до 10 раз.</td></tr>
+<tr><td data-l="Навык"><b>Капелла</b> <span class="en">(Cappella)</span><br><span class="lab">Базовая атака</span></td><td data-l="Что делает (по тексту игры)"><b>Базовая атака: Легато</b><br>Пой плавно и естественно! Наносит удары оружием, выполняя до 4 последовательных атак и нанося Урон психики.<br><br><b>Базовая атака: Стаккато</b><br>Пой громко и от души! Зажмите уклонение во время движения, чтобы оседлать медузу и на время развить высокую скорость. При приближении целей периодически выпускает медузный взрыв, нанося урон психики.<br>В этом состоянии совершается особое уклонение, а «Контрудар после критического уклонения: Синкопа» автоматически выпускает четыре медузных взрыва.<br>Эффект автоматически заканчивается, когда выносливость падает ниже определённого значения.<br><br><b>Базовая атака: Портаменто</b><br>Пой чисто и красиво! Взмахивает своим оружием в воздухе и пикирует, нанося 1 удар урона психики по области при ударе. Урон увеличивается в зависимости от высоты падения (до 100 %).</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/aurelia-skill.png" alt="" width="40" height="40" loading="lazy"><b>Виртуозная ария</b> <span class="en">(Cadenza Aria)</span><br><span class="lab">Навык</span></td><td data-l="Что делает (по тексту игры)"><b>Виртуозная ария</b><br>Преврати повседневность в радужную мелодию и позволь ей греметь над горизонтом. Наносит 1 удар урона психики по области и входит в состояние Каденции на 12 сек.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/aurelia-qte.png" alt="" width="40" height="40" loading="lazy"><b>Диссонанс</b> <span class="en">(Dissonance)</span><br><span class="lab">Навык поддержки</span></td><td data-l="Что делает (по тексту игры)"><b>Диссонанс</b><br>Истинное мастерство есть безупречное чувство времени. Приказывает медузе атаковать, нанося 1 удар урона психики по области.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/aurelia-ultraskill.png" alt="" width="40" height="40" loading="lazy"><b>Канонический хор</b> <span class="en">(Canon Chorus)</span><br><span class="lab">Сверхспособность</span></td><td data-l="Что делает (по тексту игры)"><b>Канонический хор</b><br>Споём следующий куплет вместе! Собирает ближайших медуз, нанося Урон психики 6 раз по области и слегка стягивая противников друг к другу.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/aurelia-passive_1.png" alt="" width="40" height="40" loading="lazy"><b>Гармоника</b> <span class="en">(Harmonics)</span><br><span class="lab">Пассив 1</span></td><td data-l="Что делает (по тексту игры)"><b>Гармоника</b><br>Усиление Новы: после завершения состояния «Новы» наносит цели Урон психики 3 раза, каждый раз в размере 50 % от АТК.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/aurelia-passive_2.png" alt="" width="40" height="40" loading="lazy"><b>Крещендо</b> <span class="en">(Crescendo)</span><br><span class="lab">Пассив 2</span></td><td data-l="Что делает (по тексту игры)"><b>Крещендо</b><br>Когда медузный взрыв поражает цель, АТК Аурелии повышается на 1 % на 5 сек., складывается до 10 раз.</td></tr>
 </table></div>
 <p class="note">Числа вида «…» в игре зависят от уровня навыка и здесь не показаны, множители смотрите в самой игре.</p>
 <h2 id="s2">Пробуждения</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>№</th><th>Название</th><th>Эффект</th></tr>
-<tr><td>1</td><td><b>Футуристическая прелюдия</b> <span class="en">(Futuristic Prelude)</span></td><td>Находясь в состоянии Каденции, увеличивает шанс крит. удара на 15 %.</td></tr>
-<tr><td>2</td><td><b>Уникальная мелодия</b> <span class="en">(Unique Melody)</span></td><td>Входит в состояние Каденции на 5 сек. после успешного критического уклонения или применения «Диссонанса». Продлевает действие на 5 сек, если состояние уже активно. Каденция длится максимум 12 сек.</td></tr>
-<tr><td>3</td><td><b>Пауза в трио</b> <span class="en">(Trio Rest)</span></td><td>Увеличивает урон «Канонического хора» на 20 %, находясь в состоянии Каденции.</td></tr>
-<tr><td>4</td><td><b>Пауза в партитуре</b> <span class="en">(Staff Gap)</span></td><td>Применяя «Стаккато», увеличивает ЗЩТ Аурелии на 20 %.</td></tr>
-<tr><td>5</td><td><b>Простая мелодия</b> <span class="en">(Simple Melody)</span></td><td>Увеличивает шанс крита «Канонического хора» на 15 %.</td></tr>
-<tr><td>6</td><td><b>Фуга минувшего</b> <span class="en">(Bygone Fugue)</span></td><td>Увеличивает максимальное количество уровней «Крещендо» до 20. Даёт 10 уровней «Крещендо» после применения «Виртуозной арии».</td></tr>
-<tr><td>7</td><td><b>Вселенская гармония</b> <span class="en">(Universal Harmony)</span></td><td>Увеличивает уровни навыков «Капелла», «Виртуозная ария» и «Канонический хор» на 1.</td></tr>
-<tr><td>8</td><td><b>Общая мелодия</b> <span class="en">(Shared Melody)</span></td><td>Увеличивает Урон психики всех союзников на 8 % на 15 сек., когда входит в состояние Каденции или продлевает его действие. Повторное применение полностью обновляет длительность эффекта.</td></tr>
+<tr><td data-l="№">1</td><td data-l="Название"><b>Футуристическая прелюдия</b> <span class="en">(Futuristic Prelude)</span></td><td data-l="Эффект">Находясь в состоянии Каденции, увеличивает шанс крит. удара на 15 %.</td></tr>
+<tr><td data-l="№">2</td><td data-l="Название"><b>Уникальная мелодия</b> <span class="en">(Unique Melody)</span></td><td data-l="Эффект">Входит в состояние Каденции на 5 сек. после успешного критического уклонения или применения «Диссонанса». Продлевает действие на 5 сек, если состояние уже активно. Каденция длится максимум 12 сек.</td></tr>
+<tr><td data-l="№">3</td><td data-l="Название"><b>Пауза в трио</b> <span class="en">(Trio Rest)</span></td><td data-l="Эффект">Увеличивает урон «Канонического хора» на 20 %, находясь в состоянии Каденции.</td></tr>
+<tr><td data-l="№">4</td><td data-l="Название"><b>Пауза в партитуре</b> <span class="en">(Staff Gap)</span></td><td data-l="Эффект">Применяя «Стаккато», увеличивает ЗЩТ Аурелии на 20 %.</td></tr>
+<tr><td data-l="№">5</td><td data-l="Название"><b>Простая мелодия</b> <span class="en">(Simple Melody)</span></td><td data-l="Эффект">Увеличивает шанс крита «Канонического хора» на 15 %.</td></tr>
+<tr><td data-l="№">6</td><td data-l="Название"><b>Фуга минувшего</b> <span class="en">(Bygone Fugue)</span></td><td data-l="Эффект">Увеличивает максимальное количество уровней «Крещендо» до 20. Даёт 10 уровней «Крещендо» после применения «Виртуозной арии».</td></tr>
+<tr><td data-l="№">7</td><td data-l="Название"><b>Вселенская гармония</b> <span class="en">(Universal Harmony)</span></td><td data-l="Эффект">Увеличивает уровни навыков «Капелла», «Виртуозная ария» и «Канонический хор» на 1.</td></tr>
+<tr><td data-l="№">8</td><td data-l="Название"><b>Общая мелодия</b> <span class="en">(Shared Melody)</span></td><td data-l="Эффект">Увеличивает Урон психики всех союзников на 8 % на 15 сек., когда входит в состояние Каденции или продлевает его действие. Повторное применение полностью обновляет длительность эффекта.</td></tr>
 </table></div>
 <h2 id="s3"><img class="ico" src="https://kitron4ik.github.io/assets/ico/arc.svg" alt="" width="28" height="28">Сборка по сторонним гайдам</h2>
 <p>Роль по гайдам: основной ДД психики. Оценка силы: C (GenshinBuilds). Эффекты дуг и картриджей ниже из текста игры, числа и выбор из гайда.</p>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Дуга</th><th>Что делает (текст игры)</th><th>Числа и заметки из гайда</th></tr>
-<tr><td><img class="gico" src="https://kitron4ik.github.io/assets/arc/moon.png" alt="" width="46" height="46" loading="lazy"><b>Звёздная вуаль</b> <span class="en">(Stellar Veil)</span> <i class=best>лучшая</i></td><td>Увеличивает Урон психики владельца на …. При нанесении урона психики увеличивает крит. урон на … на … сек. Эффект складывается до 10 раз. Срабатывает не чаще одного раза в 0,1 сек.</td><td>+12 % урона психики. Урон психики даёт до 10 стаков по +2 % крит. урона на 5 с, не чаще раза в 0,1 с</td></tr>
-<tr><td><img class="gico" src="https://kitron4ik.github.io/assets/arc/BoxingCandy.png" alt="" width="46" height="46" loading="lazy"><b>Пух стойкости</b> <span class="en">(Fluff of Fortitude)</span></td><td>Увеличивает урон владельца на …. Эффект увеличивается до … против врагов, у которых меньше 50 % ОЗ.</td><td>+22 % к урону, а против врагов с ОЗ ниже 50 % +28 %</td></tr>
-<tr><td><img class="gico" src="https://kitron4ik.github.io/assets/arc/oulaquantao.png" alt="" width="46" height="46" loading="lazy"><b>Ора-ора!</b> <span class="en">(Oraora!)</span></td><td>За каждую проведённую базовую атаку увеличивает урон от базовых атак владельца на … на … сек., складывается до 10 раз. У каждого уровня своя длительность.</td><td>+2 % к урону базовой атаки на 10 с за каждую базовую атаку, до 10 стаков. Каждый стак длится отдельно</td></tr>
+<tr><td data-l="Дуга"><img class="gico" src="https://kitron4ik.github.io/assets/arc/moon.png" alt="" width="46" height="46" loading="lazy"><b>Звёздная вуаль</b> <span class="en">(Stellar Veil)</span> <i class=best>лучшая</i></td><td data-l="Что делает (текст игры)">Увеличивает Урон психики владельца на …. При нанесении урона психики увеличивает крит. урон на … на … сек. Эффект складывается до 10 раз. Срабатывает не чаще одного раза в 0,1 сек.</td><td data-l="Числа и заметки из гайда">+12 % урона психики. Урон психики даёт до 10 стаков по +2 % крит. урона на 5 с, не чаще раза в 0,1 с</td></tr>
+<tr><td data-l="Дуга"><img class="gico" src="https://kitron4ik.github.io/assets/arc/BoxingCandy.png" alt="" width="46" height="46" loading="lazy"><b>Пух стойкости</b> <span class="en">(Fluff of Fortitude)</span></td><td data-l="Что делает (текст игры)">Увеличивает урон владельца на …. Эффект увеличивается до … против врагов, у которых меньше 50 % ОЗ.</td><td data-l="Числа и заметки из гайда">+22 % к урону, а против врагов с ОЗ ниже 50 % +28 %</td></tr>
+<tr><td data-l="Дуга"><img class="gico" src="https://kitron4ik.github.io/assets/arc/oulaquantao.png" alt="" width="46" height="46" loading="lazy"><b>Ора-ора!</b> <span class="en">(Oraora!)</span></td><td data-l="Что делает (текст игры)">За каждую проведённую базовую атаку увеличивает урон от базовых атак владельца на … на … сек., складывается до 10 раз. У каждого уровня своя длительность.</td><td data-l="Числа и заметки из гайда">+2 % к урону базовой атаки на 10 с за каждую базовую атаку, до 10 стаков. Каждый стак длится отдельно</td></tr>
 </table></div>
 <p><b>Картридж «Кровь демона: Проклятие»</b> (Devil&#x27;s Blood: Curse), лучший комплект. Эпический (2): Урон психики +10 %. Легендарный (4): увеличивает урон владельца на 18 %. Бонус повышается до 36 % против врагов, поражённых Новой или Следом. (текст игры). Запасные: Кредо теней (Shadow Creed #2).</p>
 <p>Порядок модулей по гайду: крит. шанс, крит. урон, урон, атака %, интенсивность цикла.</p>
 <h2 id="s4">Команды</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Команда</th><th>Состав (роль)</th></tr>
-<tr><td>Диссонанс (единственная в гайде)</td><td><b>Аурелия</b> (основной ДД), <b>Ханиэль</b> (поддержка), <b>Даффодил</b> (саб-ДД), <b>Сакири</b> (поддержка)</td></tr>
+<tr><td data-l="Команда">Диссонанс (единственная в гайде)</td><td data-l="Состав (роль)"><b>Аурелия</b> (основной ДД), <b>Ханиэль</b> (поддержка), <b>Даффодил</b> (саб-ДД), <b>Сакири</b> (поддержка)</td></tr>
 </table></div>
 <p>Команда строится вокруг цикла диссонанса, чтобы быстро ломать врагов через «Ожог» и «Нову». Замен гайд не даёт. Гайд советует наложить все баффы до смены на Аурелию, чтобы её время на поле работало как можно дольше.</p>
 <h2 id="s5">Ротация</h2>
@@ -301,17 +315,17 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
 <p>Второй источник: страница героя на GameWith (обновлена 03.09.2026). Сравнение по главным пунктам:</p>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Пункт</th><th>GenshinBuilds</th><th>GameWith</th><th>Итог</th></tr>
-<tr><td>Лучшая дуга</td><td>«Звёздная вуаль» (Stellar Veil)</td><td>«Звёздная вуаль» (Stellar Veil)</td><td><span class="okk">совпало</span></td></tr>
-<tr><td>Картридж</td><td>«Кровь демона: Проклятие» (Devil's Blood: Curse)</td><td>«Кровь демона: Проклятие» (Devil's Blood: Curse)</td><td><span class="okk">совпало</span></td></tr>
-<tr><td>Порядок прокачки навыков</td><td>«Капелла», «Канонический хор», «Виртуозная ария», «Диссонанс»</td><td>«Капелла», «Канонический хор», «Диссонанс», «Виртуозная ария»</td><td><span class="diff">расходится</span></td></tr>
+<tr><td data-l="Пункт">Лучшая дуга</td><td data-l="GenshinBuilds">«Звёздная вуаль» (Stellar Veil)</td><td data-l="GameWith">«Звёздная вуаль» (Stellar Veil)</td><td data-l="Итог"><span class="okk">совпало</span></td></tr>
+<tr><td data-l="Пункт">Картридж</td><td data-l="GenshinBuilds">«Кровь демона: Проклятие» (Devil's Blood: Curse)</td><td data-l="GameWith">«Кровь демона: Проклятие» (Devil's Blood: Curse)</td><td data-l="Итог"><span class="okk">совпало</span></td></tr>
+<tr><td data-l="Пункт">Порядок прокачки навыков</td><td data-l="GenshinBuilds">«Капелла», «Канонический хор», «Виртуозная ария», «Диссонанс»</td><td data-l="GameWith">«Капелла», «Канонический хор», «Диссонанс», «Виртуозная ария»</td><td data-l="Итог"><span class="diff">расходится</span></td></tr>
 </table></div>
 <p>По лучшей дуге и картриджу источники согласны.</p>
 <p>Остальные дуги у GameWith по порядку: «Пух стойкости» (Fluff of Fortitude), «Ора-ора!» (Oraora!), «Песня кита» (Song of the Whale).</p>
 <h3>Команды по GameWith</h3>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Команда</th><th>Состав</th><th>Замены</th></tr>
-<tr><td>«Нова»</td><td><b>Аурелия</b>, <b>Даффодил</b>, <b>Сакири</b>, <b>Фадия</b></td><td>вместо Фадия можно Хатор</td></tr>
-<tr><td>Бюджетная</td><td><b>Аурелия</b>, <b>Даффодил</b>, <b>Ския</b>, <b>Адлер</b></td><td>замены: Ноль вместо Даффодил, Минт вместо Адлер</td></tr>
+<tr><td data-l="Команда">«Нова»</td><td data-l="Состав"><b>Аурелия</b>, <b>Даффодил</b>, <b>Сакири</b>, <b>Фадия</b></td><td data-l="Замены">вместо Фадия можно Хатор</td></tr>
+<tr><td data-l="Команда">Бюджетная</td><td data-l="Состав"><b>Аурелия</b>, <b>Даффодил</b>, <b>Ския</b>, <b>Адлер</b></td><td data-l="Замены">замены: Ноль вместо Даффодил, Минт вместо Адлер</td></tr>
 </table></div>
 <h2 id="s9">Источники</h2>
 <p class="src">Названия, описания навыков и пробуждений: <a href="https://github.com/AzureXuanVerse/NTE_Assets" rel="noopener">выгрузка ресурсов игры NTE_Assets</a> (версия 1.4.13 CN), русская локализация. Сборка и команды: <a href="https://genshin-builds.com/en/neverness-to-everness/characters/aurelia" rel="noopener">GenshinBuilds</a> (без даты на странице), сверка: <a href="https://gamewith.net/nte/74386" rel="noopener">GameWith</a> (03.09.2026). Это не официальные рекомендации. Данные проверены 21 октября 2026, неофициальная выгрузка ресурсов игры.</p>

@@ -117,6 +117,8 @@ footer div{max-width:var(--max);margin:0 auto}
 }
 @media (max-width:1060px){.nav{padding:8px 11px;font-size:13px}.logo{font-size:16px;gap:8px}.logo img{width:34px;height:34px}.pill{margin-left:4px;padding:8px 14px;font-size:13px}.top div{padding:8px 14px}}
 @media (max-width:860px){.nav.x2{display:none}}
+.mnav{display:none}
+@media (max-width:560px){.top .nav{display:none}.mnav{display:flex;gap:6px;overflow-x:auto;padding:2px 14px 8px;max-width:var(--max);margin:0 auto;scrollbar-width:none}.mnav::-webkit-scrollbar{display:none}.mnav a{flex:none;color:#cfd8e0;font:400 13px "Russo One",sans-serif;text-decoration:none;padding:7px 13px;background:#0e1620;clip-path:var(--slant)}.mnav a.cur{background:var(--y);color:#000}}
 @media (max-width:620px){
  body{font-size:16.5px}
  .grid{grid-template-columns:1fr}
@@ -139,7 +141,7 @@ footer div{max-width:var(--max);margin:0 auto}
   <a class="nav opt x2" href="https://kitron4ik.github.io/nte/kody/">Коды</a>
   <a class="nav opt cur" href="./" aria-current="page">Калькулятор</a>
   <a class="pill" href="https://max.ru/channel_nte_po_russki" rel="noopener">Канал в MAX</a>
-</div></header>
+</div><nav class="mnav" aria-label="Разделы"><a href="https://kitron4ik.github.io/nte/personazhi/">Герои</a><a href="https://kitron4ik.github.io/nte/s-chego-nachat/">Новичку</a><a href="https://kitron4ik.github.io/nte/garant/">Гарант</a><a href="https://kitron4ik.github.io/nte/valyuty/">Валюты</a><a href="https://kitron4ik.github.io/nte/kody/">Коды</a><a href="./" class="cur">Калькулятор</a></nav></header>
 <section class="stage"><div class="stage-bg"></div><div class="giant" aria-hidden="true">NTE</div>
 <div class="stage-in">
   <span class="tag">Инструмент</span>

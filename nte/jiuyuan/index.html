@@ -207,8 +207,22 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
  .home .stage-in>div{max-width:52%}
  .keyart{position:absolute;right:2%;bottom:-6px;height:84%;margin:0}
 }
+@media (max-width:620px){
+ .tbl{overflow:visible;padding:4px 14px}
+ .tbl table,.tbl tbody{display:block}
+ .tbl tr{display:block;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+ .tbl tr:first-child{display:none}.tbl tr:last-child{border-bottom:0}
+ .tbl td{display:block;border:0;padding:3px 0;overflow-wrap:anywhere}
+ .tbl td::before{content:attr(data-l);display:block;font:400 11px "Russo One",sans-serif;color:var(--y);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
+ .tbl td:first-child::before{display:none}.tbl td:first-child{font-size:17px}
+ .tbl td:empty{display:none}
+ .two{grid-template-columns:1fr}
+ .rw{white-space:normal;display:block;margin:4px 0}
+}
 @media (max-width:1060px){.nav{padding:8px 11px;font-size:13px}.logo{font-size:16px;gap:8px}.logo img{width:34px;height:34px}.pill{margin-left:4px;padding:8px 14px;font-size:13px}.top div{padding:8px 14px}}
 @media (max-width:860px){.nav.x2{display:none}}
+.mnav{display:none}
+@media (max-width:560px){.top .nav{display:none}.mnav{display:flex;gap:6px;overflow-x:auto;padding:2px 14px 8px;max-width:var(--max);margin:0 auto;scrollbar-width:none}.mnav::-webkit-scrollbar{display:none}.mnav a{flex:none;color:#cfd8e0;font:400 13px "Russo One",sans-serif;text-decoration:none;padding:7px 13px;background:#0e1620;clip-path:var(--slant)}}
 @media (max-width:560px){body{font-size:16.5px}.nav.opt{display:none}.logo{font-size:15px;white-space:nowrap;gap:8px}.logo img{width:34px;height:34px}.nav{padding:8px 10px;font-size:13px}.pill{margin-left:4px;padding:8px 14px;font-size:13px}.top div{gap:2px}.giant{top:-2%}.slab.k{margin-left:18px}.top div{padding:8px 14px}.step:nth-child(n){margin-left:0}.giant{font-size:210px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.kicker,.slab,.girl{animation:none!important}.btn,.tile,.nav::before,details{transition:none}}
 </style>
@@ -224,7 +238,7 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
   <a class="nav opt x2" href="https://kitron4ik.github.io/nte/kody/">Коды</a>
   <a class="nav opt" href="https://kitron4ik.github.io/nte/kalkulyator/">Калькулятор</a>
   <a class="pill" href="https://max.ru/channel_nte_po_russki">Канал в MAX</a>
-</div></header>
+</div><nav class="mnav" aria-label="Разделы"><a href="https://kitron4ik.github.io/nte/personazhi/">Герои</a><a href="https://kitron4ik.github.io/nte/s-chego-nachat/">Новичку</a><a href="https://kitron4ik.github.io/nte/garant/">Гарант</a><a href="https://kitron4ik.github.io/nte/valyuty/">Валюты</a><a href="https://kitron4ik.github.io/nte/kody/">Коды</a><a href="https://kitron4ik.github.io/nte/kalkulyator/">Калькулятор</a></nav></header>
 <section class="stage" style="--bg:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><div class="stage-bg"></div><div class="giant" aria-hidden="true">JIUYUAN</div>
 <div class="stage-in"><div>
   <div class="crumbs"><a href="https://kitron4ik.github.io/">NTE по-русски</a> / Neverness to Everness</div>
@@ -243,40 +257,40 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
 <h2 id="s0">Коротко</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Параметр</th><th>Значение</th></tr>
-<tr><td>Редкость</td><td>S-ранг</td></tr><tr><td>Стихия (по описанию навыков)</td><td>анима</td></tr><tr><td>Фракция</td><td>«Стерри Экспресс»</td></tr><tr><td>Имя в игре</td><td>Цзююань (Jiuyuan)</td></tr>
+<tr><td data-l="Параметр">Редкость</td><td data-l="Значение">S-ранг</td></tr><tr><td data-l="Параметр">Стихия (по описанию навыков)</td><td data-l="Значение">анима</td></tr><tr><td data-l="Параметр">Фракция</td><td data-l="Значение">«Стерри Экспресс»</td></tr><tr><td data-l="Параметр">Имя в игре</td><td data-l="Значение">Цзююань (Jiuyuan)</td></tr>
 </table></div>
 <p>Официальное описание из игры: «Сладкоречивый и загадочный Элитный курьер «Стерри», также исполняет обязанности управляющей.».</p>
 <h2 id="s1">Навыки</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Навык</th><th>Что делает (по тексту игры)</th></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/jiuyuan-melee.png" alt="" width="40" height="40" loading="lazy"><b>Когда тайны обретают форму</b> <span class="en">(When Secrets Take Shape)</span><br><span class="lab">Базовая атака</span></td><td><b>Базовая атака: Когда тайны обретают форму</b><br>Проводит до 5 последовательных атак, держа оружие в обеих руках и нанося урон анимы. Даёт 2 пули договора розы. После нанесения последнего удара заключает Смертоносный договор розы с целью.<br><br><b>Базовая атака: Вид с высоты птичьего полёта</b><br>Взмахивает своим оружием в воздухе и пикирует, нанося 1 удар урона анимы по области при ударе. Урон увеличивается в зависимости от высоты падения (до 100 %).<br><br><b>Базовая атака: Осведомлённое искусство</b><br>Удерживайте базовую атаку, чтобы активировать. Автоматически прицеливается и выпускает пулю, нанося 1 удар урона анимы. Расходует пули договора розы для непрерывного ведения огня и отдаёт приоритет целям со Смертоносным договором розы при наличии пуль договора розы.<br><br><b>Базовая атака: Использование возможности</b><br>Нажмите «Прицеливание» для перехода в режим прицеливания. Выпускает пулю, которая наносит 1 удар урона анимы противнику в прицеле.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/jiuyuan-skill.png" alt="" width="40" height="40" loading="lazy"><b>Охотник за разведданными</b> <span class="en">(Intel Hunter)</span><br><span class="lab">Навык</span></td><td><b>Охотник за разведданными</b><br>Пересекает поле боя, втягивая цель в область своего контроля, и нападает, нанося несколько ударов урона анимы и получая 4 пули договора розы, а также заключает Смертоносный договор розы.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/jiuyuan-qte.png" alt="" width="40" height="40" loading="lazy"><b>Сбор разведданных</b> <span class="en">(Intel Lock-On)</span><br><span class="lab">Навык поддержки</span></td><td><b>Сбор разведданных</b><br>Выпускает закрученную пулю, нанося 1 удар урона анимы, и даёт 2 пули договора розы при попадании.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/jiuyuan-ultraskill.png" alt="" width="40" height="40" loading="lazy"><b>Расплата</b> <span class="en">(Final Reckoning)</span><br><span class="lab">Сверхспособность</span></td><td><b>Расплата</b><br>На большой скорости пересекает поле боя, ведя непрерывный огонь по окружающим целям, затем устраивает масштабный взрыв, нанося урон анимы.<br>Запускает «Расплату», в результате чего все цели со Смертоносным договором розы в диапазоне действия переходят на этап, на котором возможно Заключение договора, приводящее к одновременному заключению всех договоров при нанесении последнего удара.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/jiuyuan-passive_1.png" alt="" width="40" height="40" loading="lazy"><b>Ловите момент</b> <span class="en">(Seize the Moment)</span><br><span class="lab">Пассив 1</span></td><td><b>Ловите момент</b><br>Усиление цветения: порождает 1 дополнительный Бутон жизни и повышает лимит Бутонов жизни на поле до 6.</td></tr>
-<tr><td><img class="gico sk" src="https://kitron4ik.github.io/assets/char/jiuyuan-passive_2.png" alt="" width="40" height="40" loading="lazy"><b>Подвластный мне шёпот</b> <span class="en">(Whispers at My Command)</span><br><span class="lab">Пассив 2</span></td><td><b>Подвластный мне шёпот</b><br>Связывает цели, не затронутые Фатальным договором розы, когда в них попадают Пестики жизни. Заключает дополнительный договор с уже связанными целями, нанося им 15 % × урона анимы дополнительно.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/jiuyuan-melee.png" alt="" width="40" height="40" loading="lazy"><b>Когда тайны обретают форму</b> <span class="en">(When Secrets Take Shape)</span><br><span class="lab">Базовая атака</span></td><td data-l="Что делает (по тексту игры)"><b>Базовая атака: Когда тайны обретают форму</b><br>Проводит до 5 последовательных атак, держа оружие в обеих руках и нанося урон анимы. Даёт 2 пули договора розы. После нанесения последнего удара заключает Смертоносный договор розы с целью.<br><br><b>Базовая атака: Вид с высоты птичьего полёта</b><br>Взмахивает своим оружием в воздухе и пикирует, нанося 1 удар урона анимы по области при ударе. Урон увеличивается в зависимости от высоты падения (до 100 %).<br><br><b>Базовая атака: Осведомлённое искусство</b><br>Удерживайте базовую атаку, чтобы активировать. Автоматически прицеливается и выпускает пулю, нанося 1 удар урона анимы. Расходует пули договора розы для непрерывного ведения огня и отдаёт приоритет целям со Смертоносным договором розы при наличии пуль договора розы.<br><br><b>Базовая атака: Использование возможности</b><br>Нажмите «Прицеливание» для перехода в режим прицеливания. Выпускает пулю, которая наносит 1 удар урона анимы противнику в прицеле.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/jiuyuan-skill.png" alt="" width="40" height="40" loading="lazy"><b>Охотник за разведданными</b> <span class="en">(Intel Hunter)</span><br><span class="lab">Навык</span></td><td data-l="Что делает (по тексту игры)"><b>Охотник за разведданными</b><br>Пересекает поле боя, втягивая цель в область своего контроля, и нападает, нанося несколько ударов урона анимы и получая 4 пули договора розы, а также заключает Смертоносный договор розы.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/jiuyuan-qte.png" alt="" width="40" height="40" loading="lazy"><b>Сбор разведданных</b> <span class="en">(Intel Lock-On)</span><br><span class="lab">Навык поддержки</span></td><td data-l="Что делает (по тексту игры)"><b>Сбор разведданных</b><br>Выпускает закрученную пулю, нанося 1 удар урона анимы, и даёт 2 пули договора розы при попадании.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/jiuyuan-ultraskill.png" alt="" width="40" height="40" loading="lazy"><b>Расплата</b> <span class="en">(Final Reckoning)</span><br><span class="lab">Сверхспособность</span></td><td data-l="Что делает (по тексту игры)"><b>Расплата</b><br>На большой скорости пересекает поле боя, ведя непрерывный огонь по окружающим целям, затем устраивает масштабный взрыв, нанося урон анимы.<br>Запускает «Расплату», в результате чего все цели со Смертоносным договором розы в диапазоне действия переходят на этап, на котором возможно Заключение договора, приводящее к одновременному заключению всех договоров при нанесении последнего удара.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/jiuyuan-passive_1.png" alt="" width="40" height="40" loading="lazy"><b>Ловите момент</b> <span class="en">(Seize the Moment)</span><br><span class="lab">Пассив 1</span></td><td data-l="Что делает (по тексту игры)"><b>Ловите момент</b><br>Усиление цветения: порождает 1 дополнительный Бутон жизни и повышает лимит Бутонов жизни на поле до 6.</td></tr>
+<tr><td data-l="Навык"><img class="gico sk" src="https://kitron4ik.github.io/assets/char/jiuyuan-passive_2.png" alt="" width="40" height="40" loading="lazy"><b>Подвластный мне шёпот</b> <span class="en">(Whispers at My Command)</span><br><span class="lab">Пассив 2</span></td><td data-l="Что делает (по тексту игры)"><b>Подвластный мне шёпот</b><br>Связывает цели, не затронутые Фатальным договором розы, когда в них попадают Пестики жизни. Заключает дополнительный договор с уже связанными целями, нанося им 15 % × урона анимы дополнительно.</td></tr>
 </table></div>
 <p class="note">Числа вида «…» в игре зависят от уровня навыка и здесь не показаны, множители смотрите в самой игре.</p>
 <h2 id="s2">Пробуждения</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>№</th><th>Название</th><th>Эффект</th></tr>
-<tr><td>1</td><td><b>Знание есть равновесие</b> <span class="en">(To Know, To Balance)</span></td><td>Увеличивает атаку Цзююань на 5 % для каждой цели на поле, связанной Смертоносным договором розы, до 15 %.</td></tr>
-<tr><td>2</td><td><b>Разведданные превращаются в клинки</b> <span class="en">(Intel Turns Into Blades)</span></td><td>Повышает множитель урона Смертоносного договора розы на 100 %. Когда Заключение договора активируется «Расплатой», восстанавливает всей команде ОЗ в размере 5 % от общего урона, накопленного этим договором.</td></tr>
-<tr><td>3</td><td><b>Достижение преимущества</b> <span class="en">(Advantage Established)</span></td><td>Снижает «Разрушение» для цели заключения договора на 4 ед. при активации Заключения договора «Расплатой».</td></tr>
-<tr><td>4</td><td><b>Удар на поражение</b> <span class="en">(Strike to Kill)</span></td><td>При ручной активации Заключения договора его множитель урона повышается на 50 %, а эффект затрагивает все цели в области действия.</td></tr>
-<tr><td>5</td><td><b>Главенство благодаря разведданным</b> <span class="en">(Intel Superiority)</span></td><td>Цзююань наносит на 8 % больше урона по целям, связанным Смертоносным договором розы.</td></tr>
-<tr><td>6</td><td><b>Узнайте все тайны</b> <span class="en">(Know Every Secret)</span></td><td>Цели, связанные Смертоносным договором розы, получают урон с множителем 200 % каждый раз, когда используют навык. Перезарядка: 5 сек.</td></tr>
-<tr><td>7</td><td><b>Момент получения разведданных</b> <span class="en">(The Moment Intel Lands)</span></td><td>Повышает уровень навыков «Когда тайны обретают форму», «Охотник за разведданными» и «Расплата» на 1.</td></tr>
-<tr><td>8</td><td><b>Меченая добыча</b> <span class="en">(Marked Prey)</span></td><td>Снижает сопротивление целей, связанных Смертоносным договором розы, урону анимы на 10 %.</td></tr>
+<tr><td data-l="№">1</td><td data-l="Название"><b>Знание есть равновесие</b> <span class="en">(To Know, To Balance)</span></td><td data-l="Эффект">Увеличивает атаку Цзююань на 5 % для каждой цели на поле, связанной Смертоносным договором розы, до 15 %.</td></tr>
+<tr><td data-l="№">2</td><td data-l="Название"><b>Разведданные превращаются в клинки</b> <span class="en">(Intel Turns Into Blades)</span></td><td data-l="Эффект">Повышает множитель урона Смертоносного договора розы на 100 %. Когда Заключение договора активируется «Расплатой», восстанавливает всей команде ОЗ в размере 5 % от общего урона, накопленного этим договором.</td></tr>
+<tr><td data-l="№">3</td><td data-l="Название"><b>Достижение преимущества</b> <span class="en">(Advantage Established)</span></td><td data-l="Эффект">Снижает «Разрушение» для цели заключения договора на 4 ед. при активации Заключения договора «Расплатой».</td></tr>
+<tr><td data-l="№">4</td><td data-l="Название"><b>Удар на поражение</b> <span class="en">(Strike to Kill)</span></td><td data-l="Эффект">При ручной активации Заключения договора его множитель урона повышается на 50 %, а эффект затрагивает все цели в области действия.</td></tr>
+<tr><td data-l="№">5</td><td data-l="Название"><b>Главенство благодаря разведданным</b> <span class="en">(Intel Superiority)</span></td><td data-l="Эффект">Цзююань наносит на 8 % больше урона по целям, связанным Смертоносным договором розы.</td></tr>
+<tr><td data-l="№">6</td><td data-l="Название"><b>Узнайте все тайны</b> <span class="en">(Know Every Secret)</span></td><td data-l="Эффект">Цели, связанные Смертоносным договором розы, получают урон с множителем 200 % каждый раз, когда используют навык. Перезарядка: 5 сек.</td></tr>
+<tr><td data-l="№">7</td><td data-l="Название"><b>Момент получения разведданных</b> <span class="en">(The Moment Intel Lands)</span></td><td data-l="Эффект">Повышает уровень навыков «Когда тайны обретают форму», «Охотник за разведданными» и «Расплата» на 1.</td></tr>
+<tr><td data-l="№">8</td><td data-l="Название"><b>Меченая добыча</b> <span class="en">(Marked Prey)</span></td><td data-l="Эффект">Снижает сопротивление целей, связанных Смертоносным договором розы, урону анимы на 10 %.</td></tr>
 </table></div>
 
 
 <h2 id="s3">Роль и оценка по сторонним гайдам</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Параметр</th><th>Значение</th><th>Откуда</th></tr>
-<tr><td>Стихия</td><td><img class="ico" src="https://kitron4ik.github.io/assets/ico/anima.svg" alt="" width="28" height="28">анима</td><td>текст игры</td></tr>
-<tr><td>Роль</td><td><img class="ico" src="https://kitron4ik.github.io/assets/ico/support.svg" alt="" width="28" height="28">«Utility» (NTE Guide), саб-ДД и поддержка (GenshinBuilds)</td><td>источники расходятся</td></tr>
-<tr><td>Оценка силы</td><td>S у NTE Guide (историческая), A у GenshinBuilds</td><td>источники расходятся</td></tr>
+<tr><td data-l="Параметр">Стихия</td><td data-l="Значение"><img class="ico" src="https://kitron4ik.github.io/assets/ico/anima.svg" alt="" width="28" height="28">анима</td><td data-l="Откуда">текст игры</td></tr>
+<tr><td data-l="Параметр">Роль</td><td data-l="Значение"><img class="ico" src="https://kitron4ik.github.io/assets/ico/support.svg" alt="" width="28" height="28">«Utility» (NTE Guide), саб-ДД и поддержка (GenshinBuilds)</td><td data-l="Откуда">источники расходятся</td></tr>
+<tr><td data-l="Параметр">Оценка силы</td><td data-l="Значение">S у NTE Guide (историческая), A у GenshinBuilds</td><td data-l="Откуда">источники расходятся</td></tr>
 </table></div>
 <div class="box warn"><p>В сторонних гайдах названия расходятся: NTE Guide называет сверхспособность «Final Settlement» (а в своей же ротации «Final Reckoning»), метку «Fatal Rose Pact». По тексту игры верно «Расплата» (Final Reckoning) и «Смертоносный договор розы» (Lethal Rose Pact). Внутри файлов игры Цзююань числится под именем Kuhara.</p></div>
 
