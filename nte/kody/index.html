@@ -104,6 +104,47 @@ h1{margin:0 0 22px;line-height:1;display:flex;flex-direction:column;align-items:
 .edge-lean{display:flex;justify-content:flex-end;padding-right:44px;margin:-70px 0 -14px;position:relative;z-index:3;pointer-events:none}
 .edge-lean img{width:210px;height:auto;display:block;filter:drop-shadow(4px 0 0 rgba(0,0,0,.35))}
 @media (max-width:700px){.perchband{padding:150px 20px 22px;margin-top:100px}.perchband .sitter{right:14px;width:170px;bottom:calc(100% - 122px)}.edge-lean{padding-right:12px}.edge-lean img{width:170px}.runner{height:46px}}
+/* гайд героя: команды, ротация, порядок навыков, плюсы/минусы, приоритет, материалы */
+.team{--fill:#0c141c;--edge:#22303d;margin:0 0 20px;padding:16px 18px 16px}
+.tname{font:400 15px "Russo One",sans-serif;margin:0 0 12px;color:#fff}
+.tslots{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.slot{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;text-decoration:none;color:var(--text);padding:4px 0}
+.slot .av{width:76px;height:76px;border-radius:50%;border:3px solid var(--rc,#2b3a49);background:#0b1622;object-fit:cover;transition:transform .15s}
+.slot:hover .av{transform:translateY(-3px)}
+.slot.me .av{box-shadow:0 0 0 3px rgba(255,198,26,.4),0 0 18px rgba(255,198,26,.35)}
+.slot b{font:400 14px/1.15 "Russo One",sans-serif}
+.slot i{font-style:normal;font-size:12px;line-height:1.25;color:#001018;background:var(--rc);padding:2px 10px;clip-path:var(--slant);max-width:100%}
+.r-main{--rc:var(--y)}.r-sub{--rc:var(--c)}.r-sup{--rc:#4ee08a}.r-oth{--rc:#9fb2c1}
+.tnote{margin:12px 0 0;font-size:14.5px;line-height:1.5;color:var(--mut)}
+.rchips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
+.rchip{font-size:14px;color:#001018;background:var(--rc);padding:4px 16px;clip-path:var(--slant)}
+.rot{display:flex;flex-direction:column;margin:0 0 26px}
+.rar{align-self:flex-start;margin:4px 0 4px 26px;color:var(--c);font-size:13px;font-style:normal;line-height:1}
+.rstep{--fill:#0c141c;--edge:#22303d;display:grid;grid-template-columns:34px auto minmax(0,1fr);gap:14px;align-items:center;padding:12px 18px}
+.rn{font:400 28px "Russo One",sans-serif;color:var(--y);line-height:1}
+.ravs{display:flex}.rav{width:46px;height:46px;border-radius:50%;border:2px solid var(--y);background:#0b1622;object-fit:cover;margin-left:-10px}.rav:first-child{margin-left:0}
+.rstep p{margin:0;font-size:15.5px;line-height:1.45}
+.rsks{display:flex;gap:6px;margin-top:8px}.rsk{width:40px;height:40px;border-radius:10px;border:2px solid var(--c);background:#0b1622}
+.sko{display:flex;flex-wrap:wrap;align-items:flex-start;gap:6px 4px;margin:0 0 12px}
+.skt{position:relative;display:flex;flex-direction:column;align-items:center;width:112px;text-align:center;gap:4px}
+.skt img,.skt .noic{width:64px;height:64px;border-radius:14px;border:2px solid var(--y);background:#0b1622;object-fit:cover}
+.skt .noic{display:flex;align-items:center;justify-content:center;font:400 24px "Russo One",sans-serif;color:var(--y)}
+.skt .sn{position:absolute;top:-8px;left:14px;z-index:2;width:26px;height:26px;border-radius:50%;background:var(--y);color:#000;font:400 15px/26px "Russo One",sans-serif}
+.skt b{font:400 12.5px/1.15 "Russo One",sans-serif}.skt span:not(.sn):not(.noic){font-size:12px;color:var(--mut);line-height:1.2}
+.ska{color:var(--c);font:400 30px/64px "Russo One",sans-serif;font-style:normal;margin:0 2px}
+.pc{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0 0 26px}
+.pcc{--fill:#0c141c;padding:16px 20px 10px}.pcc.good{--edge:#4ee08a}.pcc.bad{--edge:#ff6b6b}
+.pcc h3{margin:0 0 8px;font:400 17px "Russo One",sans-serif}
+.pcc ul{list-style:none;padding:0;margin:0}.pcc li{position:relative;padding-left:28px;margin:10px 0;font-size:15.5px;line-height:1.45}
+.pcc.good li::before{content:"✔";position:absolute;left:0;color:#4ee08a}.pcc.bad li::before{content:"✖";position:absolute;left:0;color:#ff6b6b}
+.pstrip{display:flex;flex-wrap:wrap;align-items:center;gap:2px 2px;margin:0 0 22px}
+.pch{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;font:400 18px "Russo One",sans-serif}
+.pch.t1{background:var(--y);color:#000}.pch.t2{border:2px solid var(--c);color:var(--c)}.pch.t3{border:2px solid #536372;color:#8497a6}
+.mat{display:inline-flex;align-items:center;gap:6px;margin:3px 14px 3px 0;white-space:nowrap;font-size:14.5px}.mat img{width:30px;height:30px}.mat b{font-weight:600}
+i.best.g{background:var(--c)}
+@media (max-width:370px){.tslots{grid-template-columns:repeat(2,minmax(0,1fr))}.slot .av{width:64px;height:64px}}
+@media (max-width:700px){.pc{grid-template-columns:1fr}}
+@media (max-width:560px){.team{padding:14px 12px}.tslots{gap:4px}.slot .av{width:56px;height:56px;border-width:2px}.slot b{font-size:11px}.slot i{font-size:9.5px;padding:2px 4px;clip-path:none;border-radius:5px;line-height:1.15;white-space:normal;overflow-wrap:anywhere}.rstep{grid-template-columns:28px minmax(0,1fr);row-gap:8px}.rstep p{grid-column:1/-1}.skt{width:92px}.ska{font-size:24px}.mat{white-space:normal}}
 .side .girl.up{height:auto;width:min(300px,64%);right:14px;top:auto;bottom:calc(100% - 314px);z-index:4}
 .side .girl.lie{height:auto;width:min(430px,92%);right:-6px;top:auto;bottom:calc(100% - 314px);z-index:7}
 .step:first-child{box-shadow:0 -6px 0 #000}
@@ -318,7 +359,7 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
 </div>
 
 <h2 id="faq">Частые вопросы</h2><details class="cp"><summary>Какие коды работают в NTE?</summary><p>На 19 октября 2026 по списку game.guide: BLACKBIRDHERE, WONDERLOGGIFT, BLACKBIRDINNTE, ZANKOU0819, NTEMusou, NTENENE, NTEGIFT, DREAMWALK0603, TOMATO100, RACENOLIMIT, COMEBACK, WELCOMETONTE, NTEKokushi и DRAGONGIRL.</p></details><details class="cp"><summary>Как ввести код в Neverness to Everness?</summary><p>Откройте меню телефона, нажмите три точки справа вверху, выберите «Промокод», введите код и заберите награду в «Почте».</p></details><details class="cp"><summary>С какого момента можно вводить коды?</summary><p>После обучения и нулевого эпизода «Непредвиденное, но предсказанное».</p></details><details class="cp"><summary>Почему код не работает?</summary><p>Код закончился, введён не в том регистре или не пройден нулевой эпизод. Копируйте код из таблицы.</p></details><details class="cp"><summary>Где награда за код?</summary><p>В «Почте» на телефоне: после ввода кода приходит письмо с наградой.</p></details>
-<a class="perchband cp" href="https://max.ru/channel_nte_po_russki"><img class="sitter" src="https://kitron4ik.github.io/assets/pose-sit-edge.webp" alt="" width="196" height="315" loading="lazy"><b>Новое по NTE – в канале MAX</b><span class="pt">События с датами, свежие коды и разборы. Каждый факт со ссылкой на источник.</span><span class="btn">Открыть канал</span></a><h2 class="related">Читайте также</h2><div class="tiles"><a class="tile cp s6" href="https://kitron4ik.github.io/nte/garant/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-crown.png alt='' width=76 height=76><b>Гарант в NTE: как он работает</b><span>Как работает гарант в Neverness to Everness: S-ранг персонажа на 90-й крутке, нет «50 на 50», перенос гаранта на следующий баннер, дуги (арки) на 60 и 80 круток.</span></a><a class="tile cp s6" href="https://kitron4ik.github.io/nte/valyuty/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-gift.png alt='' width=76 height=76><b>Валюты NTE: что на что менять</b><span>Какие валюты есть в Neverness to Everness и на что они меняются: Аннулит (Annulith), Фонс (Fons), Твёрдый и Шулерский кубики, Тройной ключ.</span></a><a class="tile cp s6" href="https://kitron4ik.github.io/nte/s-chego-nachat/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-calendar.png alt='' width=76 height=76><b>С чего начать в NTE</b><span>Что делать новичку в Neverness to Everness: обучение, коды, баннер для новичков, выбор персонажа и план первой недели по дням.</span></a><a class="tile cp s6" href="https://kitron4ik.github.io/nte/nanally/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-crown.png alt='' width=76 height=76><b>Наналли в NTE: навыки, сборка, команды</b><span>Наналли (Nanally) в Neverness to Everness: S-ранг, анима, основной ДД на последующих атаках.</span></a></div></article></div>
+<a class="perchband cp" href="https://max.ru/channel_nte_po_russki"><img class="sitter" src="https://kitron4ik.github.io/assets/pose-sit-edge.webp" alt="" width="196" height="315" loading="lazy"><b>Новое по NTE – в канале MAX</b><span class="pt">События с датами, свежие коды и разборы. Каждый факт со ссылкой на источник.</span><span class="btn">Открыть канал</span></a><h2 class="related">Читайте также</h2><div class="tiles"><a class="tile cp s6" href="https://kitron4ik.github.io/nte/garant/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-crown.png alt='' width=76 height=76><b>Гарант в NTE: как он работает</b><span>Как работает гарант в Neverness to Everness: S-ранг персонажа на 90-й крутке, нет «50 на 50», перенос гаранта на следующий баннер, дуги (арки) на 60 и 80 круток.</span></a><a class="tile cp s6" href="https://kitron4ik.github.io/nte/valyuty/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-gift.png alt='' width=76 height=76><b>Валюты NTE: что на что менять</b><span>Какие валюты есть в Neverness to Everness и на что они меняются: Аннулит (Annulith), Фонс (Fons), Твёрдый и Шулерский кубики, Тройной ключ.</span></a><a class="tile cp s6" href="https://kitron4ik.github.io/nte/s-chego-nachat/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-calendar.png alt='' width=76 height=76><b>С чего начать в NTE</b><span>Что делать новичку в Neverness to Everness: обучение, коды, баннер для новичков, выбор персонажа и план первой недели по дням.</span></a><a class="tile cp s6" href="https://kitron4ik.github.io/nte/sakiri/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><b>Сакири в NTE: гайд на героя</b><span>Сакири (Sakiri) в Neverness to Everness: S-ранг, навыки, роли и команды, ротация, лучшая дуга и картридж, материалы для прокачки и приоритет пробуждений.</span></a></div></article></div>
 <footer><div>NTE по-русски – неофициальный проект игроков. Neverness to Everness принадлежит Hotta Studio и Perfect World. Канал: <a href="https://max.ru/channel_nte_po_russki">NTE по-русски в MAX</a>. <a href="https://kitron4ik.github.io/nte/pravoobladatelyam/">Правообладателям</a>.</div></footer>
 <script>
 (function(){
