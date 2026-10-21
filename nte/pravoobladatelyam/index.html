@@ -110,6 +110,16 @@ h1{margin:0 0 22px;line-height:1;display:flex;flex-direction:column;align-items:
 .page .stage-in{min-height:0;padding:56px 20px 110px;align-items:end}
 .page .stage-in .stairs{margin-top:0}
 .page .stage-in .lead{max-width:40ch}
+.side .girl.portrait{height:auto;width:min(230px,60%);right:26px;top:auto;bottom:calc(100% - 258px);z-index:7;filter:drop-shadow(6px 8px 0 rgba(0,0,0,.45))}
+.en{color:#8497a6;font-size:.9em}.lab{color:#8497a6;font-size:13px}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;margin:18px 0 30px}
+.ccard{--fill:#0c141c;display:flex;flex-direction:column;align-items:center;text-align:center;padding:16px 8px 14px;text-decoration:none;color:#fff;transition:transform .15s}
+.ccard:hover{transform:translateY(-4px)}
+.ccard img{width:100px;height:100px;border-radius:50%;margin-bottom:8px;box-shadow:0 0 0 3px var(--y)}
+.ccard b{font:400 17px/1.2 "Russo One",sans-serif}.ccard span{font-size:13px;color:var(--mut)}
+.ccard i{position:absolute;right:12px;top:10px;font:400 13px "Russo One",sans-serif;font-style:normal;padding:2px 9px;background:var(--y);color:#000;clip-path:var(--slant)}
+.ccard i.rA{background:var(--c)}
+.tile img.ic[src*="/char/"]{border-radius:50%;box-shadow:0 0 0 3px var(--y)}
 .ico{display:inline-block;width:28px;height:28px;vertical-align:-8px;margin-right:7px}
 .gico{display:inline-block;width:46px;height:46px;vertical-align:middle;margin-right:12px;object-fit:contain}
 .rw .gico{width:28px;height:28px;margin-right:6px}
@@ -200,6 +210,7 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
 <div class="prog" id="prog"></div>
 <header class="top"><div>
   <a class="logo" href="https://kitron4ik.github.io/"><img src="https://kitron4ik.github.io/assets/logo-192.png" alt="" width="40" height="40">NTE по-русски</a>
+  <a class="nav opt" href="https://kitron4ik.github.io/nte/personazhi/">Герои</a>
   <a class="nav opt" href="https://kitron4ik.github.io/nte/s-chego-nachat/">Новичку</a>
   <a class="nav" href="https://kitron4ik.github.io/nte/garant/">Гарант</a>
   <a class="nav opt" href="https://kitron4ik.github.io/nte/valyuty/">Валюты</a>
@@ -224,7 +235,7 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
 <p>Если вы считаете, что какой-то материал нужно убрать или подписать иначе, напишите администратору проекта в MAX через <a href="https://max.ru/channel_nte_po_russki">канал «NTE по-русски»</a>. Мы уберём указанное изображение в кратчайший срок и не будем спорить.</p>
 
 
-<h2 class="related">Читайте также</h2><div class="tiles"><a class="tile cp s6" href="https://kitron4ik.github.io/nte/garant/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-crown.png alt='' width=76 height=76><b>Гарант в NTE: как он работает</b><span>Как работает гарант в Neverness to Everness: S-ранг персонажа на 90-й крутке, нет «50 на 50», перенос гаранта на следующий баннер, арки на 60 и 80 круток.</span></a><a class="tile cp s6" href="https://kitron4ik.github.io/nte/valyuty/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-gift.png alt='' width=76 height=76><b>Валюты NTE: что на что менять</b><span>Какие валюты есть в Neverness to Everness и на что они меняются: Annulith, Solid Dice, Fabricated Dice, Tri-Key.</span></a><a class="tile cp s6" href="https://kitron4ik.github.io/nte/s-chego-nachat/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-calendar.png alt='' width=76 height=76><b>С чего начать в NTE</b><span>Что делать новичку в Neverness to Everness: обучение, коды, баннер для новичков, выбор персонажа и план первой недели по дням.</span></a><a class="tile cp s6" href="https://kitron4ik.github.io/nte/kody/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-scroll.png alt='' width=76 height=76><b>Коды NTE: рабочие промокоды</b><span>Рабочие коды Neverness to Everness: список с наградами, как ввести код, почему код не работает.</span></a></div></article></div>
+<h2 class="related">Читайте также</h2><div class="tiles"><a class="tile cp s6" href="https://kitron4ik.github.io/nte/garant/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-crown.png alt='' width=76 height=76><b>Гарант в NTE: как он работает</b><span>Как работает гарант в Neverness to Everness: S-ранг персонажа на 90-й крутке, нет «50 на 50», перенос гаранта на следующий баннер, дуги (арки) на 60 и 80 круток.</span></a><a class="tile cp s6" href="https://kitron4ik.github.io/nte/valyuty/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-gift.png alt='' width=76 height=76><b>Валюты NTE: что на что менять</b><span>Какие валюты есть в Neverness to Everness и на что они меняются: Аннулит (Annulith), Фонс (Fons), Твёрдый и Шулерский кубики, Тройной ключ.</span></a><a class="tile cp s6" href="https://kitron4ik.github.io/nte/s-chego-nachat/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-calendar.png alt='' width=76 height=76><b>С чего начать в NTE</b><span>Что делать новичку в Neverness to Everness: обучение, коды, баннер для новичков, выбор персонажа и план первой недели по дням.</span></a><a class="tile cp s6" href="https://kitron4ik.github.io/nte/kody/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-scroll.png alt='' width=76 height=76><b>Коды NTE: рабочие промокоды</b><span>Рабочие коды Neverness to Everness: список с наградами, как ввести код, почему код не работает.</span></a></div></article></div>
 <footer><div>NTE по-русски – неофициальный проект игроков. Neverness to Everness принадлежит Hotta Studio и Perfect World. Канал: <a href="https://max.ru/channel_nte_po_russki">NTE по-русски в MAX</a>. <a href="https://kitron4ik.github.io/nte/pravoobladatelyam/">Правообладателям</a>.</div></footer>
 <script>
 (function(){

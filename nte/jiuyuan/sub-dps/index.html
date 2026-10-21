@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Jiuyuan как саб-урон в NTE: сборка, арка, команды и ротация</title>
-<meta name="description" content="Гайд на Jiuyuan в роли саб-урона в Neverness to Everness: арка Reality Refuge, картридж Fireflies and the Forest, команды Blossom и Hexed, ротация. По GenshinBuilds, с пометкой расхождений.">
+<title>Цзююань как саб-ДД в NTE: сборка, дуга, команды и ротация</title>
+<meta name="description" content="Гайд на Цзююань (Jiuyuan) в роли саб-ДД в Neverness to Everness: дуга «Убежище реальности», картридж «Светлячки и лес», команды цветения и колдовства, ротация. По GenshinBuilds и тексту игры.">
 <link rel="canonical" href="https://kitron4ik.github.io/nte/jiuyuan/sub-dps/">
 <link rel="icon" type="image/png" sizes="32x32" href="https://kitron4ik.github.io/assets/favicon-32.png">
 <link rel="apple-touch-icon" href="https://kitron4ik.github.io/assets/favicon.png">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Jiuyuan как саб-урон в NTE: сборка, арка, команды и ротация">
-<meta property="og:description" content="Гайд на Jiuyuan в роли саб-урона в Neverness to Everness: арка Reality Refuge, картридж Fireflies and the Forest, команды Blossom и Hexed, ротация. По GenshinBuilds, с пометкой расхождений.">
+<meta property="og:title" content="Цзююань как саб-ДД в NTE: сборка, дуга, команды и ротация">
+<meta property="og:description" content="Гайд на Цзююань (Jiuyuan) в роли саб-ДД в Neverness to Everness: дуга «Убежище реальности», картридж «Светлячки и лес», команды цветения и колдовства, ротация. По GenshinBuilds и тексту игры.">
 <meta property="og:url" content="https://kitron4ik.github.io/nte/jiuyuan/sub-dps/">
 <meta property="og:image" content="https://kitron4ik.github.io/assets/og-garant.jpg">
 <meta name="theme-color" content="#07090d">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Какую арку брать Jiuyuan в роли саб-урона?", "acceptedAnswer": {"@type": "Answer", "text": "Reality Refuge: +15% Anima DMG и +10% по прикреплённым целям, после ультимейта до 20% на 6 секунд. Альтернативы: The Forgotten, First Step to Success."}}, {"@type": "Question", "name": "Какой комплект ставить Jiuyuan?", "acceptedAnswer": {"@type": "Answer", "text": "Fireflies and the Forest: два предмета +10% Anima DMG, четыре до 7 стаков CRIT DMG."}}, {"@type": "Question", "name": "С кем играть Jiuyuan-саб-уроном?", "acceptedAnswer": {"@type": "Answer", "text": "Чаще всего в команде Blossom: Nanally, Jiuyuan, Zero, Sakiri. Есть вариант Hexed с Adler."}}, {"@type": "Question", "name": "В каком порядке качать навыки Jiuyuan?", "acceptedAnswer": {"@type": "Answer", "text": "По GenshinBuilds: ультимейт, потом обычную атаку, навык последним."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Какую дугу брать Цзююань в роли саб-ДД?", "acceptedAnswer": {"@type": "Answer", "text": "«Убежище реальности» (Reality Refuge): урон анимы и урон от присоединения, после сверхспособности выше. Запасные: «Забытое», «Первый шаг к успеху»."}}, {"@type": "Question", "name": "Какой картридж ставить Цзююань?", "acceptedAnswer": {"@type": "Answer", "text": "«Светлячки и лес»: два предмета +10 % урона анимы, четыре повышают крит. урон до 7 стаков по 8 %."}}, {"@type": "Question", "name": "С кем играть Цзююань-саб-ДД?", "acceptedAnswer": {"@type": "Answer", "text": "Чаще всего в команде цветения: Наналли, Цзююань, Ноль, Сакири. Есть вариант колдовства с Адлером."}}, {"@type": "Question", "name": "В каком порядке качать навыки Цзююань?", "acceptedAnswer": {"@type": "Answer", "text": "По GenshinBuilds: сверхспособность «Расплата», потом базовую атаку, навык последним."}}]}</script>
 <style>
 @font-face{font-family:"Russo One";src:url("https://kitron4ik.github.io/assets/fonts/RussoOne-Regular.ttf") format("truetype");font-display:swap}
 :root{color-scheme:dark;--y:#ffc61a;--y2:#fff1a8;--k:#07090d;--k2:#0e1620;--c:#50e6ff;--text:#ecf2f7;--mut:#9fb2c1;--line:rgba(255,198,26,.28);--max:1160px;--n:20px;
@@ -110,6 +110,16 @@ h1{margin:0 0 22px;line-height:1;display:flex;flex-direction:column;align-items:
 .page .stage-in{min-height:0;padding:56px 20px 110px;align-items:end}
 .page .stage-in .stairs{margin-top:0}
 .page .stage-in .lead{max-width:40ch}
+.side .girl.portrait{height:auto;width:min(230px,60%);right:26px;top:auto;bottom:calc(100% - 258px);z-index:7;filter:drop-shadow(6px 8px 0 rgba(0,0,0,.45))}
+.en{color:#8497a6;font-size:.9em}.lab{color:#8497a6;font-size:13px}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;margin:18px 0 30px}
+.ccard{--fill:#0c141c;display:flex;flex-direction:column;align-items:center;text-align:center;padding:16px 8px 14px;text-decoration:none;color:#fff;transition:transform .15s}
+.ccard:hover{transform:translateY(-4px)}
+.ccard img{width:100px;height:100px;border-radius:50%;margin-bottom:8px;box-shadow:0 0 0 3px var(--y)}
+.ccard b{font:400 17px/1.2 "Russo One",sans-serif}.ccard span{font-size:13px;color:var(--mut)}
+.ccard i{position:absolute;right:12px;top:10px;font:400 13px "Russo One",sans-serif;font-style:normal;padding:2px 9px;background:var(--y);color:#000;clip-path:var(--slant)}
+.ccard i.rA{background:var(--c)}
+.tile img.ic[src*="/char/"]{border-radius:50%;box-shadow:0 0 0 3px var(--y)}
 .ico{display:inline-block;width:28px;height:28px;vertical-align:-8px;margin-right:7px}
 .gico{display:inline-block;width:46px;height:46px;vertical-align:middle;margin-right:12px;object-fit:contain}
 .rw .gico{width:28px;height:28px;margin-right:6px}
@@ -200,6 +210,7 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
 <div class="prog" id="prog"></div>
 <header class="top"><div>
   <a class="logo" href="https://kitron4ik.github.io/"><img src="https://kitron4ik.github.io/assets/logo-192.png" alt="" width="40" height="40">NTE по-русски</a>
+  <a class="nav opt" href="https://kitron4ik.github.io/nte/personazhi/">Герои</a>
   <a class="nav opt" href="https://kitron4ik.github.io/nte/s-chego-nachat/">Новичку</a>
   <a class="nav" href="https://kitron4ik.github.io/nte/garant/">Гарант</a>
   <a class="nav opt" href="https://kitron4ik.github.io/nte/valyuty/">Валюты</a>
@@ -211,55 +222,55 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
 <div class="stage-in"><div>
   <div class="crumbs"><a href="https://kitron4ik.github.io/">NTE по-русски</a> / Neverness to Everness</div>
   <span class="kicker">Гайд</span><img class="namelogo" src="https://kitron4ik.github.io/assets/official-name-jiuyuan.png" alt="Jiuyuan" width="263" height="41">
-  <h1><span class="slab y s"><span>Jiuyuan как саб-урон: сборка и команды</span></span></h1><p class="lead">В роли саб-урона Jiuyuan открывает бой, собирает врагов и взрывает метку ультимейтом в начале окна главного урон-дилера. Общее про навыки и пробуждения вынесено на <a href="https://kitron4ik.github.io/nte/jiuyuan/">общую страницу</a>, здесь только то, что относится к этой роли.</p><div class="chips"><span class="chip">Обновлено 20 октября 2026</span><span class="chip">Основа: GenshinBuilds (без даты), арки и комплект сверены с NTE Guide (29.09.2026), команды из выдачи GameWith и Beebom. Это не официальные данные</span></div><p class="credit">Арт и иконки: © Hotta Studio / Perfect World. Постеры с <a href="https://nte.perfectworld.com/en/main.html" rel="noopener">официального сайта игры</a>, иконки из ресурсов игры (выгрузка сообщества). <a href="https://kitron4ik.github.io/nte/pravoobladatelyam/">Правообладателям</a></p>
+  <h1><span class="slab y s"><span>Цзююань как саб-ДД: сборка и команды</span></span></h1><p class="lead">В роли саб-ДД Цзююань открывает бой, собирает врагов и взрывает метку сверхспособностью в начале окна основного ДД. Общее про навыки и пробуждения на <a href="https://kitron4ik.github.io/nte/jiuyuan/">общей странице</a>, здесь только то, что относится к этой роли.</p><div class="chips"><span class="chip">Обновлено 21 октября 2026</span><span class="chip">Основа: GenshinBuilds (без даты), эффекты дуг и картриджа из текстов игры (версия 1.4.13 CN), команды сверены с выдачей GameWith и Beebom. Это не официальные рекомендации</span></div><p class="credit">Арт и иконки: © Hotta Studio / Perfect World. Постеры с <a href="https://nte.perfectworld.com/en/main.html" rel="noopener">официального сайта игры</a>, иконки из ресурсов игры (выгрузка сообщества). <a href="https://kitron4ik.github.io/nte/pravoobladatelyam/">Правообладателям</a></p>
 </div>
-<div class="side"><img class="girl poster" src="https://kitron4ik.github.io/assets/official-bust-jiuyuan.png" alt="Официальный арт персонажа Jiuyuan" width="576" height="576"><div class="stairs lean"><div class="step cp"><b>+15%</b><span>Anima DMG от арки Reality Refuge (GenshinBuilds)</span></div><div class="step cp"><b>7</b><span>стаков CRIT DMG в комплекте на 4 предмета</span></div><div class="step cp"><b>80%</b><span>урона окна burst даёт ультимейт</span></div></div></div></div>
+<div class="side"><img class="girl poster" src="https://kitron4ik.github.io/assets/official-bust-jiuyuan.png" alt="Официальный арт персонажа Jiuyuan" width="576" height="576"><div class="stairs lean"><div class="step cp"><b>+15%</b><span>урона анимы от дуги «Убежище реальности» (GenshinBuilds)</span></div><div class="step cp"><b>7</b><span>стаков крит. урона в картридже на 4 предмета</span></div><div class="step cp"><b>80%</b><span>урона окна burst даёт «Расплата»</span></div></div></div></div>
 <div class="stage-cut"></div></section>
-<div class="layout"><nav class="toc" aria-label="Содержание"><b>На этой странице</b><a href="#s0">Арка и комплект</a><a href="#s1">Какие пробуждения прибавляют урон</a><a href="#s2">Порядок прокачки навыков</a><a href="#s3">Команды</a><a href="#s4">Ротация</a><a href="#s5">Источники</a><a href="#faq">Частые вопросы</a></nav><article>
+<div class="layout"><nav class="toc" aria-label="Содержание"><b>На этой странице</b><a href="#s0">Дуга и картридж</a><a href="#s1">Какие пробуждения прибавляют урон</a><a href="#s2">Порядок прокачки навыков</a><a href="#s3">Команды</a><a href="#s4">Ротация</a><a href="#s5">Источники</a><a href="#faq">Частые вопросы</a></nav><article>
 
-<h2 id="s0"><img class="ico" src="https://kitron4ik.github.io/assets/ico/arc.svg" alt="" width="28" height="28">Арка и комплект</h2>
-<p>Лучшая арка: <b>Reality Refuge</b>. По GenshinBuilds, +15% Anima DMG и +10% урона по прикреплённым целям, после ультимейта доходит до 20% на 6 секунд, не складывается. Название совпадает с NTE Guide. Альтернативы у GenshinBuilds: The Forgotten (+20% ATK или DEF в зависимости от HP выше или ниже 50%) и First Step to Success (+12% ATK на 10 с после перенаправляющего навыка, не чаще раза в 20 с).</p>
+<h2 id="s0"><img class="ico" src="https://kitron4ik.github.io/assets/ico/arc.svg" alt="" width="28" height="28">Дуга и картридж</h2>
+<p>Лучшая дуга: <b>«Убежище реальности»</b> (Reality Refuge). Остальные варианты у GenshinBuilds: «Забытое» и «Первый шаг к успеху».</p>
 <div class="tbl cp" style="--edge:#22303d"><table>
-<tr><th>Арка</th><th>Что даёт (GenshinBuilds)</th></tr>
-<tr><td><img class="gico " src="https://kitron4ik.github.io/assets/game/reality-refuge.png" alt="" width="44" height="44" loading="lazy"><b>Reality Refuge</b></td><td>+15% Anima DMG и +10% урона по прикреплённым целям, после ультимейта 20% на 6 с, не складывается</td></tr>
-<tr><td><img class="gico " src="https://kitron4ik.github.io/assets/game/the-forgotten.png" alt="" width="44" height="44" loading="lazy">The Forgotten</td><td>+20% ATK или DEF в зависимости от того, больше или меньше 50% HP</td></tr>
-<tr><td><img class="gico " src="https://kitron4ik.github.io/assets/game/first-step.png" alt="" width="44" height="44" loading="lazy">First Step to Success</td><td>+12% ATK на 10 с после перенаправляющего навыка, не чаще раза в 20 с</td></tr>
+<tr><th>Дуга</th><th>Что делает (текст игры)</th><th>Число на макс. уровне (GenshinBuilds)</th></tr>
+<tr><td><img class="gico " src="https://kitron4ik.github.io/assets/game/reality-refuge.png" alt="" width="44" height="44" loading="lazy"><b>Убежище реальности</b> (Reality Refuge)</td><td>Увеличивает урон анимы и урон от присоединения. После сверхспособности бонус растёт на 6 секунд, не складывается</td><td>+15 % урона анимы и +10 % урона от присоединения, после сверхспособности до 20 %</td></tr>
+<tr><td><img class="gico " src="https://kitron4ik.github.io/assets/game/the-forgotten.png" alt="" width="44" height="44" loading="lazy">Забытое (The Forgotten)</td><td>Увеличивает атаку, пока у владельца больше 50 % ОЗ, и защиту, когда меньше 50 %</td><td>+20 % к атаке или защите</td></tr>
+<tr><td><img class="gico " src="https://kitron4ik.github.io/assets/game/first-step.png" alt="" width="44" height="44" loading="lazy">Первый шаг к успеху (First Step to Success)</td><td>При навыке перенаправления на время повышает атаку, срабатывает не чаще, чем раз в несколько секунд</td><td>+12 % к атаке на 10 с, не чаще раза в 20 с</td></tr>
 </table></div>
-<p>Комплект: <b>Fireflies and the Forest</b>. Два предмета дают +10% Anima DMG, четыре до 7 стаков CRIT DMG по +8% каждый, когда рядом получают урон Anima от команды. Порядок модулей у GenshinBuilds: CRIT Rate, CRIT DMG, DMG, ATK%, Cycle Intensity. Beebom (по выдаче поиска) советует порядок: CRIT Rate, Anima DMG, CRIT DMG, ATK%.</p>
+<p>Картридж: <b>«Светлячки и лес»</b>. Эпический эффект (2 предмета) даёт +10 % урона анимы, легендарный (4 предмета) повышает крит. урон на 8 % за стак, до 7 стаков (текст игры). Порядок модулей у GenshinBuilds: крит. шанс, крит. урон, урон, атака, интенсивность цикла. Beebom (по выдаче поиска) советует: крит. шанс, урон анимы, крит. урон, атака.</p>
 
 <h2 id="s1">Какие пробуждения прибавляют урон</h2>
-<p>Из восьми узлов (полный список на <a href="https://kitron4ik.github.io/nte/jiuyuan/">общей странице</a>) урон усиливают 1 (+5% ATK за связанную цель, до 15%), 2 (+100% урона метки), 4 (+50% к множителю), 5 (+8% по меченым), 6 (200% по связанным), 8 (-10% сопротивления Anima у меченых). Узел 7 даёт +1 уровень трёх навыков. Какие брать первыми, источники не ранжируют.</p>
+<p>Из восьми пробуждений (полный список на <a href="https://kitron4ik.github.io/nte/jiuyuan/">общей странице</a>) урон усиливают 1-е («Знание есть равновесие»: +5 % атаки за связанную цель, до 15 %), 2-е («Разведданные превращаются в клинки»: +100 % к множителю урона метки), 4-е («Удар на поражение»: +50 % и срабатывание по целям в области), 5-е (+8 % урона по меченым), 6-е (200 % урона по связанным целям, когда они используют навык), 8-е (снижает сопротивление анимы у меченых на 10 %). Седьмое поднимает уровни трёх навыков на 1. Какие брать первыми, источники не ранжируют.</p>
 
 <h2 id="s2">Порядок прокачки навыков</h2>
-<p>По GenshinBuilds: ультимейт первым, обычную атаку вторым, навык последним. Ультимейт даёт около 80% урона в окне burst.</p>
+<p>По GenshinBuilds: сверхспособность «Расплата» первой, базовую атаку второй, навык «Охотник за разведданными» последним. Сверхспособность даёт около 80 % урона в окне burst.</p>
 
 <h2 id="s3">Команды</h2>
 <div class="tbl cp" style="--edge:#22303d"><table>
 <tr><th>Команда</th><th>Состав</th><th>Источник</th></tr>
-<tr><td>Blossom</td><td>Nanally (главный урон), Jiuyuan, Zero, Sakiri (баффер)</td><td>GenshinBuilds, Beebom, GameWith (с Haniel вместо Sakiri)</td></tr>
-<tr><td>Hexed</td><td>Nanally или Mint (главный урон), Jiuyuan, Sakiri, Adler (щиты)</td><td>GenshinBuilds</td></tr>
+<tr><td>Цветение</td><td>Наналли (основной ДД), Цзююань, Ноль, Сакири (баффер)</td><td>GenshinBuilds, Beebom, GameWith (с Ханиэль вместо Сакири)</td></tr>
+<tr><td>Колдовство</td><td>Наналли или Минт (основной ДД), Цзююань, Сакири, Адлер (щиты)</td><td>GenshinBuilds</td></tr>
 </table></div>
-<p>В Blossom сильный контроль, но нет лечения. Её пассивы работают только с циклом Blossom, не с Hexed, поэтому в Hexed она слабее (GenshinBuilds).</p>
+<p>В цветении сильный контроль, но нет лечения. Пассивы Цзююань работают только с циклом эспера «Цветение», в «Колдовстве» она слабее (GenshinBuilds).</p>
 
 <h2 id="s4">Ротация</h2>
 <ol>
-<li>Навык Jiuyuan: собрать врагов и наложить метку. Потратить Rose Pact Bullets.</li>
-<li>Навык щита или защиты (Adler), навык баффера (Sakiri) и его ультимейт.</li>
-<li>Навык Zero.</li>
-<li>Смена на главного урон-дилера: его окно урона.</li>
-<li>Возврат к Jiuyuan: ультимейт для взрыва меток, затем навык, чтобы снова собрать врагов.</li>
+<li>Навык Цзююань: собрать врагов и заключить договор. Потратить пули договора розы.</li>
+<li>Навык щита или защиты (Адлер), навык баффера (Сакири) и его сверхспособность.</li>
+<li>Навык Ноль.</li>
+<li>Смена на основного ДД: его окно урона.</li>
+<li>Возврат к Цзююань: «Расплата» для взрыва меток, затем навык, чтобы снова собрать врагов.</li>
 </ol>
-<p>Советы GenshinBuilds: сначала накладывайте метку, пули тратьте до ультимейта, ставьте её рядом с персонажами Cosmos или Incantation.</p>
+<p>Советы GenshinBuilds: сначала заключайте договор, пули тратьте до сверхспособности, ставьте её рядом с героями, у которых есть эффекты космоса или чар.</p>
 
 <h2 id="s5">Источники</h2>
-<p class="src"><a href="https://genshin-builds.com/en/neverness-to-everness/characters/jiuyuan" rel="noopener">GenshinBuilds: Jiuyuan</a>, <a href="https://nteguide.com/en/characters/jiuyuan/" rel="noopener">NTE Guide: Jiuyuan</a>, <a href="https://gamewith.net/nte/74395" rel="noopener">GameWith</a> и <a href="https://beebom.com/nte-jiuyuan-build/amp/" rel="noopener">Beebom</a> (две последние только в выдаче поиска). Данные проверены 20.10.2026, неофициальные.</p>
+<p class="src">Эффекты дуг и картриджа, пробуждения: <a href="https://github.com/AzureXuanVerse/NTE_Assets" rel="noopener">выгрузка ресурсов игры NTE_Assets</a> (русская локализация, версия 1.4.13 CN). Сборка и команды: <a href="https://genshin-builds.com/en/neverness-to-everness/characters/jiuyuan" rel="noopener">GenshinBuilds</a>, <a href="https://nteguide.com/en/characters/jiuyuan/" rel="noopener">NTE Guide</a>, <a href="https://gamewith.net/nte/74395" rel="noopener">GameWith</a> и <a href="https://beebom.com/nte-jiuyuan-build/amp/" rel="noopener">Beebom</a> (две последние только в выдаче поиска). Данные проверены 21.10.2026, неофициальные.</p>
 <div class="cta">
-  <a class="btn" href="https://kitron4ik.github.io/nte/nanally/">Nanally: главный урон</a>
-  <a class="btn alt" href="https://kitron4ik.github.io/nte/jiuyuan/podderzhka/">Jiuyuan как поддержка</a>
+  <a class="btn" href="https://kitron4ik.github.io/nte/nanally/">Наналли: основной ДД</a>
+  <a class="btn alt" href="https://kitron4ik.github.io/nte/jiuyuan/podderzhka/">Цзююань как поддержка</a>
 </div>
 
-<h2 id="faq">Частые вопросы</h2><details class="cp"><summary>Какую арку брать Jiuyuan в роли саб-урона?</summary><p>Reality Refuge: +15% Anima DMG и +10% по прикреплённым целям, после ультимейта до 20% на 6 секунд. Альтернативы: The Forgotten, First Step to Success.</p></details><details class="cp"><summary>Какой комплект ставить Jiuyuan?</summary><p>Fireflies and the Forest: два предмета +10% Anima DMG, четыре до 7 стаков CRIT DMG.</p></details><details class="cp"><summary>С кем играть Jiuyuan-саб-уроном?</summary><p>Чаще всего в команде Blossom: Nanally, Jiuyuan, Zero, Sakiri. Есть вариант Hexed с Adler.</p></details><details class="cp"><summary>В каком порядке качать навыки Jiuyuan?</summary><p>По GenshinBuilds: ультимейт, потом обычную атаку, навык последним.</p></details>
-<h2 class="related">Читайте также</h2><div class="tiles"><a class="tile cp s6" href="https://kitron4ik.github.io/nte/garant/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-crown.png alt='' width=76 height=76><b>Гарант в NTE: как он работает</b><span>Как работает гарант в Neverness to Everness: S-ранг персонажа на 90-й крутке, нет «50 на 50», перенос гаранта на следующий баннер, арки на 60 и 80 круток.</span></a><a class="tile cp s6" href="https://kitron4ik.github.io/nte/valyuty/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-gift.png alt='' width=76 height=76><b>Валюты NTE: что на что менять</b><span>Какие валюты есть в Neverness to Everness и на что они меняются: Annulith, Solid Dice, Fabricated Dice, Tri-Key.</span></a><a class="tile cp s6" href="https://kitron4ik.github.io/nte/s-chego-nachat/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-calendar.png alt='' width=76 height=76><b>С чего начать в NTE</b><span>Что делать новичку в Neverness to Everness: обучение, коды, баннер для новичков, выбор персонажа и план первой недели по дням.</span></a><a class="tile cp s6" href="https://kitron4ik.github.io/nte/kody/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-scroll.png alt='' width=76 height=76><b>Коды NTE: рабочие промокоды</b><span>Рабочие коды Neverness to Everness: список с наградами, как ввести код, почему код не работает.</span></a></div></article></div>
+<h2 id="faq">Частые вопросы</h2><details class="cp"><summary>Какую дугу брать Цзююань в роли саб-ДД?</summary><p>«Убежище реальности» (Reality Refuge): урон анимы и урон от присоединения, после сверхспособности выше. Запасные: «Забытое», «Первый шаг к успеху».</p></details><details class="cp"><summary>Какой картридж ставить Цзююань?</summary><p>«Светлячки и лес»: два предмета +10 % урона анимы, четыре повышают крит. урон до 7 стаков по 8 %.</p></details><details class="cp"><summary>С кем играть Цзююань-саб-ДД?</summary><p>Чаще всего в команде цветения: Наналли, Цзююань, Ноль, Сакири. Есть вариант колдовства с Адлером.</p></details><details class="cp"><summary>В каком порядке качать навыки Цзююань?</summary><p>По GenshinBuilds: сверхспособность «Расплата», потом базовую атаку, навык последним.</p></details>
+<h2 class="related">Читайте также</h2><div class="tiles"><a class="tile cp s6" href="https://kitron4ik.github.io/nte/garant/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-crown.png alt='' width=76 height=76><b>Гарант в NTE: как он работает</b><span>Как работает гарант в Neverness to Everness: S-ранг персонажа на 90-й крутке, нет «50 на 50», перенос гаранта на следующий баннер, дуги (арки) на 60 и 80 круток.</span></a><a class="tile cp s6" href="https://kitron4ik.github.io/nte/valyuty/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-gift.png alt='' width=76 height=76><b>Валюты NTE: что на что менять</b><span>Какие валюты есть в Neverness to Everness и на что они меняются: Аннулит (Annulith), Фонс (Fons), Твёрдый и Шулерский кубики, Тройной ключ.</span></a><a class="tile cp s6" href="https://kitron4ik.github.io/nte/s-chego-nachat/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-calendar.png alt='' width=76 height=76><b>С чего начать в NTE</b><span>Что делать новичку в Neverness to Everness: обучение, коды, баннер для новичков, выбор персонажа и план первой недели по дням.</span></a><a class="tile cp s6" href="https://kitron4ik.github.io/nte/kody/" style="--img:url('https://kitron4ik.github.io/assets/hero-nte.jpg')"><i class="pic"></i><i class="shade"></i><img class=ic src=https://kitron4ik.github.io/assets/icon-nte-scroll.png alt='' width=76 height=76><b>Коды NTE: рабочие промокоды</b><span>Рабочие коды Neverness to Everness: список с наградами, как ввести код, почему код не работает.</span></a></div></article></div>
 <footer><div>NTE по-русски – неофициальный проект игроков. Neverness to Everness принадлежит Hotta Studio и Perfect World. Канал: <a href="https://max.ru/channel_nte_po_russki">NTE по-русски в MAX</a>. <a href="https://kitron4ik.github.io/nte/pravoobladatelyam/">Правообладателям</a>.</div></footer>
 <script>
 (function(){
