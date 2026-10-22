@@ -298,6 +298,9 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
 .mnav{display:none}
 @media (max-width:560px){.top .nav{display:none}.mnav{display:flex;gap:6px;overflow-x:auto;padding:2px 14px 8px;max-width:var(--max);margin:0 auto;scrollbar-width:none}.mnav::-webkit-scrollbar{display:none}.mnav a{flex:none;color:#cfd8e0;font:400 13px "Russo One",sans-serif;text-decoration:none;padding:7px 13px;background:#0e1620;clip-path:var(--slant)}}
 @media (max-width:560px){body{font-size:16.5px}.nav.opt{display:none}.logo{font-size:15px;white-space:nowrap;gap:8px}.logo img{width:34px;height:34px}.nav{padding:8px 10px;font-size:13px}.pill{margin-left:4px;padding:8px 14px;font-size:13px}.top div{gap:2px}.giant{top:-2%}.slab.k{margin-left:18px}.top div{padding:8px 14px}.step:nth-child(n){margin-left:0}.giant{font-size:210px}}
+.cur{position:fixed;left:0;top:0;width:14px;height:14px;background:var(--y);outline:1.5px solid rgba(7,9,13,.8);box-shadow:0 0 10px rgba(255,198,26,.85),0 0 28px rgba(80,230,255,.45);pointer-events:none;opacity:0;z-index:9999;transition:opacity .25s ease,width .15s ease,height .15s ease;will-change:transform}
+.cur.down{width:9px;height:9px}
+@media (hover:none),(pointer:coarse){.cur{display:none}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.kicker,.slab,.girl{animation:none!important}.btn,.tile,.nav::before,details{transition:none}}
 </style>
 <!-- Yandex.Metrika counter -->
@@ -467,6 +470,24 @@ footer div{max-width:var(--max);margin:0 auto}footer a{color:var(--mut)}
   var prog=document.getElementById('prog');var run=document.getElementById('runner');
   function onScroll(){var h=document.documentElement;var t=h.scrollHeight-h.clientHeight;var f=t>0?h.scrollTop/t:0;prog.style.transform='scaleX('+f+')';if(run){run.style.transform='translateX('+Math.round(f*(h.clientWidth-run.offsetWidth))+'px)';}}
   addEventListener('scroll',onScroll,{passive:true});onScroll();
+  if(matchMedia('(hover:hover) and (pointer:fine)').matches&&!matchMedia('(prefers-reduced-motion:reduce)').matches){
+    var cu=document.createElement('div');cu.className='cur';document.body.appendChild(cu);
+    var tx=0,ty=0,cx=0,cy=0,ang=0,want=0,seen=false,over=false,away=false;
+    var SEL='a,button,input,select,textarea,label,summary,[role=button]';
+    function show(){cu.style.opacity=(over||away)?0:1}
+    addEventListener('mousemove',function(e){tx=e.clientX;ty=e.clientY;if(!seen){seen=true;cx=tx;cy=ty}show()},{passive:true});
+    document.addEventListener('mouseover',function(e){over=!!(e.target.closest&&e.target.closest(SEL));show()});
+    document.documentElement.addEventListener('mouseleave',function(){away=true;show()});
+    document.documentElement.addEventListener('mouseenter',function(){away=false;show()});
+    addEventListener('mousedown',function(){cu.classList.add('down')});addEventListener('mouseup',function(){cu.classList.remove('down')});
+    (function loop(){
+      cx+=(tx-cx)*.2;cy+=(ty-cy)*.2;
+      var dx=tx-cx,dy=ty-cy;if(dx*dx+dy*dy>9)want=Math.atan2(dy,dx)*180/Math.PI+90;
+      var d=want-ang;while(d>180)d-=360;while(d<-180)d+=360;ang+=d*.12;
+      cu.style.transform='translate('+(cx-7)+'px,'+(cy-7)+'px) rotate('+ang+'deg)';
+      requestAnimationFrame(loop)
+    })();
+  }
   var links=[].slice.call(document.querySelectorAll('.toc a'));
   if(links.length&&'IntersectionObserver' in window){
     var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a});
